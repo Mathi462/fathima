@@ -1,0 +1,67 @@
+<div class="container">
+  <mat-card>
+    <mat-card-title>
+      Hotel Details <h5>
+        <div style="text-align:end">
+          <mat-form-field>
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+          </mat-form-field>
+        </div>
+      </h5>
+    </mat-card-title>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <table mat-table [dataSource]="dataSource" matSort style="width: 100%">
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header style="font-size:130%"> Name </th>
+          <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+        </ng-container>
+       
+        <ng-container matColumnDef="location">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header style="font-size:130%"> Location </th>
+          <td mat-cell *matCellDef="let row"> {{row.location}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="salesContact">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header style="font-size:130%"> Sales Contact Name </th>
+          <td mat-cell *matCellDef="let row"> {{row.salesContact}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="salesContactNum">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header style="font-size:130%"> Sales Contact Number </th>
+          <td mat-cell *matCellDef="let row"> {{row.salesContactNum}} </td>
+        </ng-container>
+      
+
+      <ng-container matColumnDef="edit">
+        <th mat-header-cell *matHeaderCellDef style="font-size:130%"> View & Update </th>
+        <td mat-cell *matCellDef="let row">
+          <button mat-icon-button style="color:blue" (click)="editDetails(row._id)">
+            <mat-icon aria-label="Example icon-button with a heart icon">create</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="delete">
+        <th mat-header-cell *matHeaderCellDef style="font-size:130%"> Delete </th>
+        <td mat-cell *matCellDef="let row">
+          <button mat-icon-button style="color:red" (click)="deleteDetails(row._id)">
+            <mat-icon aria-label="Example icon-button with a heart icon">delete</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+        </tr>
+      </table>
+
+      <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+
+
+
+    </mat-card-content>
+
+
+  </mat-card>

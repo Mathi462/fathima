@@ -1,0 +1,468 @@
+{
+   
+    "menuDetails" : [],
+    "facilitiesAvailableVector" : [ 
+        "Wi-Fi", 
+        "Smoking", 
+        "Spa", 
+        "Parking"
+    ],
+    "roomConfigurationsVector" : [],
+    "viewDetails" : [ 
+        "Balcony", 
+        "Sea View", 
+        "Ocean Front", 
+        "Garden View"
+    ],
+    "name" : "hotel1",
+    "type" : "Lodging",
+    "hotelCategory" : "Normal",
+    "location" : "hotel1",
+    "landmark" : "hotel1",
+    "city" : "Chennai",
+    "state" : "Tamilnadu",
+    "country" : "India",
+    "address" : "hotel1",
+    "pincode" : 636010,
+    "salesContactName" : "Sales hotel1",
+    "salesContactNumber" : "987542324",
+    "salesEmail" : "sales@hotel.com",
+    "reservationContactName" : "Reservation hotel1",
+    "reservationContactNumber" : "123456789",
+    "reservationEmail" : "reservationEmail@hotel.com",
+    "status" : "Activated",
+    "hotlePaymentCategory" : "Advance Payment",
+    "website" : "www.hotel1.com",
+    "faxNumber" : "+324532452345",
+    "cutOffDate" : null,
+    "roomsAvailableDetailsVector" : [ 
+        {
+            "notAvailableDates" : [ 
+                ""
+            ],
+           
+            "roomConfigurations" : "Double",
+            "totalAvailableRoomsCount" : 100,
+            "allowedPerGroupCount" : 5,
+            "allotmentCount" : 10,
+            "allotmentValidInDays" : 7,
+            "extraBedCount" : 2,
+            "childNoBedCount" : 3,
+            "maxPersonsAllowed" : 2,
+            "currentAvailableCount" : 0
+        }, 
+        {
+            "notAvailableDates" : [ 
+                ""
+            ],
+           
+            "roomConfigurations" : "1 Bed Room Suite",
+            "totalAvailableRoomsCount" : 500,
+            "allowedPerGroupCount" : 30,
+            "allotmentCount" : 60,
+            "allotmentValidInDays" : 0,
+            "extraBedCount" : 12,
+            "childNoBedCount" : 23,
+            "maxPersonsAllowed" : 4,
+            "currentAvailableCount" : 0
+        }, 
+        {
+            "notAvailableDates" : [ 
+                ""
+            ],
+           
+            "roomConfigurations" : "Twin",
+            "totalAvailableRoomsCount" : 10,
+            "allowedPerGroupCount" : 3,
+            "allotmentCount" : 10,
+            "allotmentValidInDays" : 3,
+            "extraBedCount" : 22,
+            "childNoBedCount" : 31,
+            "maxPersonsAllowed" : 2,
+            "currentAvailableCount" : 0
+        }, 
+        {
+            "notAvailableDates" : [ 
+                ""
+            ],
+           
+            "roomConfigurations" : "2 Bed Rooms Suite",
+            "totalAvailableRoomsCount" : 10,
+            "allowedPerGroupCount" : 10,
+            "allotmentCount" : 3,
+            "allotmentValidInDays" : 6,
+            "extraBedCount" : 2,
+            "childNoBedCount" : 3,
+            "maxPersonsAllowed" : 4,
+            "currentAvailableCount" : 0
+        }, 
+        {
+            "notAvailableDates" : [ 
+                ""
+            ],
+           
+            "roomConfigurations" : "3 Bed Rooms Suite",
+            "totalAvailableRoomsCount" : 10,
+            "allowedPerGroupCount" : 10,
+            "allotmentCount" : 3,
+            "allotmentValidInDays" : 3,
+            "extraBedCount" : 22,
+            "childNoBedCount" : 3,
+            "maxPersonsAllowed" : 32,
+            "currentAvailableCount" : 0
+        }, 
+        {
+            "notAvailableDates" : [ 
+                ""
+            ],
+           
+            "roomConfigurations" : "10 Bed Rooms Suite",
+            "totalAvailableRoomsCount" : 10,
+            "allowedPerGroupCount" : 10,
+            "allotmentCount" : 3,
+            "allotmentValidInDays" : 2,
+            "extraBedCount" : 32,
+            "childNoBedCount" : 3,
+            "maxPersonsAllowed" : 2,
+            "currentAvailableCount" : 0
+        }
+    ],
+    "policyDetails" : [ 
+        {
+           
+            "policyType" : "Applicable",
+            "displayText" : "Booking may be cancelled without penalty up to 72 hours prior to guest arrival.  Cancellations received after these cut-off periods or no-show on day of arrival will result in a charge amounting to one night’s room, tax and service charge.",
+            "rule" : 10,
+            "policySpecifierType" : "Days",
+            "charges" : 10,
+            "policyChargesSpecifierType" : "%",
+            "validityStartDate" : "2018-12-09T00:01:00.000Z",
+            "validityEndDate" : "2018-12-28T00:01:00.000Z",
+            "name" : "Cancellation Policy"
+        }, 
+        {
+           
+            "policyType" : "Informative",
+            "displayText" : "Child Policy",
+            "rule" : 4,
+            "policySpecifierType" : "Age",
+            "charges" : 10,
+            "policyChargesSpecifierType" : "Currency",
+            "validityStartDate" : "2018-12-09T00:01:00.000Z",
+            "validityEndDate" : "2018-12-28T00:01:00.000Z",
+            "name" : "Child Policy"
+        }, 
+        {
+           
+            "policyType" : "Both",
+            "displayText" : "This below rate can apply only bundle in package cannot public and selling in B2B system for only room accommodation",
+            "rule" : 10,
+            "policySpecifierType" : "Hours",
+            "charges" : 10,
+            "policyChargesSpecifierType" : "None",
+            "validityStartDate" : "2018-12-09T00:01:00.000Z",
+            "validityEndDate" : "2018-12-28T00:01:00.000Z",
+            "name" : "Check-in Policy"
+        }
+    ],
+    "meetingRoomDetails" : [ 
+        {
+           
+            "meetingRoomStyle" : "Theater",
+            "capacity" : 1000
+        }, 
+        {
+           
+            "meetingRoomStyle" : "Classroom",
+            "capacity" : 400
+        }, 
+        {
+           
+            "meetingRoomStyle" : "Half Moon",
+            "capacity" : 100
+        }
+    ],
+    "hotelTariff" : {
+        "fitandGroupHotelTariffVector" : [ 
+            {
+               
+                "roomCategory" : "Deluxe",
+                "roomType" : "Single",
+                "viewDetails" : "Ocean Front",
+                "fitPrice" : 1000,
+                "groupPrice" : 2000,
+                "extraBedType" : "Normal Bed",
+                "extraBedAdultPrice" : 200,
+                "extraBedChildPrice" : 104,
+                "validityStartDate" : "2018-12-09T00:01:00.000Z",
+                "validityEndDate" : "2018-12-28T00:01:00.000Z"
+            }, 
+            {
+               
+                "roomCategory" : "Corner suite",
+                "roomType" : "Single",
+                "viewDetails" : "Balcony",
+                "fitPrice" : 1000,
+                "groupPrice" : 3000,
+                "extraBedType" : "Normal Bed",
+                "extraBedAdultPrice" : 200,
+                "extraBedChildPrice" : 104,
+                "validityStartDate" : "2018-12-09T00:01:00.000Z",
+                "validityEndDate" : "2018-12-28T00:01:00.000Z"
+            }, 
+            {
+               
+                "roomCategory" : "Executive or Club",
+                "roomType" : "Single/Twin",
+                "viewDetails" : "Sea View",
+                "fitPrice" : 4000,
+                "groupPrice" : 5000,
+                "extraBedType" : "Normal Bed",
+                "extraBedAdultPrice" : 200,
+                "extraBedChildPrice" : 104,
+                "validityStartDate" : "2018-12-09T00:01:00.000Z",
+                "validityEndDate" : "2018-12-28T00:01:00.000Z"
+            }, 
+            {
+               
+                "roomCategory" : "Grand Deluxe",
+                "roomType" : "Double/Twin",
+                "viewDetails" : "None",
+                "fitPrice" : 4000,
+                "groupPrice" : 6000,
+                "extraBedType" : "Normal Bed",
+                "extraBedAdultPrice" : 200,
+                "extraBedChildPrice" : 104,
+                "validityStartDate" : "2018-12-14T00:01:00.000Z",
+                "validityEndDate" : "2018-12-28T00:01:00.000Z"
+            }
+        ],
+        "micehotelTariff" : [ 
+            {
+               
+                "sessionType" : "First Half",
+                "noOfBreaks" : 2,
+                "mealsType" : "Dinner",
+                "price" : 1000,
+                "supplementary" : "None",
+                "supplementaryCharges" : 0,
+                "validityStartDate" : "2018-12-22T00:01:00.000Z",
+                "validityEndDate" : "2018-12-28T00:01:00.000Z",
+                "micetype" : "Full Day"
+            }, 
+            {
+               
+                "sessionType" : "Second Half",
+                "noOfBreaks" : 1,
+                "mealsType" : "Lunch",
+                "price" : 2,
+                "supplementary" : "Soft Drinks",
+                "supplementaryCharges" : 200,
+                "validityStartDate" : "2018-12-20T00:01:00.000Z",
+                "validityEndDate" : "2018-12-28T00:01:00.000Z",
+                "micetype" : "Half Day"
+            }
+        ]
+    },
+    "seasonDetails" : [ 
+        {
+           
+            "type" : "Event",
+            "name" : "Event",
+            "startDate" : "2018-12-23T00:01:00.000Z",
+            "endDate" : "2018-12-28T00:01:00.000Z",
+            "supplementCharges" : 0,
+            "minimumNightRestrictions" : 2,
+            "adultPrice" : 134.44,
+            "childPrice" : 44.44,
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd",
+            "compulsory" : false
+        }, 
+        {
+           
+            "type" : "Sesonal Rates",
+            "name" : "Sesonal Rates",
+            "startDate" : "2018-12-24T00:01:00.000Z",
+            "endDate" : "2018-12-28T00:01:00.000Z",
+            "supplementCharges" : 5.13,
+            "minimumNightRestrictions" : 2,
+            "adultPrice" : 268.88,
+            "childPrice" : 88.88,
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd",
+            "compulsory" : true
+        }, 
+        {
+           
+            "type" : "Event",
+            "name" : "Event",
+            "startDate" : "2018-12-25T00:01:00.000Z",
+            "endDate" : "2018-12-28T00:01:00.000Z",
+            "supplementCharges" : 10.26,
+            "minimumNightRestrictions" : 2,
+            "adultPrice" : 403.32,
+            "childPrice" : 133.32,
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd",
+            "compulsory" : false
+        }, 
+        {
+           
+            "type" : "Compulsory Gala Dinner",
+            "name" : "Compulsory Gala Dinner",
+            "startDate" : "2018-12-27T00:01:00.000Z",
+            "endDate" : "2018-12-28T00:01:00.000Z",
+            "supplementCharges" : 15.39,
+            "minimumNightRestrictions" : 2,
+            "adultPrice" : 537.76,
+            "childPrice" : 177.76,
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd",
+            "compulsory" : true
+        }, 
+        {
+           
+            "type" : "Event",
+            "name" : "Event",
+            "startDate" : "2018-12-22T00:01:00.000Z",
+            "endDate" : "2018-12-28T00:01:00.000Z",
+            "supplementCharges" : 20.52,
+            "minimumNightRestrictions" : 2,
+            "adultPrice" : 672.2,
+            "childPrice" : 222.2,
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd",
+            "compulsory" : false
+        }, 
+        {
+           
+            "type" : "Peak Season Details",
+            "name" : "Peak Season Details",
+            "startDate" : "2018-12-26T00:01:00.000Z",
+            "endDate" : "2018-12-28T00:01:00.000Z",
+            "supplementCharges" : 25.65,
+            "minimumNightRestrictions" : 2,
+            "adultPrice" : 806.64,
+            "childPrice" : 266.64,
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasdl;kl;lk;lk;l  asasdasd",
+            "compulsory" : false
+        }
+    ],
+    "mealsTariff" : [ 
+        {
+           
+            "mealsType" : "BreakFast",
+            "adultPrice" : 100.98,
+            "childPrice" : 100.98,
+            "validityStartDate" : "2018-12-24T00:01:00.000Z",
+            "validityEndDate" : "2018-12-28T00:01:00.000Z",
+            "compulsory" : false
+        }
+    ],
+    "promotionsAndOffers" : [ 
+        {
+           
+            "name" : "Promotions offer",
+            "payFor" : 2,
+            "getTo" : "3",
+            "startDate" : "2018-12-27T00:01:00.000Z",
+            "endDate" : "2018-12-28T00:01:00.000Z",
+            "displayText" : "apply only bundle in package cannot public and selling"
+        }, 
+        {
+           
+            "name" : " offer",
+            "payFor" : 2,
+            "getTo" : "SPA for 2 hrs",
+            "startDate" : "2018-12-28T00:01:00.000Z",
+            "endDate" : "2018-12-28T00:01:00.000Z",
+            "displayText" : "apply only bundle in package cannot public and selling"
+        }
+    ],
+    "inRoomFacilitiesVector" : [ 
+        {
+            "inRoomFacilitiesVector" : [ 
+                "[[[[[Iron Box, Cofee Maker, Wi-fi]]]]]"
+            ],
+
+            "roomCategory" : "Standard"
+        }, 
+        {
+            "inRoomFacilitiesVector" : [ 
+                "[[[[[Iron Box, Cofee Maker, Wi-fi]]]]]"
+            ],
+
+            "roomCategory" : "Deluxe"
+        }
+    ],
+    "__v" : 0
+}
+
+{
+    "type" : "Event",
+    "name" : "Event",
+    "startDate" :"2018-12-19T00:01:00.000Z",
+    "endDate" :"2018-12-25T00:01:00.000Z",
+    "supplementCharges" : 0,
+    "minimumNightRestrictions" : 2,
+    "adultPrice" : 134.44,
+    "childPrice" : 44.44,
+    "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd",
+    "compulsory" : false
+}, 
+{
+    "type" : "Sesonal Rates",
+    "name" : "Sesonal Rates",
+    "startDate" :"2018-12-19T00:01:00.000Z",
+    "endDate" :"2018-12-25T00:01:00.000Z",
+    "supplementCharges" : 5.13,
+    "minimumNightRestrictions" : 2,
+    "adultPrice" : 268.88,
+    "childPrice" : 88.88,
+    "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd",
+    "compulsory" : true
+}, 
+{
+    "type" : "Event",
+    "name" : "Event",
+    "startDate" :"2018-12-19T00:01:00.000Z",
+    "endDate" :"2018-12-25T00:01:00.000Z",
+    "supplementCharges" : 10.26,
+    "minimumNightRestrictions" : 2,
+    "adultPrice" : 403.32,
+    "childPrice" : 133.32,
+    "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd",
+    "compulsory" : false
+}, 
+{
+    "type" : "Compulsory Gala Dinner",
+    "name" : "Compulsory Gala Dinner",
+    "startDate" :"2018-12-19T00:01:00.000Z",
+    "endDate" :"2018-12-25T00:01:00.000Z",
+    "supplementCharges" : 15.39,
+    "minimumNightRestrictions" : 2,
+    "adultPrice" : 537.76,
+    "childPrice" : 177.76,
+    "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd",
+    "compulsory" : true
+}, 
+{
+    "type" : "Event",
+    "name" : "Event",
+    "startDate" :"2018-12-19T00:01:00.000Z",
+    "endDate" :"2018-12-25T00:01:00.000Z",
+    "supplementCharges" : 20.52,
+    "minimumNightRestrictions" : 2,
+    "adultPrice" : 672.2,
+    "childPrice" : 222.2,
+    "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd",
+    "compulsory" : false
+}, 
+{
+    "type" : "Peak Season Details",
+    "name" : "Peak Season Details",
+    "startDate" :"2018-12-19T00:01:00.000Z",
+    "endDate" :"2018-12-25T00:01:00.000Z",
+    "supplementCharges" : 25.65,
+    "minimumNightRestrictions" : 2,
+    "adultPrice" : 806.64,
+    "childPrice" : 266.64,
+    "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasdl;kl;lk;lk;l  asasdasd",
+    "compulsory" : false
+}

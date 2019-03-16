@@ -1,0 +1,1161 @@
+<div>
+        <div class="container">
+          <h3>Hotel Details</h3>
+        </div>
+        <form [formGroup]="hotelDetails">
+          <div class="container">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>BASIC DETAILS</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <mat-form-field>
+                        <input matInput placeholder="Name" type="text" formControlName="name">
+                      </mat-form-field>
+                    </div>
+                    <div class="col-sm-4">
+                      <mat-form-field>
+                        <mat-select placeholder="Select Hotel Type" formControlName="hotel_Type">
+                          <mat-option *ngFor="let h1 of hoteltype" value="{{h1}}">{{h1}} </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-sm-4">
+                      <mat-form-field>
+                        <mat-select placeholder="Select Hotel Catogery" formControlName="hotel_Catogery">
+                          <mat-option *ngFor="let h2 of hotelcatogery" value="{{h2}}">{{h2}}</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <br>
+          <div class="container">
+            <mat-card class="example-card">
+              <mat-card-header>
+                <mat-card-title>STATUS & PAYMENT DETAILS</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <mat-form-field>
+                        <mat-select placeholder="Select Status" formControlName="status">
+                          <mat-option *ngFor="let s1 of status" value="{{s1}}">{{s1}}</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-sm-6">
+                      <mat-form-field>
+                        <mat-select placeholder="Select Payment catogery" formControlName="payment_Catogery">
+                          <mat-option *ngFor="let p1 of payment" value="{{p1}}">{{p1}}</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <br>
+          <div class="container">
+            <mat-card class="example-card">
+              <mat-card-header>
+                <mat-card-title>ADDRESS DETAILS</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <mat-form-field class="full-width">
+                        <input matInput placeholder="Address" type="text" formControlName="address">
+                      </mat-form-field>
+                    </div>
+                    <div class="col-sm-6">
+                      <mat-form-field>
+                        <input matInput placeholder="Location" type="text" formControlName="location">
+                      </mat-form-field>
+                    </div>
+                    <div class="col-sm-6">
+                      <mat-form-field>
+                        <input matInput placeholder="Landmark" type="text" formControlName="landmark">
+                      </mat-form-field>
+                    </div>
+                    <div class="col-sm-3">
+                      <mat-form-field>
+                        <mat-select placeholder="Select City" formControlName="city">
+                          <mat-option *ngFor="let c1 of cities" value="{{c1}}">{{c1}}</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-sm-3">
+                      <mat-form-field>
+                        <mat-select placeholder="Select State" formControlName="State">
+                          <mat-option *ngFor="let s2 of states" value="{{s2}}">{{s2}}</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-sm-3">
+                      <mat-form-field>
+                        <mat-select placeholder="Select Country" formControlName="Country">
+                          <mat-option *ngFor="let c2 of countries" value="{{c2}}">{{c2}}</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-sm-3">
+                      <mat-form-field>
+                        <input matInput placeholder="Pincode" type="text" formControlName="pincode">
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <br>
+          <div class="container">
+            <mat-card class="example-card">
+              <mat-card-header>
+                <mat-card-title>CONTACT DETAILS</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <mat-form-field>
+                        <input matInput placeholder="Sales contact name" type="text" formControlName="salesContact">
+                      </mat-form-field>
+                    </div>
+                    <div class="col-sm-4">
+                      <mat-form-field>
+                        <input matInput placeholder="Sales contact number" type="text" formControlName="salesContactNum">
+                      </mat-form-field>
+                    </div>
+                    <div class="col-sm-4">
+                      <mat-form-field>
+                        <input matInput placeholder="Sales Email" type="email" formControlName="sales_Email">
+                      </mat-form-field>
+                    </div>
+                    <div class="col-sm-4">
+                      <mat-form-field>
+                        <input matInput placeholder="Reservation contact name" type="text" formControlName="reservationContact">
+                      </mat-form-field>
+                    </div>
+                    <div class="col-sm-4">
+                      <mat-form-field>
+                        <input matInput placeholder="Reservation contact number" type="text" formControlName="reservationContactNum">
+                      </mat-form-field>
+                    </div>
+                    <div class="col-sm-4">
+                      <mat-form-field>
+                        <input matInput placeholder="Reservation Email" type="email" formControlName="reservation_Email">
+                      </mat-form-field>
+                    </div>
+                    <div class="col-sm-8">
+                      <mat-form-field>
+                        <input matInput placeholder="Website" type="text" formControlName="websites">
+                      </mat-form-field>
+                    </div>
+                    <div class="col-sm-4">
+                      <mat-form-field>
+                        <input matInput placeholder="Fax number" type="text" formControlName="faxnumber">
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <br>
+          <div class="container">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>ROOM AVAILABLE DETAILS</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div formArrayName="room_availability_details">
+                  <div *ngFor="let detail of hotelDetails.get('room_availability_details').controls; let j=index">
+                    <div [formGroupName]="j">
+                      <mat-card class="mt-2">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-sm-3">
+                              <mat-form-field>
+                                <mat-select placeholder="Select Configuration" formControlName="configuration">
+                                  <mat-option *ngFor="let c3 of configuration" value="{{c3}}">
+                                    {{c3}}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-sm-3">
+                              <mat-form-field>
+                                <mat-select placeholder="Total Count" formControlName="totalCount">
+                                  <mat-option *ngFor="let t1 of tcount" value="{{t1}}">
+                                    {{t1}}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-sm-3">
+                              <mat-form-field>
+                                <mat-select placeholder="Per Group Count" formControlName="perGroupCount">
+                                  <mat-option *ngFor="let p2 of gcount" value="{{p2}}">
+                                    {{p2}}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-sm-3">
+                              <mat-form-field>
+                                <input matInput [matDatepicker]="picker" formControlName="not_available_dates" placeholder="Not available dates">
+                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                <mat-datepicker #picker></mat-datepicker>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-sm-3">
+                              <mat-form-field>
+                                <mat-select placeholder="Allotment Count" formControlName="allotmentCount">
+                                  <mat-option *ngFor="let a1 of allotc" value="{{a1}}">
+                                    {{a1}}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-sm-3">
+                              <mat-form-field>
+                                <mat-select placeholder="Allotment valid days" formControlName="allotmentValidDays">
+                                  <mat-option *ngFor="let a2 of allotv" value="{{a2}}">
+                                    {{a2}}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-sm-3">
+                              <mat-form-field>
+                                <mat-select placeholder="Extra bed count" formControlName="extraBedCount">
+                                  <mat-option *ngFor="let e1 of exbcount" value="{{e1}}">
+                                    {{e1}}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-sm-3">
+                              <mat-form-field>
+                                <mat-select placeholder="CNB Count" formControlName="cnbCount">
+                                  <mat-option *ngFor="let c4 of cnb" value="{{c4}}">
+                                    {{c4}}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-sm-4">
+                              <mat-form-field>
+                                <mat-select placeholder="Max person allowed" formControlName="maxPersonAllowed">
+                                  <mat-option *ngFor="let m1 of maxp" value="{{m1}}">
+                                    {{m1}}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-sm-2">
+                              <div class="row">
+                                <div *ngIf="hotelDetails.get('room_availability_details').length > 1">
+                                  <button mat-icon-button type="button" color="accent" (click)="remove1(j)">
+                                    <img style="width:75%" src="assets/negative.svg">
+                                  </button>
+                                </div>
+                                <!-- <div *ngIf="hotelDetails.get('visits').length > 1"> -->
+                                <button mat-icon-button type="button" color="accent" (click)="addCountry1()">
+                                  <img style="width:75%" src="assets/plus.svg">
+                                </button>
+                                <!-- </div> -->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </mat-card>
+                    </div>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <br>
+          <div class="container">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>HOTEL FACILITIES</mat-card-title>
+                <br>
+                <mat-card-subtitle>please enter the hotel facilities</mat-card-subtitle>
+              </mat-card-header>
+              <!-- <mat-card-content>
+                <div formArrayName="visits">
+                  <div *ngFor="let detail of hotelDetails.get('visits').controls; let i=index">
+                    <div [formGroupName]="i">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-sm-8">
+                            <div class="row">
+                              <mat-form-field>
+                                <mat-select placeholder="Facilites" formControlName="facilities">
+                                  <mat-option *ngFor="let f1 of faci" value="{{f1}}">
+                                    {{f1}}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                              <button mat-icon-button type="button" color="accent" (click)="addAvailability()">
+                                <img style="width:75%" src="assets/negative.svg">
+                              </button>
+                              <button class="ml-2" mat-icon-button>
+                                <img style="width:75%" src="assets/plus.svg">
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </mat-card-content> -->
+              <mat-card-content>
+                <div formArrayName="hotel_facilitys">
+                  <div *ngFor="let param of hotelDetails.get('hotel_facilitys').controls; let i=index">
+                    <div [formGroupName]="i">
+                      <mat-card class="mt-2">
+                        <mat-card-content>
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <mat-form-field>
+                                <mat-select placeholder="Facilites" formControlName="facilities">
+                                  <mat-option *ngFor="let f1 of faci" value="{{f1}}">
+                                    {{f1}}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                            </div>
+                            <div class="col-sm-2">
+                              <div class="row">
+                                <div *ngIf="hotelDetails.get('hotel_facilitys').length > 1">
+                                  <button mat-icon-button type="button" color="accent" (click)="remove(i)">
+                                    <img style="width:75%" src="assets/negative.svg">
+                                  </button>
+                                </div>
+                                <!-- <div *ngIf="hotelDetails.get('visits').length > 1"> -->
+                                <button mat-icon-button type="button" color="accent" (click)="addCountry()">
+                                  <img style="width:75%" src="assets/plus.svg">
+                                </button>
+                                <!-- </div> -->
+                              </div>
+                            </div>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="container mt-2" style="text-align:end">
+                  <button mat-flat-button type="button" color="accent" (click)="addCountry()">Add Visits</button>
+                </div> -->
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <br>
+          <div class="container">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>VIEW-FACILITIES</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div formArrayName="view_facilitys">
+                  <div *ngFor="let par of hotelDetails.get('view_facilitys').controls; let k=index">
+                    <div [formGroupName]="k">
+                      <mat-card class="mt-2">
+                        <mat-card-content>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <mat-select placeholder="View Facilities" formControlName="viewFacilities">
+                                    <mat-option *ngFor="let f2 of vfaci" value="{{f2}}">
+                                      {{f2}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="row">
+                                  <div *ngIf="hotelDetails.get('view_facilitys').length > 1">
+                                    <button mat-icon-button type="button" color="accent" (click)="remove2(k)">
+                                      <img style="width:75%" src="assets/negative.svg">
+                                    </button>
+                                  </div>
+                                  <!-- <div *ngIf="hotelDetails.get('visits').length > 1"> -->
+                                  <button mat-icon-button type="button" color="accent" (click)="addCountry2()">
+                                    <img style="width:75%" src="assets/plus.svg">
+                                  </button>
+                                  <!-- </div> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>
+                    </div>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <br>
+          <div class="container">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>IN ROOM-FACILITIES</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div formArrayName="in_room_facilitys">
+                  <div *ngFor="let para of hotelDetails.get('in_room_facilitys').controls; let l=index">
+                    <div [formGroupName]="l">
+                      <mat-card class="mt-2">
+                        <mat-card-content>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <mat-select placeholder="In room facilities" formControlName="inRoomFacilities">
+                                    <mat-option *ngFor="let i1 of irfaci" value="{{i1}}">
+                                      {{i1}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field class="full-width">
+                                  <input matInput placeholder="Selection-Eg.[value1,value2]" type="text" formControlName="selection">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="row">
+                                  <div *ngIf="hotelDetails.get('in_room_facilitys').length > 1">
+                                    <button mat-icon-button type="button" color="accent" (click)="remove3(l)">
+                                      <img style="width:75%" src="assets/negative.svg">
+                                    </button>
+                                  </div>
+                                  <!-- <div *ngIf="hotelDetails.get('visits').length > 1"> -->
+                                  <button mat-icon-button type="button" color="accent" (click)="addCountry3()">
+                                    <img style="width:75%" src="assets/plus.svg">
+                                  </button>
+                                  <!-- </div> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>
+                    </div>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <br>
+          <div class="container">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>MEETING ROOM CONFIGURATION</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <div formArrayName="meeting_room_details">
+                  <div *ngFor="let params of hotelDetails.get('meeting_room_details').controls; let m=index">
+                    <div [formGroupName]="m">
+                      <mat-card class="mt-2">
+                        <mat-card-content>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <mat-select placeholder="Meeting room facilities" formControlName="meetingRoomFacilities">
+                                    <mat-option *ngFor="let m2 of mrfaci" value="{{m2}}">
+                                      {{m2}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <mat-select placeholder="Capacity" formControlName="capacity">
+                                    <mat-option *ngFor="let c5 of capacity" value="{{c5}}">
+                                      {{c5}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="row">
+                                  <div *ngIf="hotelDetails.get('meeting_room_details').length > 1">
+                                    <button mat-icon-button type="button" color="accent" (click)="remove4(m)">
+                                      <img style="width:75%" src="assets/negative.svg">
+                                    </button>
+                                  </div>
+                                  <!-- <div *ngIf="hotelDetails.get('visits').length > 1"> -->
+                                  <button mat-icon-button type="button" color="accent" (click)="addCountry4()">
+                                    <img style="width:75%" src="assets/plus.svg">
+                                  </button>
+                                  <!-- </div> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>
+                    </div>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <br>
+          <div class="container">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>TARIFF DETAILS-FIT AND GROUP</mat-card-title>
+                <mat-card-subtitle>please enter the FIT and Group Details</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+                <div formArrayName="tarif_details_FIT">
+                  <div *ngFor="let params1 of hotelDetails.get('tarif_details_FIT').controls; let n=index">
+                    <div [formGroupName]="n">
+                      <mat-card class="mt-2">
+                        <mat-card-content>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="Room catogery" formControlName="room_Catogery">
+                                    <mat-option *ngFor="let r1 of roomc" value="{{r1}}">
+                                      {{r1}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="Room Type" formControlName="roomType">
+                                    <mat-option *ngFor="let r2 of roomt" value="{{r2}}">
+                                      {{r2}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="View Details" formControlName="viewDetails">
+                                    <mat-option *ngFor="let v1 of vdetails" value="{{v1}}">
+                                      {{v1}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="ExtraBed Type" formControlName="extraBedType">
+                                    <mat-option *ngFor="let e2 of exbtype" value="{{e2}}">
+                                      {{e2}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="FIT price" formControlName="fitPrice">
+                                    <mat-option *ngFor="let fr1 of fitprice" value="{{fr1}}">
+                                      {{fr1}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="Group price" formControlName="groupPrice">
+                                    <mat-option *ngFor="let gp1 of gprice" value="{{gp1}}">
+                                      {{gp1}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="Extra bed adult price" formControlName="extraBedAdultPrice">
+                                    <mat-option *ngFor="let ea of ebaprice" value="{{ea}}">
+                                      {{ea}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="Extra bed child price" formControlName="extraBedChildPrice">
+                                    <mat-option *ngFor="let ec of ebcprice" value="{{ec}}">
+                                      {{ec}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <input matInput [matDatepicker]="arr" placeholder="Validity start date" formControlName="arrDate">
+                                  <mat-datepicker-toggle matSuffix [for]="arr"></mat-datepicker-toggle>
+                                  <mat-datepicker #arr></mat-datepicker>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <input matInput [matDatepicker]="dep" placeholder="Validity end Date" formControlName="depDate">
+                                  <mat-datepicker-toggle matSuffix [for]="dep"></mat-datepicker-toggle>
+                                  <mat-datepicker #dep></mat-datepicker>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="row">
+                                  <div *ngIf="hotelDetails.get('tarif_details_FIT').length > 1">
+                                    <button mat-icon-button type="button" color="accent" (click)="remove5(n)">
+                                      <img style="width:75%" src="assets/negative.svg">
+                                    </button>
+                                  </div>
+                                  <!-- <div *ngIf="hotelDetails.get('visits').length > 1"> -->
+                                  <button mat-icon-button type="button" color="accent" (click)="addCountry5()">
+                                    <img style="width:75%" src="assets/plus.svg">
+                                  </button>
+                                  <!-- </div> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>
+                    </div>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <br>
+          <div class="container">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>TARIFF DETAILS-MICE</mat-card-title>
+                <mat-card-subtitle>please enter the MICE Details</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+                <div formArrayName="tarif_details_MICE">
+                  <div *ngFor="let params2 of hotelDetails.get('tarif_details_MICE').controls; let o=index">
+                    <div [formGroupName]="o">
+                      <mat-card class="mt-2">
+                        <mat-card-content>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="Type" formControlName="type">
+                                    <mat-option *ngFor="let t2 of ttype" value="{{t2}}">
+                                      {{t2}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="Sessions" formControlName="sessions">
+                                    <mat-option *ngFor="let sc of sessions" value="{{sc}}">
+                                      {{sc}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3"> 
+                                <mat-form-field>
+                                  <mat-select placeholder="No of Breaks" formControlName="noOfBreaks">
+                                    <mat-option *ngFor="let nd of breaks" value="{{nd}}">
+                                      {{nd}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="Meals" formControlName="meals">
+                                    <mat-option *ngFor="let me of meals" value="{{me}}">
+                                      {{me}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="Price" formControlName="price">
+                                    <mat-option *ngFor="let pr of pprice" value="{{pr}}">
+                                      {{pr}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <input matInput [matDatepicker]="arr1" placeholder="Validity start Date" formControlName="arr1Date">
+                                  <mat-datepicker-toggle matSuffix [for]="arr1"></mat-datepicker-toggle>
+                                  <mat-datepicker #arr1></mat-datepicker>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <input matInput [matDatepicker]="dep1" placeholder="Validity end Date" formControlName="dep1Date">
+                                  <mat-datepicker-toggle matSuffix [for]="dep1"></mat-datepicker-toggle>
+                                  <mat-datepicker #dep1></mat-datepicker>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="Supplementary" formControlName="supplementary">
+                                    <mat-option *ngFor="let sp of supplementary" value="{{sp}}">
+                                      {{sp}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <mat-select placeholder="Supplementary Charges" formControlName="supplementaryCharges">
+                                    <mat-option *ngFor="let sc of scharge" value="{{sc}}">
+                                      {{sc}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="row">
+                                  <div *ngIf="hotelDetails.get('tarif_details_MICE').length > 1">
+                                    <button mat-icon-button type="button" color="accent" (click)="remove6(o)">
+                                      <img style="width:75%" src="assets/negative.svg">
+                                    </button>
+                                  </div>
+                                  <!-- <div *ngIf="hotelDetails.get('visits').length > 1"> -->
+                                  <button mat-icon-button type="button" color="accent" (click)="addCountry6()">
+                                    <img style="width:75%" src="assets/plus.svg">
+                                  </button>
+                                  <!-- </div> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>
+                    </div>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <br>
+          <div class="container">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>POLICY DETAILS</mat-card-title>
+                <mat-card-subtitle>please enter the Policy Details</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+                <div formArrayName="policy_details">
+                  <div *ngFor="let params2 of hotelDetails.get('policy_details').controls; let p=index">
+                    <div [formGroupName]="p">
+                      <mat-card class="mt-2">
+                        <mat-card-content>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="Policy Type" formControlName="policy_Type">
+                                    <mat-option *ngFor="let pt of ptype" value="{{pt}}">
+                                      {{pt}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <input matInput placeholder="Policy Name" type="text" formControlName="policy_Name">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="Hours/Days/Nights/Age" formControlName="day_Nights">
+                                    <mat-option *ngFor="let hdn of hdna" value="{{hdn}}">
+                                      {{hdn}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="Rule Specifier" formControlName="rule_Specifier">
+                                    <mat-option *ngFor="let rs of rulespecify" value="{{rs}}">
+                                      {{rs}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="Charges" formControlName="charges">
+                                    <mat-option *ngFor="let ch of charge" value="{{ch}}">
+                                      {{ch}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <mat-select placeholder="Charges Specifier" formControlName="chargesSpecifier">
+                                    <mat-option *ngFor="let cs of chspecify" value="{{cs}}">
+                                      {{cs}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <input matInput [matDatepicker]="arr2" placeholder="Validity start Date" formControlName="arr2Date">
+                                  <mat-datepicker-toggle matSuffix [for]="arr2"></mat-datepicker-toggle>
+                                  <mat-datepicker #arr2></mat-datepicker>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-3">
+                                <mat-form-field>
+                                  <input matInput [matDatepicker]="dep2" placeholder="Validity end Date" formControlName="dep2Date">
+                                  <mat-datepicker-toggle matSuffix [for]="dep2"></mat-datepicker-toggle>
+                                  <mat-datepicker #dep2></mat-datepicker>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field class="full-width">
+                                  <textarea matInput placeholder="Display Text" formControlName="display_Text"></textarea>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="row">
+                                  <div *ngIf="hotelDetails.get('policy_details').length > 1">
+                                    <button mat-icon-button type="button" color="accent" (click)="remove7(p)">
+                                      <img style="width:75%" src="assets/negative.svg">
+                                    </button>
+                                  </div>
+                                  <!-- <div *ngIf="hotelDetails.get('visits').length > 1"> -->
+                                  <button mat-icon-button type="button" color="accent" (click)="addCountry7()">
+                                    <img style="width:75%" src="assets/plus.svg">
+                                  </button>
+                                  <!-- </div> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>
+                    </div>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <br>
+          <div class="container">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>PROMOTIONS AND OFFERS</mat-card-title>
+                <mat-card-subtitle>please enter the Promotions and Offers Details</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+                <div formArrayName="promotion_and_offers">
+                  <div *ngFor="let params3 of hotelDetails.get('promotion_and_offers').controls; let q=index">
+                    <div [formGroupName]="q">
+                      <mat-card class="mt-2">
+                        <mat-card-content>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <input matInput placeholder="Name" type="text" formControlName="name1">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <mat-select placeholder="Pay for night" formControlName="payForNight">
+                                    <mat-option *ngFor="let pn of paynight" value="{{pn}}">
+                                      {{pn}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field> 
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <mat-select placeholder="Get/stay for" formControlName="get_Stay">
+                                    <mat-option *ngFor="let gs of stay" value="{{gs}}">
+                                      {{gs}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <input matInput [matDatepicker]="arr3" placeholder="Start Date" formControlName="arr3Date">
+                                  <mat-datepicker-toggle matSuffix [for]="arr3"></mat-datepicker-toggle>
+                                  <mat-datepicker #arr3></mat-datepicker>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <input matInput [matDatepicker]="dep3" placeholder="End Date" formControlName="dep3Date">
+                                  <mat-datepicker-toggle matSuffix [for]="dep3"></mat-datepicker-toggle>
+                                  <mat-datepicker #dep3></mat-datepicker>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-5">
+                                <mat-form-field>
+                                  <textarea matInput placeholder="Display Text" formControlName="display"></textarea>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="row">
+                                  <div *ngIf="hotelDetails.get('promotion_and_offers').length > 1">
+                                    <button mat-icon-button type="button" color="accent" (click)="remove8(q)">
+                                      <img style="width:75%" src="assets/negative.svg">
+                                    </button>
+                                  </div>
+                                  <!-- <div *ngIf="hotelDetails.get('visits').length > 1"> -->
+                                  <button mat-icon-button type="button" color="accent" (click)="addCountry8()">
+                                    <img style="width:75%" src="assets/plus.svg">
+                                  </button>
+                                  <!-- </div> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>
+                    </div>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <br>
+          <div class="container">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>EVENT AND SEASON DETAILS</mat-card-title>
+                <mat-card-subtitle>please enter the Event and Season Details</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+                <div formArrayName="event_and_season_details">
+                  <div *ngFor="let params4 of hotelDetails.get('event_and_season_details').controls; let r=index">
+                    <div [formGroupName]="r">
+                      <mat-card class="mt-2">
+                        <mat-card-content>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <mat-select placeholder="Season Type" formControlName="season_Type">
+                                    <mat-option *ngFor="let st of Setype" value="{{st}}">
+                                      {{st}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <input matInput placeholder="Season Name" type="text" formControlName="season_Name">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <mat-select placeholder="Adult price" formControlName="adult_Price">
+                                    <mat-option *ngFor="let ap of aprice " value="{{ap}}">
+                                      {{ap}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <mat-select placeholder="Child price" formControlName="child_Price">
+                                    <mat-option *ngFor="let cp of cprice" value="{{cp}}">
+                                      {{cp}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <input matInput [matDatepicker]="arr4" placeholder="Season Start Date" formControlName="arr4Date">
+                                  <mat-datepicker-toggle matSuffix [for]="arr4"></mat-datepicker-toggle>
+                                  <mat-datepicker #arr4></mat-datepicker>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <input matInput [matDatepicker]="dep4" placeholder="Season End Date" formControlName="dep4Date">
+                                  <mat-datepicker-toggle matSuffix [for]="dep4"></mat-datepicker-toggle>
+                                  <mat-datepicker #dep4></mat-datepicker>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <mat-select placeholder="Supplement Charges" formControlName="supplement_Charges">
+                                    <mat-option *ngFor="let sc1 of suppleCharges" value="{{sc1}}">
+                                      {{sc1}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <mat-select placeholder="Minimum Night Restrictions" formControlName="min_Restrictions">
+                                    <mat-option *ngFor="let mn of Restrictions" value="{{mn}}">
+                                      {{mn}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field class="full-width">
+                                  <textarea matInput placeholder="Display Text" type="text" formControlName="display_Txt"></textarea>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-checkbox formControlName="is_complusary" class="mr-2">Is complusary?</mat-checkbox>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="row">
+                                  <div *ngIf="hotelDetails.get('event_and_season_details').length > 1">
+                                    <button mat-icon-button type="button" color="accent" (click)="remove9(r)">
+                                      <img style="width:75%" src="assets/negative.svg">
+                                    </button>
+                                  </div>
+                                  <!-- <div *ngIf="hotelDetails.get('visits').length > 1"> -->
+                                  <button mat-icon-button type="button" color="accent" (click)="addCountry9()">
+                                    <img style="width:75%" src="assets/plus.svg">
+                                  </button>
+                                  <!-- </div> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>
+                    </div>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <br>
+          <div class="container">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title>MEALS DETAILS</mat-card-title>
+                <mat-card-subtitle>please enter the Meals Details</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+                <div formArrayName="meals_details">
+                  <div *ngFor="let params5 of hotelDetails.get('meals_details').controls; let s=index">
+                    <div [formGroupName]="s">
+                      <mat-card class="mt-2">
+                        <mat-card-content>
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <input matInput placeholder="Meals Type" type="text" formControlName="meals_Type">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <mat-select placeholder="Adult price" formControlName="adult1_Price">
+                                    <mat-option *ngFor="let amp of adprice" value="{{amp}}">
+                                      {{amp}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <mat-select placeholder="Child price" formControlName="child1_Price">
+                                    <mat-option *ngFor="let cmp of chprice" value="{{cmp}}">
+                                      {{cmp}}
+                                    </mat-option>
+                                  </mat-select>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-form-field>
+                                  <input matInput [matDatepicker]="arr5" placeholder="Validity Start Date" formControlName="arr5Date">
+                                  <mat-datepicker-toggle matSuffix [for]="arr5"></mat-datepicker-toggle>
+                                  <mat-datepicker #arr5></mat-datepicker>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-6">
+                                <mat-form-field>
+                                  <input matInput [matDatepicker]="dep5" placeholder="Validity End Date" formControlName="dep5Date">
+                                  <mat-datepicker-toggle matSuffix [for]="dep5"></mat-datepicker-toggle>
+                                  <mat-datepicker #dep5></mat-datepicker>
+                                </mat-form-field>
+                              </div>
+                              <div class="col-sm-4">
+                                <mat-checkbox class="mr-2"  formControlName="is_complusary">Is complusary?</mat-checkbox>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="row">
+                                  <div *ngIf="hotelDetails.get('meals_details').length > 1">
+                                    <button mat-icon-button type="button" color="accent" (click)="remove10(s)">
+                                      <img style="width:75%" src="assets/negative.svg">
+                                    </button>
+                                  </div>
+                                  <!-- <div *ngIf="hotelDetails.get('visits').length > 1"> -->
+                                  <button mat-icon-button type="button" color="accent" (click)="addCountry10()">
+                                    <img style="width:75%" src="assets/plus.svg">
+                                  </button>
+                                  <!-- </div> -->
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>
+                    </div>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <br>
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="text-center w-100">
+                <button mat-stroked-button (click)="onSubmit()">Update</button>
+                <button mat-stroked-button (click)="cancelButton()">Cancel</button>
+              </div>
+              <!-- <div>
+                  <button mat-stroked-button>Update</button>
+            
+                  <button mat-stroked-button>Cancel</button>
+              </div> -->
+      
+              <!-- </div> -->
+            </div>
+          </div>
+        </form>
+      </div>

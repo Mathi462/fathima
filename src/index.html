@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ToursPro</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <meta charset="utf-8">
+
+	
+  <link rel="shortcut icon" href="assets/images/fav.ico" type="image/x-icon">
+  
+	<!-- GOOGLE FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:500,700" rel="stylesheet">
+	<!-- FONTAWESOME ICONS -->
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<!-- ALL CSS FILES -->
+	<link href="assets/css/materialize.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<!-- RESPONSIVE.CSS ONLY FOR MOBILE AND TABLET VIEWS -->
+	<link href="assets/css/responsive.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+
+
+</head>
+<body>
+		<app-root></app-root>
+	<!--ALL SCRIPT FILES-->
+	<script src="assets/js/jquery-ui.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxWUXPxbmhIJXr8s-0f_jvyJLB_bdJrDk&libraries=places&callback=activatePlacesSearch">
+</script>
+	<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery-ui.js"></script>
+	<script src="assets/js/angular.min.js"></script>
+	<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+	<script src="assets/js/materialize.min.js" type="text/javascript"></script>
+	<script src="assets/js/jquery.mixitup.min.js" type="text/javascript"></script>
+	<script src="assets/js/custom.js"></script>
+	<script>
+$(document).ready(function() {
+	console.log("asdasdfg");
+			$("#search_term").on('change paste keyup' ,  function(e) {
+			   console.log($("#search_term").val());
+			   
+    var input =document.getElementById('search_term');
+
+var autocomplete =new google.maps.places.Autocomplete(input);
+
+console.log(autocomplete);
+		   })})
+		   </script>
+
+<script>
+		$(document).ready(function() {
+			console.log("asdasdfg");
+					$("#search_term1").on('change paste keyup' ,  function(e) {
+					   console.log($("#search_term1").val());
+					   
+			var input =document.getElementById('search_term1');
+		
+		var autocomplete =new google.maps.places.Autocomplete(input);
+		
+		console.log(autocomplete);
+				   })})
+				   </script>
+
+	
+</body>
+</html>

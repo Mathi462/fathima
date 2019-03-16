@@ -1,0 +1,7 @@
+{ 
+    "_id" : ObjectId("5c050ae0eee78b155f3eeb92"), 
+    "email" : "admin", 
+    "city" : "admin", 
+    "additional" : "None", 
+    "jsonvalue" : "{\"email\":\"admin\",\"password\":\"8FonMlnjFv2JJSpQl9fUJg==\",\"companyName\":\"admin\",\"aliasName\":\"admin\",\"headName\":\"admin\",\"contactName\":\"admin\",\"contactNumber\":\"admin\",\"address1\":\"admin\",\"address2\":\"admin\",\"address3\":\"admin\",\"city\":\"admin\",\"state\":null,\"country\":\"admin\",\"pinCode\":1,\"enrolledDate\":1543376019126,\"companyLogo\":\"companyLogo\",\"paymentDetails\":{\"totalCredit\":0.309530986705464,\"totalPaymentReceived\":0.03523686248159452,\"paymentReceivedDetails\":{\"paymentDate\":1543376019126,\"paymentMode\":\"paymentMode1\",\"bankName\":\"bankName\",\"paymentReceived\":0.1892653314428181}},\"marginPercentageDetails\":{\"dummy\":\"\"},\"parentDetails\":{\"parentUserRole\":\"ADMIN\",\"parentID\":\"37\"},\"accessRights\":\"BOTH\",\"userRole\":\"AGENTSBRANCH\",\"activatedServices\":\"ALL\",\"userStatus\":{\"status\":\"ACTIVATED\",\"reason\":\"ACTIVATED\",\"date\":1543376019141}}"
+}

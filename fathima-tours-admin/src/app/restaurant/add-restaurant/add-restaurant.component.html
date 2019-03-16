@@ -1,0 +1,226 @@
+<div>
+  <div class="container">
+    <h3>Add Restaurant Details</h3>
+  </div>
+  <form [formGroup]="restaurantForm">
+    <div class="container">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>BASIC DETAILS</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <mat-form-field>
+                  <input matInput placeholder="Name" type="text" formControlName="name">
+                </mat-form-field>
+              </div>
+              <div class="col-sm-4">
+                <mat-form-field>
+                  <mat-select placeholder="Select Restaurant Type" formControlName="restaurant_Catogery">
+                    <mat-option *ngFor="let h1 of restaurant_Catogery" value="{{h1}}">{{h1}} </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <br>
+    <div class="container">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>STATUS & PAYMENT DETAILS</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <mat-form-field>
+                  <mat-select placeholder="Select Status" formControlName="status">
+                    <mat-option *ngFor="let s1 of status" value="{{s1}}">{{s1}}</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div class="col-sm-6">
+                <mat-form-field>
+                  <mat-select placeholder="Select Payment catogery" formControlName="payment_Catogery">
+                    <mat-option *ngFor="let p1 of payment" value="{{p1}}">{{p1}}</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <br>
+    <div class="container">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>ADDRESS DETAILS</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <mat-form-field class="full-width">
+                  <input matInput placeholder="Address" type="text" formControlName="address">
+                </mat-form-field>
+              </div>
+              <div class="col-sm-6">
+                <mat-form-field>
+                  <input matInput placeholder="Location" type="text" formControlName="location">
+                </mat-form-field>
+              </div>
+              <div class="col-sm-6">
+                <mat-form-field>
+                  <input matInput placeholder="Landmark" type="text" formControlName="landmark">
+                </mat-form-field>
+              </div>
+              <div class="col-sm-3">
+                <mat-form-field>
+                  <mat-select placeholder="Select City" formControlName="city">
+                    <mat-option *ngFor="let c1 of cities" value="{{c1}}">{{c1}}</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div class="col-sm-3">
+                <mat-form-field>
+                  <mat-select placeholder="Select State" formControlName="State">
+                    <mat-option *ngFor="let s2 of states" value="{{s2}}">{{s2}}</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div class="col-sm-3">
+                <mat-form-field>
+                  <mat-select placeholder="Select Country" formControlName="Country">
+                    <mat-option *ngFor="let c2 of countries" value="{{c2}}">{{c2}}</mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+              <div class="col-sm-3">
+                <mat-form-field>
+                  <input matInput placeholder="Pincode" type="text" formControlName="pincode">
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <br>
+    <div class="container">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>CONTACT DETAILS</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <mat-form-field>
+                  <input matInput placeholder="Sales contact name" type="text" formControlName="salesContact">
+                </mat-form-field>
+              </div>
+              <div class="col-sm-4">
+                <mat-form-field>
+                  <input matInput placeholder="Sales contact number" type="text" formControlName="salesContactNum">
+                </mat-form-field>
+              </div>
+              <div class="col-sm-4">
+                <mat-form-field>
+                  <input matInput placeholder="Sales Email" type="email" formControlName="sales_Email">
+                </mat-form-field>
+              </div>
+              <div class="col-sm-4">
+                <mat-form-field>
+                  <input matInput placeholder="Reservation contact name" type="text" formControlName="reservationContact">
+                </mat-form-field>
+              </div>
+              <div class="col-sm-4">
+                <mat-form-field>
+                  <input matInput placeholder="Reservation contact number" type="text" formControlName="reservationContactNum">
+                </mat-form-field>
+              </div>
+              <div class="col-sm-4">
+                <mat-form-field>
+                  <input matInput placeholder="Reservation Email" type="email" formControlName="reservation_Email">
+                </mat-form-field>
+              </div>
+              <div class="col-sm-8">
+                <mat-form-field>
+                  <input matInput placeholder="Website" type="text" formControlName="websites">
+                </mat-form-field>
+              </div>
+              <div class="col-sm-4">
+                <mat-form-field>
+                  <input matInput placeholder="Fax number" type="text" formControlName="faxnumber">
+                </mat-form-field>
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <br>
+
+    <div class="container">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Meals Type</mat-card-title>
+          <br>
+          <mat-card-subtitle>please enter the Meals Type</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <div formArrayName="hotel_facilitys">
+            <div *ngFor="let param of restaurantForm.get('hotel_facilitys').controls; let i=index">
+              <div [formGroupName]="i">
+                <mat-card class="mt-2">
+                  <mat-card-content>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <mat-form-field>
+                          <input matInput formControlName="meals_type" placeholder="Enter Meals Type">
+                        </mat-form-field>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="row">
+                          <div *ngIf="restaurantForm.get('hotel_facilitys').length > 1">
+                            <button mat-icon-button type="button" color="accent" (click)="remove(i)">
+                              <img style="width:75%" src="assets/negative.svg">
+                            </button>
+                          </div>
+                          <!-- <div *ngIf="hotelDetails.get('visits').length > 1"> -->
+                          <button mat-icon-button type="button" color="accent" (click)="addCountry()">
+                            <img style="width:75%" src="assets/plus.svg">
+                          </button>
+                          <!-- </div> -->
+                        </div>
+                      </div>
+                    </div>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+            </div>
+          </div>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+
+    <div class="col-lg-12">
+      <div class="row">
+        <div class="text-center w-100">
+          <button mat-stroked-button (click)="onSubmit()">Submit</button>
+          <button mat-stroked-button (click)="restaurantForm.reset()">Reset</button>
+        </div>
+
+      </div>
+    </div>
+  </form>
+</div>

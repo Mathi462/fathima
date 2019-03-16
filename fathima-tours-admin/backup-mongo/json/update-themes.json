@@ -1,0 +1,6 @@
+{ 
+    "_id" : ObjectId("5beff3873ea03d1ce3da1181"), 
+    "value" : "purple-theme", 
+    "theme" : true, 
+    "__v" : NumberInt(0)
+}

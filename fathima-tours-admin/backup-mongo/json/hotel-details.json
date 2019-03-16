@@ -1,0 +1,1579 @@
+{ 
+    "_id" : ObjectId("5c0ac494e27b492c701d784b"), 
+    "menuDetails" : [
+
+    ], 
+    "facilitiesAvailableVector" : [
+        "Wi-Fi", 
+        "Smoking", 
+        "Spa", 
+        "Parking"
+    ], 
+    "roomConfigurationsVector" : [
+
+    ], 
+    "viewDetails" : [
+        "Balcony", 
+        "Sea View", 
+        "Ocean Front", 
+        "Garden View"
+    ], 
+    "name" : "Naban Hotels", 
+    "type" : "Lodging", 
+    "hotelCategory" : "Normal", 
+    "location" : "hotel1", 
+    "landmark" : "hotel1", 
+    "city" : "Bangalore", 
+    "state" : "Tamilnadu", 
+    "country" : "India", 
+    "address" : "hotel1", 
+    "pincode" : ISODate("123455-12-31T18:30:00.000+0000"), 
+    "salesContactName" : "Sales hotel1", 
+    "salesContactNumber" : "987542324", 
+    "salesEmail" : "sales@hotel.com", 
+    "reservationContactName" : "Reservation hotel1", 
+    "reservationContactNumber" : "123456789", 
+    "reservationEmail" : "reservationEmail@hotel.com", 
+    "status" : "Activated", 
+    "hotlePaymentCategory" : "Advance Payment", 
+    "website" : "www.hotel1.com", 
+    "faxNumber" : "+324532452345", 
+    "cutOffDate" : null, 
+    "roomsAvailableDetailsVector" : [
+        {
+            "notAvailableDates" : [
+                "2018-12-11T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ac494e27b492c701d7851"), 
+            "roomConfigurations" : "Double", 
+            "totalAvailableRoomsCount" : NumberInt(100), 
+            "allowedPerGroupCount" : NumberInt(5), 
+            "allotmentCount" : NumberInt(10), 
+            "allotmentValidInDays" : NumberInt(7), 
+            "extraBedCount" : NumberInt(2), 
+            "childNoBedCount" : NumberInt(3), 
+            "maxPersonsAllowed" : NumberInt(2), 
+            "currentAvailableCount" : NumberInt(0)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-11T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ac494e27b492c701d7850"), 
+            "roomConfigurations" : "1 Bed Room Suite", 
+            "totalAvailableRoomsCount" : NumberInt(500), 
+            "allowedPerGroupCount" : NumberInt(30), 
+            "allotmentCount" : NumberInt(60), 
+            "allotmentValidInDays" : NumberInt(0), 
+            "extraBedCount" : NumberInt(12), 
+            "childNoBedCount" : NumberInt(23), 
+            "maxPersonsAllowed" : NumberInt(4), 
+            "currentAvailableCount" : NumberInt(0)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-15T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ac494e27b492c701d784f"), 
+            "roomConfigurations" : "Twin", 
+            "totalAvailableRoomsCount" : NumberInt(10), 
+            "allowedPerGroupCount" : NumberInt(3), 
+            "allotmentCount" : NumberInt(10), 
+            "allotmentValidInDays" : NumberInt(3), 
+            "extraBedCount" : NumberInt(22), 
+            "childNoBedCount" : NumberInt(31), 
+            "maxPersonsAllowed" : NumberInt(2), 
+            "currentAvailableCount" : NumberInt(0)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-11T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ac494e27b492c701d784e"), 
+            "roomConfigurations" : "2 Bed Rooms Suite", 
+            "totalAvailableRoomsCount" : NumberInt(10), 
+            "allowedPerGroupCount" : NumberInt(10), 
+            "allotmentCount" : NumberInt(3), 
+            "allotmentValidInDays" : NumberInt(6), 
+            "extraBedCount" : NumberInt(2), 
+            "childNoBedCount" : NumberInt(3), 
+            "maxPersonsAllowed" : NumberInt(4), 
+            "currentAvailableCount" : NumberInt(0)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-11T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ac494e27b492c701d784d"), 
+            "roomConfigurations" : "3 Bed Rooms Suite", 
+            "totalAvailableRoomsCount" : NumberInt(10), 
+            "allowedPerGroupCount" : NumberInt(10), 
+            "allotmentCount" : NumberInt(3), 
+            "allotmentValidInDays" : NumberInt(3), 
+            "extraBedCount" : NumberInt(22), 
+            "childNoBedCount" : NumberInt(3), 
+            "maxPersonsAllowed" : NumberInt(32), 
+            "currentAvailableCount" : NumberInt(0)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-11T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ac494e27b492c701d784c"), 
+            "roomConfigurations" : "10 Bed Rooms Suite", 
+            "totalAvailableRoomsCount" : NumberInt(10), 
+            "allowedPerGroupCount" : NumberInt(10), 
+            "allotmentCount" : NumberInt(3), 
+            "allotmentValidInDays" : NumberInt(2), 
+            "extraBedCount" : NumberInt(32), 
+            "childNoBedCount" : NumberInt(3), 
+            "maxPersonsAllowed" : NumberInt(2), 
+            "currentAvailableCount" : NumberInt(0)
+        }
+    ], 
+    "policyDetails" : [
+        {
+            "_id" : ObjectId("5c0ac494e27b492c701d7854"), 
+            "policyType" : "Applicable", 
+            "displayText" : "Booking may be cancelled without penalty up to 72 hours prior to guest arrival.  Cancellations received after these cut-off periods or no-show on day of arrival will result in a charge amounting to one night’s room, tax and service charge.", 
+            "rule" : NumberInt(10), 
+            "policySpecifierType" : "Days", 
+            "charges" : NumberInt(10), 
+            "policyChargesSpecifierType" : "%", 
+            "validityStartDate" : ISODate("2018-12-12T00:01:00.000+0000"), 
+            "validityEndDate" : ISODate("2018-12-13T00:01:00.000+0000"), 
+            "name" : "Cancellation Policy"
+        }, 
+        {
+            "_id" : ObjectId("5c0ac494e27b492c701d7853"), 
+            "policyType" : "Informative", 
+            "displayText" : "Child Policy", 
+            "rule" : NumberInt(4), 
+            "policySpecifierType" : "Age", 
+            "charges" : NumberInt(10), 
+            "policyChargesSpecifierType" : "Currency", 
+            "validityStartDate" : ISODate("2018-12-18T00:01:00.000+0000"), 
+            "validityEndDate" : ISODate("2018-12-18T00:01:00.000+0000"), 
+            "name" : "Child Policy"
+        }, 
+        {
+            "_id" : ObjectId("5c0ac494e27b492c701d7852"), 
+            "policyType" : "Both", 
+            "displayText" : "This below rate can apply only bundle in package cannot public and selling in B2B system for only room accommodation", 
+            "rule" : NumberInt(10), 
+            "policySpecifierType" : "Hours", 
+            "charges" : NumberInt(10), 
+            "policyChargesSpecifierType" : "None", 
+            "validityStartDate" : ISODate("2018-12-15T00:01:00.000+0000"), 
+            "validityEndDate" : ISODate("2018-12-15T00:01:00.000+0000"), 
+            "name" : "Check-in Policy"
+        }
+    ], 
+    "meetingRoomDetails" : [
+        {
+            "_id" : ObjectId("5c0ac494e27b492c701d7857"), 
+            "meetingRoomStyle" : "Theater", 
+            "capacity" : NumberInt(1000)
+        }, 
+        {
+            "_id" : ObjectId("5c0ac494e27b492c701d7856"), 
+            "meetingRoomStyle" : "Classroom", 
+            "capacity" : NumberInt(400)
+        }, 
+        {
+            "_id" : ObjectId("5c0ac494e27b492c701d7855"), 
+            "meetingRoomStyle" : "Half Moon", 
+            "capacity" : NumberInt(100)
+        }
+    ], 
+    "hotelTariff" : {
+        "fitandGroupHotelTariffVector" : [
+            {
+                "_id" : ObjectId("5c0ac494e27b492c701d785b"), 
+                "roomCategory" : "Deluxe", 
+                "roomType" : "Single", 
+                "viewDetails" : "Ocean Front", 
+                "fitPrice" : NumberInt(1000), 
+                "groupPrice" : NumberInt(2000), 
+                "extraBedType" : "Normal Bed", 
+                "extraBedAdultPrice" : NumberInt(200), 
+                "extraBedChildPrice" : NumberInt(104), 
+                "validityStartDate" : ISODate("2018-12-15T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-18T00:01:00.000+0000")
+            }, 
+            {
+                "_id" : ObjectId("5c0ac494e27b492c701d785a"), 
+                "roomCategory" : "Corner suite", 
+                "roomType" : "Single", 
+                "viewDetails" : "Balcony", 
+                "fitPrice" : NumberInt(1000), 
+                "groupPrice" : NumberInt(3000), 
+                "extraBedType" : "Normal Bed", 
+                "extraBedAdultPrice" : NumberInt(200), 
+                "extraBedChildPrice" : NumberInt(104), 
+                "validityStartDate" : ISODate("2018-12-19T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-25T00:01:00.000+0000")
+            }, 
+            {
+                "_id" : ObjectId("5c0ac494e27b492c701d7859"), 
+                "roomCategory" : "Executive or Club", 
+                "roomType" : "Single/Twin", 
+                "viewDetails" : "Sea View", 
+                "fitPrice" : NumberInt(4000), 
+                "groupPrice" : NumberInt(5000), 
+                "extraBedType" : "Normal Bed", 
+                "extraBedAdultPrice" : NumberInt(200), 
+                "extraBedChildPrice" : NumberInt(104), 
+                "validityStartDate" : ISODate("2018-12-19T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-25T00:01:00.000+0000")
+            }, 
+            {
+                "_id" : ObjectId("5c0ac494e27b492c701d7858"), 
+                "roomCategory" : "Grand Deluxe", 
+                "roomType" : "Double/Twin", 
+                "viewDetails" : "None", 
+                "fitPrice" : NumberInt(4000), 
+                "groupPrice" : NumberInt(6000), 
+                "extraBedType" : "Normal Bed", 
+                "extraBedAdultPrice" : NumberInt(200), 
+                "extraBedChildPrice" : NumberInt(104), 
+                "validityStartDate" : ISODate("2018-12-19T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-25T00:01:00.000+0000")
+            }
+        ], 
+        "micehotelTariff" : [
+            {
+                "_id" : ObjectId("5c0ac494e27b492c701d785d"), 
+                "sessionType" : "First Half", 
+                "noOfBreaks" : NumberInt(2), 
+                "mealsType" : "Dinner", 
+                "price" : NumberInt(1000), 
+                "supplementary" : "None", 
+                "supplementaryCharges" : NumberInt(0), 
+                "validityStartDate" : ISODate("2018-12-19T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-25T00:01:00.000+0000"), 
+                "micetype" : "Full Day"
+            }, 
+            {
+                "_id" : ObjectId("5c0ac494e27b492c701d785c"), 
+                "sessionType" : "Second Half", 
+                "noOfBreaks" : NumberInt(1), 
+                "mealsType" : "Lunch", 
+                "price" : NumberInt(2), 
+                "supplementary" : "Soft Drinks", 
+                "supplementaryCharges" : NumberInt(200), 
+                "validityStartDate" : ISODate("2018-12-19T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-25T00:01:00.000+0000"), 
+                "micetype" : "Half Day"
+            }
+        ]
+    }, 
+    "seasonDetails" : [
+        {
+            "_id" : ObjectId("5c0ac494e27b492c701d7863"), 
+            "type" : "Event", 
+            "name" : "Event", 
+            "startDate" : ISODate("2018-12-19T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-25T00:01:00.000+0000"), 
+            "supplementCharges" : NumberInt(0), 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 134.44, 
+            "childPrice" : 44.44, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : false
+        }, 
+        {
+            "_id" : ObjectId("5c0ac494e27b492c701d7862"), 
+            "type" : "Sesonal Rates", 
+            "name" : "Sesonal Rates", 
+            "startDate" : ISODate("2018-12-19T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-25T00:01:00.000+0000"), 
+            "supplementCharges" : 5.13, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 268.88, 
+            "childPrice" : 88.88, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : true
+        }, 
+        {
+            "_id" : ObjectId("5c0ac494e27b492c701d7861"), 
+            "type" : "Event", 
+            "name" : "Event", 
+            "startDate" : ISODate("2018-12-19T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-25T00:01:00.000+0000"), 
+            "supplementCharges" : 10.26, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 403.32, 
+            "childPrice" : 133.32, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : false
+        }, 
+        {
+            "_id" : ObjectId("5c0ac494e27b492c701d7860"), 
+            "type" : "Compulsory Gala Dinner", 
+            "name" : "Compulsory Gala Dinner", 
+            "startDate" : ISODate("2018-12-19T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-25T00:01:00.000+0000"), 
+            "supplementCharges" : 15.39, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 537.76, 
+            "childPrice" : 177.76, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : true
+        }, 
+        {
+            "_id" : ObjectId("5c0ac494e27b492c701d785f"), 
+            "type" : "Event", 
+            "name" : "Event", 
+            "startDate" : ISODate("2018-12-19T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-25T00:01:00.000+0000"), 
+            "supplementCharges" : 20.52, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 672.2, 
+            "childPrice" : 222.2, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : false
+        }, 
+        {
+            "_id" : ObjectId("5c0ac494e27b492c701d785e"), 
+            "type" : "Peak Season Details", 
+            "name" : "Peak Season Details", 
+            "startDate" : ISODate("2018-12-19T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-25T00:01:00.000+0000"), 
+            "supplementCharges" : 25.65, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 806.64, 
+            "childPrice" : 266.64, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasdl;kl;lk;lk;l  asasdasd", 
+            "compulsory" : false
+        }
+    ], 
+    "mealsTariff" : [
+        {
+            "_id" : ObjectId("5c0ac494e27b492c701d7864"), 
+            "mealsType" : "BreakFast", 
+            "adultPrice" : 100.98, 
+            "childPrice" : 100.98, 
+            "validityStartDate" : ISODate("2018-12-19T00:01:00.000+0000"), 
+            "validityEndDate" : ISODate("2018-12-25T00:01:00.000+0000"), 
+            "compulsory" : false
+        }
+    ], 
+    "promotionsAndOffers" : [
+        {
+            "_id" : ObjectId("5c0ac494e27b492c701d7866"), 
+            "name" : "Promotions offer", 
+            "payFor" : NumberInt(2), 
+            "getTo" : "3", 
+            "validityStartDate" : ISODate("2018-12-19T00:01:00.000+0000"), 
+            "validityEndDate" : ISODate("2018-12-15T00:01:00.000+0000"), 
+            "displayText" : "apply only bundle in package cannot public and selling"
+        }, 
+        {
+            "_id" : ObjectId("5c0ac494e27b492c701d7865"), 
+            "name" : " offer", 
+            "payFor" : NumberInt(2), 
+            "getTo" : "SPA for 2 hrs", 
+            "validityStartDate" : ISODate("2018-12-19T00:01:00.000+0000"), 
+            "validityEndDate" : ISODate("2018-12-25T00:01:00.000+0000"), 
+            "displayText" : "apply only bundle in package cannot public and selling"
+        }
+    ], 
+    "inRoomFacilitiesVector" : [
+        {
+            "inRoomFacilitiesVector" : [
+                "Iron Box", 
+                "Cofee Maker", 
+                "Wi-fi"
+            ], 
+            "_id" : ObjectId("5c0ac494e27b492c701d7868"), 
+            "roomCategory" : "Standard"
+        }, 
+        {
+            "inRoomFacilitiesVector" : [
+                "Iron Box", 
+                "Cofee Maker", 
+                "Wi-fi"
+            ], 
+            "_id" : ObjectId("5c0ac494e27b492c701d7867"), 
+            "roomCategory" : "Deluxe"
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c0ea06c41f5012c8c445da9"), 
+    "menuDetails" : [
+
+    ], 
+    "facilitiesAvailableVector" : [
+        "Wi-Fi", 
+        "Smoking", 
+        "Spa", 
+        "Parking"
+    ], 
+    "roomConfigurationsVector" : [
+
+    ], 
+    "viewDetails" : [
+        "Balcony", 
+        "Sea View", 
+        "Ocean Front", 
+        "Garden View"
+    ], 
+    "name" : "hotel1", 
+    "type" : "Lodging", 
+    "hotelCategory" : "Normal", 
+    "location" : "hotel1", 
+    "landmark" : "hotel1", 
+    "city" : "Chennai", 
+    "state" : "Tamilnadu", 
+    "country" : "India", 
+    "address" : "hotel1", 
+    "pincode" : ISODate("123455-12-31T18:30:00.000+0000"), 
+    "salesContactName" : "Sales hotel1", 
+    "salesContactNumber" : "987542324", 
+    "salesEmail" : "sales@hotel.com", 
+    "reservationContactName" : "Reservation hotel1", 
+    "reservationContactNumber" : "123456789", 
+    "reservationEmail" : "reservationEmail@hotel.com", 
+    "status" : "Activated", 
+    "hotlePaymentCategory" : "Advance Payment", 
+    "website" : "www.hotel1.com", 
+    "faxNumber" : "+324532452345", 
+    "cutOffDate" : null, 
+    "roomsAvailableDetailsVector" : [
+        {
+            "notAvailableDates" : [
+                "2018-12-23T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ea06c41f5012c8c445daf"), 
+            "roomConfigurations" : "Double", 
+            "totalAvailableRoomsCount" : NumberInt(100), 
+            "allowedPerGroupCount" : NumberInt(5), 
+            "allotmentCount" : NumberInt(10), 
+            "allotmentValidInDays" : NumberInt(7), 
+            "extraBedCount" : NumberInt(2), 
+            "childNoBedCount" : NumberInt(3), 
+            "maxPersonsAllowed" : NumberInt(5), 
+            "currentAvailableCount" : NumberInt(10)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-12T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ea06c41f5012c8c445dae"), 
+            "roomConfigurations" : "1 Bed Room Suite", 
+            "totalAvailableRoomsCount" : NumberInt(500), 
+            "allowedPerGroupCount" : NumberInt(30), 
+            "allotmentCount" : NumberInt(60), 
+            "allotmentValidInDays" : NumberInt(0), 
+            "extraBedCount" : NumberInt(12), 
+            "childNoBedCount" : NumberInt(23), 
+            "maxPersonsAllowed" : NumberInt(2), 
+            "currentAvailableCount" : NumberInt(20)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-09T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ea06c41f5012c8c445dad"), 
+            "roomConfigurations" : "Twin", 
+            "totalAvailableRoomsCount" : NumberInt(10), 
+            "allowedPerGroupCount" : NumberInt(3), 
+            "allotmentCount" : NumberInt(10), 
+            "allotmentValidInDays" : NumberInt(3), 
+            "extraBedCount" : NumberInt(22), 
+            "childNoBedCount" : NumberInt(31), 
+            "maxPersonsAllowed" : NumberInt(20), 
+            "currentAvailableCount" : NumberInt(10)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-20T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ea06c41f5012c8c445dac"), 
+            "roomConfigurations" : "2 Bed Rooms Suite", 
+            "totalAvailableRoomsCount" : NumberInt(10), 
+            "allowedPerGroupCount" : NumberInt(10), 
+            "allotmentCount" : NumberInt(3), 
+            "allotmentValidInDays" : NumberInt(6), 
+            "extraBedCount" : NumberInt(2), 
+            "childNoBedCount" : NumberInt(3), 
+            "maxPersonsAllowed" : NumberInt(5), 
+            "currentAvailableCount" : NumberInt(5)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-25T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ea06c41f5012c8c445dab"), 
+            "roomConfigurations" : "3 Bed Rooms Suite", 
+            "totalAvailableRoomsCount" : NumberInt(10), 
+            "allowedPerGroupCount" : NumberInt(10), 
+            "allotmentCount" : NumberInt(3), 
+            "allotmentValidInDays" : NumberInt(3), 
+            "extraBedCount" : NumberInt(22), 
+            "childNoBedCount" : NumberInt(3), 
+            "maxPersonsAllowed" : NumberInt(32), 
+            "currentAvailableCount" : NumberInt(0)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-19T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ea06c41f5012c8c445daa"), 
+            "roomConfigurations" : "10 Bed Rooms Suite", 
+            "totalAvailableRoomsCount" : NumberInt(10), 
+            "allowedPerGroupCount" : NumberInt(10), 
+            "allotmentCount" : NumberInt(3), 
+            "allotmentValidInDays" : NumberInt(2), 
+            "extraBedCount" : NumberInt(32), 
+            "childNoBedCount" : NumberInt(3), 
+            "maxPersonsAllowed" : NumberInt(6), 
+            "currentAvailableCount" : NumberInt(0)
+        }
+    ], 
+    "policyDetails" : [
+        {
+            "_id" : ObjectId("5c0ea06c41f5012c8c445db2"), 
+            "policyType" : "Applicable", 
+            "displayText" : "Booking may be cancelled without penalty up to 72 hours prior to guest arrival.  Cancellations received after these cut-off periods or no-show on day of arrival will result in a charge amounting to one night’s room, tax and service charge.", 
+            "rule" : NumberInt(10), 
+            "policySpecifierType" : "Days", 
+            "charges" : NumberInt(10), 
+            "policyChargesSpecifierType" : "%", 
+            "validityStartDate" : ISODate("2018-12-09T00:01:00.000+0000"), 
+            "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "name" : "Cancellation Policy"
+        }, 
+        {
+            "_id" : ObjectId("5c0ea06c41f5012c8c445db1"), 
+            "policyType" : "Informative", 
+            "displayText" : "Child Policy", 
+            "rule" : NumberInt(4), 
+            "policySpecifierType" : "Age", 
+            "charges" : NumberInt(10), 
+            "policyChargesSpecifierType" : "Currency", 
+            "validityStartDate" : ISODate("2018-12-09T00:01:00.000+0000"), 
+            "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "name" : "Child Policy"
+        }, 
+        {
+            "_id" : ObjectId("5c0ea06c41f5012c8c445db0"), 
+            "policyType" : "Both", 
+            "displayText" : "This below rate can apply only bundle in package cannot public and selling in B2B system for only room accommodation", 
+            "rule" : NumberInt(10), 
+            "policySpecifierType" : "Hours", 
+            "charges" : NumberInt(10), 
+            "policyChargesSpecifierType" : "None", 
+            "validityStartDate" : ISODate("2018-12-09T00:01:00.000+0000"), 
+            "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "name" : "Check-in Policy"
+        }
+    ], 
+    "meetingRoomDetails" : [
+        {
+            "_id" : ObjectId("5c0ea06c41f5012c8c445db5"), 
+            "meetingRoomStyle" : "Theater", 
+            "capacity" : NumberInt(1000)
+        }, 
+        {
+            "_id" : ObjectId("5c0ea06c41f5012c8c445db4"), 
+            "meetingRoomStyle" : "Classroom", 
+            "capacity" : NumberInt(400)
+        }, 
+        {
+            "_id" : ObjectId("5c0ea06c41f5012c8c445db3"), 
+            "meetingRoomStyle" : "Half Moon", 
+            "capacity" : NumberInt(100)
+        }
+    ], 
+    "hotelTariff" : {
+        "fitandGroupHotelTariffVector" : [
+            {
+                "_id" : ObjectId("5c0ea06c41f5012c8c445db9"), 
+                "roomCategory" : "Deluxe", 
+                "roomType" : "Single", 
+                "viewDetails" : "Ocean Front", 
+                "fitPrice" : NumberInt(1000), 
+                "groupPrice" : NumberInt(2000), 
+                "extraBedType" : "Normal Bed", 
+                "extraBedAdultPrice" : NumberInt(200), 
+                "extraBedChildPrice" : NumberInt(104), 
+                "validityStartDate" : ISODate("2018-12-09T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000")
+            }, 
+            {
+                "_id" : ObjectId("5c0ea06c41f5012c8c445db8"), 
+                "roomCategory" : "Corner suite", 
+                "roomType" : "Single", 
+                "viewDetails" : "Balcony", 
+                "fitPrice" : NumberInt(1000), 
+                "groupPrice" : NumberInt(3000), 
+                "extraBedType" : "Normal Bed", 
+                "extraBedAdultPrice" : NumberInt(200), 
+                "extraBedChildPrice" : NumberInt(104), 
+                "validityStartDate" : ISODate("2018-12-09T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000")
+            }, 
+            {
+                "_id" : ObjectId("5c0ea06c41f5012c8c445db7"), 
+                "roomCategory" : "Executive or Club", 
+                "roomType" : "Single/Twin", 
+                "viewDetails" : "Sea View", 
+                "fitPrice" : NumberInt(4000), 
+                "groupPrice" : NumberInt(5000), 
+                "extraBedType" : "Normal Bed", 
+                "extraBedAdultPrice" : NumberInt(200), 
+                "extraBedChildPrice" : NumberInt(104), 
+                "validityStartDate" : ISODate("2018-12-09T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000")
+            }, 
+            {
+                "_id" : ObjectId("5c0ea06c41f5012c8c445db6"), 
+                "roomCategory" : "Grand Deluxe", 
+                "roomType" : "Double/Twin", 
+                "viewDetails" : "None", 
+                "fitPrice" : NumberInt(4000), 
+                "groupPrice" : NumberInt(6000), 
+                "extraBedType" : "Normal Bed", 
+                "extraBedAdultPrice" : NumberInt(200), 
+                "extraBedChildPrice" : NumberInt(104), 
+                "validityStartDate" : ISODate("2018-12-14T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000")
+            }
+        ], 
+        "micehotelTariff" : [
+            {
+                "_id" : ObjectId("5c0ea06c41f5012c8c445dbb"), 
+                "sessionType" : "First Half", 
+                "noOfBreaks" : NumberInt(2), 
+                "mealsType" : "Dinner", 
+                "price" : NumberInt(1000), 
+                "supplementary" : "None", 
+                "supplementaryCharges" : NumberInt(0), 
+                "validityStartDate" : ISODate("2018-12-22T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+                "micetype" : "Full Day"
+            }, 
+            {
+                "_id" : ObjectId("5c0ea06c41f5012c8c445dba"), 
+                "sessionType" : "Second Half", 
+                "noOfBreaks" : NumberInt(1), 
+                "mealsType" : "Lunch", 
+                "price" : NumberInt(2), 
+                "supplementary" : "Soft Drinks", 
+                "supplementaryCharges" : NumberInt(200), 
+                "validityStartDate" : ISODate("2018-12-20T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+                "micetype" : "Half Day"
+            }
+        ]
+    }, 
+    "seasonDetails" : [
+        {
+            "_id" : ObjectId("5c0ea06c41f5012c8c445dc1"), 
+            "type" : "Event", 
+            "name" : "Event", 
+            "startDate" : ISODate("2018-12-23T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "supplementCharges" : NumberInt(0), 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 134.44, 
+            "childPrice" : 44.44, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : false
+        }, 
+        {
+            "_id" : ObjectId("5c0ea06c41f5012c8c445dc0"), 
+            "type" : "Sesonal Rates", 
+            "name" : "Sesonal Rates", 
+            "startDate" : ISODate("2018-12-24T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "supplementCharges" : 5.13, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 268.88, 
+            "childPrice" : 88.88, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : true
+        }, 
+        {
+            "_id" : ObjectId("5c0ea06c41f5012c8c445dbf"), 
+            "type" : "Event", 
+            "name" : "Event", 
+            "startDate" : ISODate("2018-12-25T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "supplementCharges" : 10.26, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 403.32, 
+            "childPrice" : 133.32, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : false
+        }, 
+        {
+            "_id" : ObjectId("5c0ea06c41f5012c8c445dbe"), 
+            "type" : "Compulsory Gala Dinner", 
+            "name" : "Compulsory Gala Dinner", 
+            "startDate" : ISODate("2018-12-27T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "supplementCharges" : 15.39, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 537.76, 
+            "childPrice" : 177.76, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : true
+        }, 
+        {
+            "_id" : ObjectId("5c0ea06c41f5012c8c445dbd"), 
+            "type" : "Event", 
+            "name" : "Event", 
+            "startDate" : ISODate("2018-12-22T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "supplementCharges" : 20.52, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 672.2, 
+            "childPrice" : 222.2, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : false
+        }, 
+        {
+            "_id" : ObjectId("5c0ea06c41f5012c8c445dbc"), 
+            "type" : "Peak Season Details", 
+            "name" : "Peak Season Details", 
+            "startDate" : ISODate("2018-12-26T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "supplementCharges" : 25.65, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 806.64, 
+            "childPrice" : 266.64, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasdl;kl;lk;lk;l  asasdasd", 
+            "compulsory" : false
+        }
+    ], 
+    "mealsTariff" : [
+        {
+            "_id" : ObjectId("5c0ea06c41f5012c8c445dc2"), 
+            "mealsType" : "BreakFast", 
+            "adultPrice" : 100.98, 
+            "childPrice" : 100.98, 
+            "validityStartDate" : ISODate("2018-12-24T00:01:00.000+0000"), 
+            "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "compulsory" : false
+        }
+    ], 
+    "promotionsAndOffers" : [
+        {
+            "_id" : ObjectId("5c0ea06c41f5012c8c445dc4"), 
+            "name" : "Promotions offer", 
+            "payFor" : NumberInt(2), 
+            "getTo" : "3", 
+            "startDate" : ISODate("2018-12-27T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "displayText" : "apply only bundle in package cannot public and selling"
+        }, 
+        {
+            "_id" : ObjectId("5c0ea06c41f5012c8c445dc3"), 
+            "name" : " offer", 
+            "payFor" : NumberInt(2), 
+            "getTo" : "SPA for 2 hrs", 
+            "startDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "displayText" : "apply only bundle in package cannot public and selling"
+        }
+    ], 
+    "inRoomFacilitiesVector" : [
+        {
+            "inRoomFacilitiesVector" : [
+                "Iron Box", 
+                "Cofee Maker", 
+                "Wi-fi"
+            ], 
+            "_id" : ObjectId("5c0ea06c41f5012c8c445dc6"), 
+            "roomCategory" : "Standard"
+        }, 
+        {
+            "inRoomFacilitiesVector" : [
+                "Iron Box", 
+                "Cofee Maker", 
+                "Wi-fi"
+            ], 
+            "_id" : ObjectId("5c0ea06c41f5012c8c445dc5"), 
+            "roomCategory" : "Deluxe"
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c0ec6e0958b5741eb90a107"), 
+    "menuDetails" : [
+
+    ], 
+    "facilitiesAvailableVector" : [
+        "Wi-Fi", 
+        "Smoking", 
+        "Spa", 
+        "Parking"
+    ], 
+    "roomConfigurationsVector" : [
+
+    ], 
+    "viewDetails" : [
+        "Balcony", 
+        "Sea View", 
+        "Ocean Front", 
+        "Garden View"
+    ], 
+    "name" : "ASD Hotels", 
+    "type" : "Lodging", 
+    "hotelCategory" : "Normal", 
+    "location" : "hotel1", 
+    "landmark" : "hotel1", 
+    "city" : "Chennai", 
+    "state" : "Tamilnadu", 
+    "country" : "India", 
+    "address" : "hotel1", 
+    "pincode" : ISODate("1970-01-01T00:10:36.010+0000"), 
+    "salesContactName" : "Sales hotel1", 
+    "salesContactNumber" : "987542324", 
+    "salesEmail" : "sales@hotel.com", 
+    "reservationContactName" : "Reservation hotel1", 
+    "reservationContactNumber" : "123456789", 
+    "reservationEmail" : "reservationEmail@hotel.com", 
+    "status" : "Activated", 
+    "hotlePaymentCategory" : "Advance Payment", 
+    "website" : "www.hotel1.com", 
+    "faxNumber" : "+324532452345", 
+    "cutOffDate" : null, 
+    "roomsAvailableDetailsVector" : [
+        {
+            "notAvailableDates" : [
+                "2018-12-09T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a10d"), 
+            "roomConfigurations" : "Double", 
+            "totalAvailableRoomsCount" : NumberInt(100), 
+            "allowedPerGroupCount" : NumberInt(5), 
+            "allotmentCount" : NumberInt(10), 
+            "allotmentValidInDays" : NumberInt(7), 
+            "extraBedCount" : NumberInt(2), 
+            "childNoBedCount" : NumberInt(3), 
+            "maxPersonsAllowed" : NumberInt(2), 
+            "currentAvailableCount" : NumberInt(0)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-09T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a10c"), 
+            "roomConfigurations" : "1 Bed Room Suite", 
+            "totalAvailableRoomsCount" : NumberInt(500), 
+            "allowedPerGroupCount" : NumberInt(30), 
+            "allotmentCount" : NumberInt(60), 
+            "allotmentValidInDays" : NumberInt(0), 
+            "extraBedCount" : NumberInt(12), 
+            "childNoBedCount" : NumberInt(23), 
+            "maxPersonsAllowed" : NumberInt(4), 
+            "currentAvailableCount" : NumberInt(0)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-23T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a10b"), 
+            "roomConfigurations" : "Twin", 
+            "totalAvailableRoomsCount" : NumberInt(10), 
+            "allowedPerGroupCount" : NumberInt(3), 
+            "allotmentCount" : NumberInt(10), 
+            "allotmentValidInDays" : NumberInt(3), 
+            "extraBedCount" : NumberInt(22), 
+            "childNoBedCount" : NumberInt(31), 
+            "maxPersonsAllowed" : NumberInt(2), 
+            "currentAvailableCount" : NumberInt(0)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-23T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a10a"), 
+            "roomConfigurations" : "2 Bed Rooms Suite", 
+            "totalAvailableRoomsCount" : NumberInt(10), 
+            "allowedPerGroupCount" : NumberInt(10), 
+            "allotmentCount" : NumberInt(3), 
+            "allotmentValidInDays" : NumberInt(6), 
+            "extraBedCount" : NumberInt(2), 
+            "childNoBedCount" : NumberInt(3), 
+            "maxPersonsAllowed" : NumberInt(4), 
+            "currentAvailableCount" : NumberInt(0)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-23T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a109"), 
+            "roomConfigurations" : "3 Bed Rooms Suite", 
+            "totalAvailableRoomsCount" : NumberInt(10), 
+            "allowedPerGroupCount" : NumberInt(10), 
+            "allotmentCount" : NumberInt(3), 
+            "allotmentValidInDays" : NumberInt(3), 
+            "extraBedCount" : NumberInt(22), 
+            "childNoBedCount" : NumberInt(3), 
+            "maxPersonsAllowed" : NumberInt(32), 
+            "currentAvailableCount" : NumberInt(0)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-23T18:30:00.000Z"
+            ], 
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a108"), 
+            "roomConfigurations" : "10 Bed Rooms Suite", 
+            "totalAvailableRoomsCount" : NumberInt(10), 
+            "allowedPerGroupCount" : NumberInt(10), 
+            "allotmentCount" : NumberInt(3), 
+            "allotmentValidInDays" : NumberInt(2), 
+            "extraBedCount" : NumberInt(32), 
+            "childNoBedCount" : NumberInt(3), 
+            "maxPersonsAllowed" : NumberInt(2), 
+            "currentAvailableCount" : NumberInt(0)
+        }
+    ], 
+    "policyDetails" : [
+        {
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a110"), 
+            "policyType" : "Applicable", 
+            "displayText" : "Booking may be cancelled without penalty up to 72 hours prior to guest arrival.  Cancellations received after these cut-off periods or no-show on day of arrival will result in a charge amounting to one night’s room, tax and service charge.", 
+            "rule" : NumberInt(10), 
+            "policySpecifierType" : "Days", 
+            "charges" : NumberInt(10), 
+            "policyChargesSpecifierType" : "%", 
+            "validityStartDate" : ISODate("2018-12-09T00:01:00.000+0000"), 
+            "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "name" : "Cancellation Policy"
+        }, 
+        {
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a10f"), 
+            "policyType" : "Informative", 
+            "displayText" : "Child Policy", 
+            "rule" : NumberInt(4), 
+            "policySpecifierType" : "Age", 
+            "charges" : NumberInt(10), 
+            "policyChargesSpecifierType" : "Currency", 
+            "validityStartDate" : ISODate("2018-12-09T00:01:00.000+0000"), 
+            "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "name" : "Child Policy"
+        }, 
+        {
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a10e"), 
+            "policyType" : "Both", 
+            "displayText" : "This below rate can apply only bundle in package cannot public and selling in B2B system for only room accommodation", 
+            "rule" : NumberInt(10), 
+            "policySpecifierType" : "Hours", 
+            "charges" : NumberInt(10), 
+            "policyChargesSpecifierType" : "None", 
+            "validityStartDate" : ISODate("2018-12-09T00:01:00.000+0000"), 
+            "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "name" : "Check-in Policy"
+        }
+    ], 
+    "meetingRoomDetails" : [
+        {
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a113"), 
+            "meetingRoomStyle" : "Theater", 
+            "capacity" : NumberInt(1000)
+        }, 
+        {
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a112"), 
+            "meetingRoomStyle" : "Classroom", 
+            "capacity" : NumberInt(400)
+        }, 
+        {
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a111"), 
+            "meetingRoomStyle" : "Half Moon", 
+            "capacity" : NumberInt(100)
+        }
+    ], 
+    "hotelTariff" : {
+        "fitandGroupHotelTariffVector" : [
+            {
+                "_id" : ObjectId("5c0ec6e0958b5741eb90a117"), 
+                "roomCategory" : "Deluxe", 
+                "roomType" : "Single", 
+                "viewDetails" : "Ocean Front", 
+                "fitPrice" : NumberInt(1000), 
+                "groupPrice" : NumberInt(2000), 
+                "extraBedType" : "Normal Bed", 
+                "extraBedAdultPrice" : NumberInt(200), 
+                "extraBedChildPrice" : NumberInt(104), 
+                "validityStartDate" : ISODate("2018-12-09T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000")
+            }, 
+            {
+                "_id" : ObjectId("5c0ec6e0958b5741eb90a116"), 
+                "roomCategory" : "Corner suite", 
+                "roomType" : "Single", 
+                "viewDetails" : "Balcony", 
+                "fitPrice" : NumberInt(1000), 
+                "groupPrice" : NumberInt(3000), 
+                "extraBedType" : "Normal Bed", 
+                "extraBedAdultPrice" : NumberInt(200), 
+                "extraBedChildPrice" : NumberInt(104), 
+                "validityStartDate" : ISODate("2018-12-09T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000")
+            }, 
+            {
+                "_id" : ObjectId("5c0ec6e0958b5741eb90a115"), 
+                "roomCategory" : "Executive or Club", 
+                "roomType" : "Single/Twin", 
+                "viewDetails" : "Sea View", 
+                "fitPrice" : NumberInt(4000), 
+                "groupPrice" : NumberInt(5000), 
+                "extraBedType" : "Normal Bed", 
+                "extraBedAdultPrice" : NumberInt(200), 
+                "extraBedChildPrice" : NumberInt(104), 
+                "validityStartDate" : ISODate("2018-12-09T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000")
+            }, 
+            {
+                "_id" : ObjectId("5c0ec6e0958b5741eb90a114"), 
+                "roomCategory" : "Grand Deluxe", 
+                "roomType" : "Double/Twin", 
+                "viewDetails" : "None", 
+                "fitPrice" : NumberInt(4000), 
+                "groupPrice" : NumberInt(6000), 
+                "extraBedType" : "Normal Bed", 
+                "extraBedAdultPrice" : NumberInt(200), 
+                "extraBedChildPrice" : NumberInt(104), 
+                "validityStartDate" : ISODate("2018-12-14T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000")
+            }
+        ], 
+        "micehotelTariff" : [
+            {
+                "_id" : ObjectId("5c0ec6e0958b5741eb90a119"), 
+                "sessionType" : "First Half", 
+                "noOfBreaks" : NumberInt(2), 
+                "mealsType" : "Dinner", 
+                "price" : NumberInt(1000), 
+                "supplementary" : "None", 
+                "supplementaryCharges" : NumberInt(0), 
+                "validityStartDate" : ISODate("2018-12-22T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+                "micetype" : "Full Day"
+            }, 
+            {
+                "_id" : ObjectId("5c0ec6e0958b5741eb90a118"), 
+                "sessionType" : "Second Half", 
+                "noOfBreaks" : NumberInt(1), 
+                "mealsType" : "Lunch", 
+                "price" : NumberInt(2), 
+                "supplementary" : "Soft Drinks", 
+                "supplementaryCharges" : NumberInt(200), 
+                "validityStartDate" : ISODate("2018-12-20T00:01:00.000+0000"), 
+                "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+                "micetype" : "Half Day"
+            }
+        ]
+    }, 
+    "seasonDetails" : [
+        {
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a11f"), 
+            "type" : "Event", 
+            "name" : "Event", 
+            "startDate" : ISODate("2018-12-23T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "supplementCharges" : NumberInt(0), 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 134.44, 
+            "childPrice" : 44.44, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : false
+        }, 
+        {
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a11e"), 
+            "type" : "Sesonal Rates", 
+            "name" : "Sesonal Rates", 
+            "startDate" : ISODate("2018-12-24T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "supplementCharges" : 5.13, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 268.88, 
+            "childPrice" : 88.88, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : true
+        }, 
+        {
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a11d"), 
+            "type" : "Event", 
+            "name" : "Event", 
+            "startDate" : ISODate("2018-12-25T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "supplementCharges" : 10.26, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 403.32, 
+            "childPrice" : 133.32, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : false
+        }, 
+        {
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a11c"), 
+            "type" : "Compulsory Gala Dinner", 
+            "name" : "Compulsory Gala Dinner", 
+            "startDate" : ISODate("2018-12-27T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "supplementCharges" : 15.39, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 537.76, 
+            "childPrice" : 177.76, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : true
+        }, 
+        {
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a11b"), 
+            "type" : "Event", 
+            "name" : "Event", 
+            "startDate" : ISODate("2018-12-22T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "supplementCharges" : 20.52, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 672.2, 
+            "childPrice" : 222.2, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : false
+        }, 
+        {
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a11a"), 
+            "type" : "Peak Season Details", 
+            "name" : "Peak Season Details", 
+            "startDate" : ISODate("2018-12-26T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "supplementCharges" : 25.65, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 806.64, 
+            "childPrice" : 266.64, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasdl;kl;lk;lk;l  asasdasd", 
+            "compulsory" : false
+        }
+    ], 
+    "mealsTariff" : [
+        {
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a120"), 
+            "mealsType" : "BreakFast", 
+            "adultPrice" : 100.98, 
+            "childPrice" : 100.98, 
+            "validityStartDate" : ISODate("2018-12-24T00:01:00.000+0000"), 
+            "validityEndDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "compulsory" : false
+        }
+    ], 
+    "promotionsAndOffers" : [
+        {
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a122"), 
+            "name" : "Promotions offer", 
+            "payFor" : NumberInt(2), 
+            "getTo" : "3", 
+            "startDate" : ISODate("2018-12-27T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "displayText" : "apply only bundle in package cannot public and selling"
+        }, 
+        {
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a121"), 
+            "name" : " offer", 
+            "payFor" : NumberInt(2), 
+            "getTo" : "SPA for 2 hrs", 
+            "startDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "endDate" : ISODate("2018-12-28T00:01:00.000+0000"), 
+            "displayText" : "apply only bundle in package cannot public and selling"
+        }
+    ], 
+    "inRoomFacilitiesVector" : [
+        {
+            "inRoomFacilitiesVector" : [
+                "Iron Box", 
+                "Cofee Maker", 
+                "Wi-fi"
+            ], 
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a124"), 
+            "roomCategory" : "Standard"
+        }, 
+        {
+            "inRoomFacilitiesVector" : [
+                "Iron Box", 
+                "Cofee Maker", 
+                "Wi-fi"
+            ], 
+            "_id" : ObjectId("5c0ec6e0958b5741eb90a123"), 
+            "roomCategory" : "Deluxe"
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c10bf33f4a619ba732043b1"), 
+    "menuDetails" : [
+
+    ], 
+    "facilitiesAvailableVector" : [
+        "Wi-Fi", 
+        "Smoking", 
+        "Spa", 
+        "Parking"
+    ], 
+    "roomConfigurationsVector" : [
+
+    ], 
+    "viewDetails" : [
+        "Balcony", 
+        "Sea View", 
+        "Ocean Front", 
+        "Garden View"
+    ], 
+    "name" : "hotel1", 
+    "type" : "Lodging", 
+    "hotelCategory" : "Normal", 
+    "location" : "hotel1", 
+    "landmark" : "hotel1", 
+    "city" : "Bangalore", 
+    "state" : "Tamilnadu", 
+    "country" : "India", 
+    "address" : "hotel1", 
+    "pincode" : NumberInt(636010), 
+    "salesContactName" : "Sales hotel1", 
+    "salesContactNumber" : "987542324", 
+    "salesEmail" : "sales@hotel.com", 
+    "reservationContactName" : "Reservation hotel1", 
+    "reservationContactNumber" : "123456789", 
+    "reservationEmail" : "reservationEmail@hotel.com", 
+    "status" : "Activated", 
+    "hotlePaymentCategory" : "Advance Payment", 
+    "website" : "www.hotel1.com", 
+    "faxNumber" : "+324532452345", 
+    "cutOffDate" : null, 
+    "roomsAvailableDetailsVector" : [
+        {
+            "notAvailableDates" : [
+                "2018-12-23T18:30:00.000Z"
+            ], 
+            "roomConfigurations" : "Double", 
+            "totalAvailableRoomsCount" : NumberInt(100), 
+            "allowedPerGroupCount" : NumberInt(5), 
+            "allotmentCount" : NumberInt(10), 
+            "allotmentValidInDays" : NumberInt(7), 
+            "extraBedCount" : NumberInt(2), 
+            "childNoBedCount" : NumberInt(3), 
+            "maxPersonsAllowed" : NumberInt(2), 
+            "currentAvailableCount" : NumberInt(0)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-23T18:30:00.000Z"
+            ], 
+            "roomConfigurations" : "1 Bed Room Suite", 
+            "totalAvailableRoomsCount" : NumberInt(500), 
+            "allowedPerGroupCount" : NumberInt(30), 
+            "allotmentCount" : NumberInt(60), 
+            "allotmentValidInDays" : NumberInt(0), 
+            "extraBedCount" : NumberInt(12), 
+            "childNoBedCount" : NumberInt(23), 
+            "maxPersonsAllowed" : NumberInt(4), 
+            "currentAvailableCount" : NumberInt(0)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-22T18:30:00.000Z"
+            ], 
+            "roomConfigurations" : "Twin", 
+            "totalAvailableRoomsCount" : NumberInt(10), 
+            "allowedPerGroupCount" : NumberInt(3), 
+            "allotmentCount" : NumberInt(10), 
+            "allotmentValidInDays" : NumberInt(3), 
+            "extraBedCount" : NumberInt(22), 
+            "childNoBedCount" : NumberInt(31), 
+            "maxPersonsAllowed" : NumberInt(2), 
+            "currentAvailableCount" : NumberInt(0)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-25T18:30:00.000Z"
+            ], 
+            "roomConfigurations" : "2 Bed Rooms Suite", 
+            "totalAvailableRoomsCount" : NumberInt(10), 
+            "allowedPerGroupCount" : NumberInt(10), 
+            "allotmentCount" : NumberInt(3), 
+            "allotmentValidInDays" : NumberInt(6), 
+            "extraBedCount" : NumberInt(2), 
+            "childNoBedCount" : NumberInt(3), 
+            "maxPersonsAllowed" : NumberInt(4), 
+            "currentAvailableCount" : NumberInt(0)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-30T18:30:00.000Z"
+            ], 
+            "roomConfigurations" : "3 Bed Rooms Suite", 
+            "totalAvailableRoomsCount" : NumberInt(10), 
+            "allowedPerGroupCount" : NumberInt(10), 
+            "allotmentCount" : NumberInt(3), 
+            "allotmentValidInDays" : NumberInt(3), 
+            "extraBedCount" : NumberInt(22), 
+            "childNoBedCount" : NumberInt(3), 
+            "maxPersonsAllowed" : NumberInt(32), 
+            "currentAvailableCount" : NumberInt(0)
+        }, 
+        {
+            "notAvailableDates" : [
+                "2018-12-29T18:30:00.000Z"
+            ], 
+            "roomConfigurations" : "10 Bed Rooms Suite", 
+            "totalAvailableRoomsCount" : NumberInt(10), 
+            "allowedPerGroupCount" : NumberInt(10), 
+            "allotmentCount" : NumberInt(3), 
+            "allotmentValidInDays" : NumberInt(2), 
+            "extraBedCount" : NumberInt(32), 
+            "childNoBedCount" : NumberInt(3), 
+            "maxPersonsAllowed" : NumberInt(2), 
+            "currentAvailableCount" : NumberInt(0)
+        }
+    ], 
+    "policyDetails" : [
+        {
+            "policyType" : "Applicable", 
+            "displayText" : "Booking may be cancelled without penalty up to 72 hours prior to guest arrival.  Cancellations received after these cut-off periods or no-show on day of arrival will result in a charge amounting to one night’s room, tax and service charge.", 
+            "rule" : NumberInt(10), 
+            "policySpecifierType" : "Days", 
+            "charges" : NumberInt(10), 
+            "policyChargesSpecifierType" : "%", 
+            "validityStartDate" : "2018-12-09T00:01:00.000Z", 
+            "validityEndDate" : "2018-12-28T00:01:00.000Z", 
+            "name" : "Cancellation Policy"
+        }, 
+        {
+            "policyType" : "Informative", 
+            "displayText" : "Child Policy", 
+            "rule" : NumberInt(4), 
+            "policySpecifierType" : "Age", 
+            "charges" : NumberInt(10), 
+            "policyChargesSpecifierType" : "Currency", 
+            "validityStartDate" : "2018-12-09T00:01:00.000Z", 
+            "validityEndDate" : "2018-12-28T00:01:00.000Z", 
+            "name" : "Child Policy"
+        }, 
+        {
+            "policyType" : "Both", 
+            "displayText" : "This below rate can apply only bundle in package cannot public and selling in B2B system for only room accommodation", 
+            "rule" : NumberInt(10), 
+            "policySpecifierType" : "Hours", 
+            "charges" : NumberInt(10), 
+            "policyChargesSpecifierType" : "None", 
+            "validityStartDate" : "2018-12-09T00:01:00.000Z", 
+            "validityEndDate" : "2018-12-28T00:01:00.000Z", 
+            "name" : "Check-in Policy"
+        }
+    ], 
+    "meetingRoomDetails" : [
+        {
+            "meetingRoomStyle" : "Theater", 
+            "capacity" : NumberInt(1000)
+        }, 
+        {
+            "meetingRoomStyle" : "Classroom", 
+            "capacity" : NumberInt(400)
+        }, 
+        {
+            "meetingRoomStyle" : "Half Moon", 
+            "capacity" : NumberInt(100)
+        }
+    ], 
+    "hotelTariff" : {
+        "fitandGroupHotelTariffVector" : [
+            {
+                "roomCategory" : "Deluxe", 
+                "roomType" : "Single", 
+                "viewDetails" : "Ocean Front", 
+                "fitPrice" : NumberInt(1000), 
+                "groupPrice" : NumberInt(2000), 
+                "extraBedType" : "Normal Bed", 
+                "extraBedAdultPrice" : NumberInt(200), 
+                "extraBedChildPrice" : NumberInt(104), 
+                "validityStartDate" : "2018-12-09T00:01:00.000Z", 
+                "validityEndDate" : "2018-12-28T00:01:00.000Z"
+            }, 
+            {
+                "roomCategory" : "Corner suite", 
+                "roomType" : "Single", 
+                "viewDetails" : "Balcony", 
+                "fitPrice" : NumberInt(1000), 
+                "groupPrice" : NumberInt(3000), 
+                "extraBedType" : "Normal Bed", 
+                "extraBedAdultPrice" : NumberInt(200), 
+                "extraBedChildPrice" : NumberInt(104), 
+                "validityStartDate" : "2018-12-09T00:01:00.000Z", 
+                "validityEndDate" : "2018-12-28T00:01:00.000Z"
+            }, 
+            {
+                "roomCategory" : "Executive or Club", 
+                "roomType" : "Single/Twin", 
+                "viewDetails" : "Sea View", 
+                "fitPrice" : NumberInt(4000), 
+                "groupPrice" : NumberInt(5000), 
+                "extraBedType" : "Normal Bed", 
+                "extraBedAdultPrice" : NumberInt(200), 
+                "extraBedChildPrice" : NumberInt(104), 
+                "validityStartDate" : "2018-12-09T00:01:00.000Z", 
+                "validityEndDate" : "2018-12-28T00:01:00.000Z"
+            }, 
+            {
+                "roomCategory" : "Grand Deluxe", 
+                "roomType" : "Double/Twin", 
+                "viewDetails" : "None", 
+                "fitPrice" : NumberInt(4000), 
+                "groupPrice" : NumberInt(6000), 
+                "extraBedType" : "Normal Bed", 
+                "extraBedAdultPrice" : NumberInt(200), 
+                "extraBedChildPrice" : NumberInt(104), 
+                "validityStartDate" : "2018-12-14T00:01:00.000Z", 
+                "validityEndDate" : "2018-12-28T00:01:00.000Z"
+            }
+        ], 
+        "micehotelTariff" : [
+            {
+                "sessionType" : "First Half", 
+                "noOfBreaks" : NumberInt(2), 
+                "mealsType" : "Dinner", 
+                "price" : NumberInt(1000), 
+                "supplementary" : "None", 
+                "supplementaryCharges" : NumberInt(0), 
+                "validityStartDate" : "2018-12-22T00:01:00.000Z", 
+                "validityEndDate" : "2018-12-28T00:01:00.000Z", 
+                "micetype" : "Full Day"
+            }, 
+            {
+                "sessionType" : "Second Half", 
+                "noOfBreaks" : NumberInt(1), 
+                "mealsType" : "Lunch", 
+                "price" : NumberInt(2), 
+                "supplementary" : "Soft Drinks", 
+                "supplementaryCharges" : NumberInt(200), 
+                "validityStartDate" : "2018-12-20T00:01:00.000Z", 
+                "validityEndDate" : "2018-12-28T00:01:00.000Z", 
+                "micetype" : "Half Day"
+            }
+        ]
+    }, 
+    "seasonDetails" : [
+        {
+            "type" : "Event", 
+            "name" : "Event", 
+            "startDate" : "2018-12-19T00:01:00.000Z", 
+            "endDate" : "2018-12-25T00:01:00.000Z", 
+            "supplementCharges" : NumberInt(0), 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 134.44, 
+            "childPrice" : 44.44, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : false
+        }, 
+        {
+            "type" : "Sesonal Rates", 
+            "name" : "Sesonal Rates", 
+            "startDate" : "2018-12-19T00:01:00.000Z", 
+            "endDate" : "2018-12-25T00:01:00.000Z", 
+            "supplementCharges" : 5.13, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 268.88, 
+            "childPrice" : 88.88, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : true
+        }, 
+        {
+            "type" : "Event", 
+            "name" : "Event", 
+            "startDate" : "2018-12-19T00:01:00.000Z", 
+            "endDate" : "2018-12-25T00:01:00.000Z", 
+            "supplementCharges" : 10.26, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 403.32, 
+            "childPrice" : 133.32, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : false
+        }, 
+        {
+            "type" : "Compulsory Gala Dinner", 
+            "name" : "Compulsory Gala Dinner", 
+            "startDate" : "2018-12-19T00:01:00.000Z", 
+            "endDate" : "2018-12-25T00:01:00.000Z", 
+            "supplementCharges" : 15.39, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 537.76, 
+            "childPrice" : 177.76, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : true
+        }, 
+        {
+            "type" : "Event", 
+            "name" : "Event", 
+            "startDate" : "2018-12-19T00:01:00.000Z", 
+            "endDate" : "2018-12-25T00:01:00.000Z", 
+            "supplementCharges" : 20.52, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 672.2, 
+            "childPrice" : 222.2, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasd", 
+            "compulsory" : false
+        }, 
+        {
+            "type" : "Peak Season Details", 
+            "name" : "Peak Season Details", 
+            "startDate" : "2018-12-19T00:01:00.000Z", 
+            "endDate" : "2018-12-25T00:01:00.000Z", 
+            "supplementCharges" : 25.65, 
+            "minimumNightRestrictions" : NumberInt(2), 
+            "adultPrice" : 806.64, 
+            "childPrice" : 266.64, 
+            "displayText" : "abcdefghijklmnopqusfd adfasdf sad dsaf asdfasd ksalfasdl;kl;lk;lk;l  asasdasd", 
+            "compulsory" : false
+        }
+    ], 
+    "mealsTariff" : [
+        {
+            "mealsType" : "BreakFast", 
+            "adultPrice" : 100.98, 
+            "childPrice" : 100.98, 
+            "validityStartDate" : "2018-12-24T00:01:00.000Z", 
+            "validityEndDate" : "2018-12-28T00:01:00.000Z", 
+            "compulsory" : false
+        }
+    ], 
+    "promotionsAndOffers" : [
+        {
+            "name" : "Promotions offer", 
+            "payFor" : NumberInt(2), 
+            "getTo" : "3", 
+            "startDate" : "2018-12-27T00:01:00.000Z", 
+            "endDate" : "2018-12-28T00:01:00.000Z", 
+            "displayText" : "apply only bundle in package cannot public and selling"
+        }, 
+        {
+            "name" : " offer", 
+            "payFor" : NumberInt(2), 
+            "getTo" : "SPA for 2 hrs", 
+            "startDate" : "2018-12-28T00:01:00.000Z", 
+            "endDate" : "2018-12-28T00:01:00.000Z", 
+            "displayText" : "apply only bundle in package cannot public and selling"
+        }
+    ], 
+    "inRoomFacilitiesVector" : [
+        {
+            "inRoomFacilitiesVector" : [
+                "[[[[[Iron Box, Cofee Maker, Wi-fi]]]]]"
+            ], 
+            "roomCategory" : "Standard"
+        }, 
+        {
+            "inRoomFacilitiesVector" : [
+                "[[[[[Iron Box, Cofee Maker, Wi-fi]]]]]"
+            ], 
+            "roomCategory" : "Deluxe"
+        }
+    ], 
+    "__v" : NumberInt(0)
+}

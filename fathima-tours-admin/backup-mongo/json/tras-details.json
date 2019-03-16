@@ -1,0 +1,7 @@
+{ 
+    "_id" : ObjectId("5c050ac3eee78b155f3eeb88"), 
+    "id" : "From CCC city1To CCCCC city2", 
+    "city" : "From CCC city1", 
+    "additional" : "None", 
+    "jsonvalue" : "{\"id\":\"From CCC city1To CCCCC city2\",\"transportServiceType\":\"Inter City\",\"fromCity\":\"From CCC city1\",\"toCity\":\"To CCCCC city2\",\"guidePrice\":12300.0,\"privateTransferPriceDetails\":[{\"transportsType\":\"Coach\",\"vehicleClass\":\"Normal\",\"transportMode\":\"Road Only\",\"transportModeDescrition\":null,\"ferryPrice\":0.0,\"capacity\":2,\"price\":35.0,\"standByPrice\":34.0,\"standByPermissableHours\":7.0},{\"transportsType\":\"Van\",\"vehicleClass\":\"Delux\",\"transportMode\":\"Road Only\",\"transportModeDescrition\":null,\"ferryPrice\":0.0,\"capacity\":2,\"price\":35.0,\"standByPrice\":34.0,\"standByPermissableHours\":2.0},{\"transportsType\":\"Car\",\"vehicleClass\":\"Super Delux\",\"transportMode\":\"Road Only\",\"transportModeDescrition\":null,\"ferryPrice\":0.0,\"capacity\":2,\"price\":35.0,\"standByPrice\":34.0,\"standByPermissableHours\":1.0},{\"transportsType\":\"Van\",\"vehicleClass\":\"Delux\",\"transportMode\":\"Road & Ferry\",\"transportModeDescrition\":null,\"ferryPrice\":30.0,\"capacity\":2,\"price\":35.0,\"standByPrice\":34.0,\"standByPermissableHours\":12.0}],\"sicprice\":1234.0}"
+}

@@ -1,0 +1,7 @@
+{ 
+    "_id" : ObjectId("5c050a95eee78b155f3eeb7e"), 
+    "id" : "supplier1", 
+    "city" : "city1", 
+    "additional" : "None", 
+    "jsonvalue" : "{\"id\":\"supplier1\",\"email\":\"email1\",\"companyName\":\"companyName1\",\"contactName\":\"contactName1\",\"contactNumber\":\"contactNumber1\",\"address\":\"1\",\"city\":\"city1\",\"state\":\"1\",\"country\":\"1\",\"pinCode\":12345,\"userStatus\":{\"status\":\"ACTIVATED\",\"reason\":\"ACTIVATED\",\"date\":1543376021454},\"servicesDetails\":[{\"serviceType\":\"SIGHTSEEING\",\"serviceID\":\"10001\",\"serviceName\":\"Ayuthaya Tour by Road1\"},{\"serviceType\":\"TRANPORTATION\",\"serviceID\":\"transports1\",\"serviceName\":\"Inter City\"}]}"
+}

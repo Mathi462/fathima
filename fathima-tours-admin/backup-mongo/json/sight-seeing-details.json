@@ -1,0 +1,7 @@
+{ 
+    "_id" : ObjectId("5c050a7ceee78b155f3eeb74"), 
+    "id" : "Ayuthaya Tour by Road1", 
+    "city" : "Ayuthaya Tour by Road1", 
+    "additional" : "None", 
+    "jsonvalue" : "{\"id\":null,\"name\":\"Ayuthaya Tour by Road1\",\"address\":\"Ayuthaya Tour by Road1\",\"city\":\"Ayuthaya Tour by Road1\",\"state\":\"Ayuthaya Tour by Road1\",\"country\":\"Ayuthaya Tour by Road1\",\"location\":\"Ayuthaya Tour by Road1\",\"pinCode\":123456,\"landMark\":\"Ayuthaya Tour by Road1\",\"contactName\":\"Ayuthaya Tour by Road1\",\"contactNumber\":\"+2312345678\",\"email\":\"sales@sightseeing.com\",\"faxNumber\":\"+123452367\",\"displayText\":\"apply only bundle in package cannot public and selling\",\"paymentOption\":\"Credit\",\"sessionPeriod\":\"Morning\",\"showDetails\":[{\"showName\":\"Show 1\",\"showTime\":\"00:00:01\",\"pickUpTime\":\"00:00:01\",\"dropOffTime\":\"00:00:01\"},{\"showName\":\"Show 1\",\"showTime\":\"00:00:01\",\"pickUpTime\":\"00:00:01\",\"dropOffTime\":\"00:00:01\"}],\"tariffDetailsVector\":[{\"sighSeeingSeatType\":\"VIP\",\"mealsType\":\"BreakFast\",\"mealsAdultPrice\":100.0,\"mealsChildPrice\":100.0,\"sicAdultPrice\":300.0,\"sicChildPrice\":300.0,\"privateAdultPrice\":760.0,\"privateChildPrice\":760.0},{\"sighSeeingSeatType\":\"Gold\",\"mealsType\":\"Lunch\",\"mealsAdultPrice\":100.0,\"mealsChildPrice\":100.0,\"sicAdultPrice\":300.0,\"sicChildPrice\":300.0,\"privateAdultPrice\":760.0,\"privateChildPrice\":760.0}],\"mediaDetails\":null,\"guidePrice\":300.0}"
+}

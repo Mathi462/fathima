@@ -1,0 +1,132 @@
+{ 
+    "_id" : ObjectId("5c137e0d17d7b53642e14cdc"), 
+    "name" : "Ayuthaya Tour by Road1", 
+    "paymentOption" : "Credit", 
+    "seasonPeriod" : "MORNING", 
+    "guidePrice" : NumberInt(300), 
+    "displayText" : "apply only bundle in package cannot public and selling", 
+    "address" : {
+        "address" : "Ayuthaya Tour by Road1", 
+        "location" : "Ayuthaya Tour by Road1", 
+        "landmark" : "Ayuthaya Tour by Road1", 
+        "city" : "Bangalore", 
+        "country" : "India", 
+        "state" : "Karnataka", 
+        "pincode" : NumberInt(636010), 
+        "latitude" : 12.963928, 
+        "longitude" : 77.598977
+    }, 
+    "contact" : {
+        "contactNumber" : "+2312345678", 
+        "contactName" : "Ayuthaya Tour by Road1", 
+        "faxNumber" : "+123452367", 
+        "email" : "sales@sightseeing.com"
+    }, 
+    "showTimingDetails" : [
+        {
+            "_id" : ObjectId("5c137e0d17d7b53642e14cde"), 
+            "showName" : "Show 1", 
+            "showTime" : ISODate("2018-12-14T09:07:07.000+0000"), 
+            "pickUpTime" : ISODate("2018-12-14T09:07:07.000+0000"), 
+            "dropOffTime" : ISODate("2018-12-14T10:10:07.000+0000")
+        }, 
+        {
+            "_id" : ObjectId("5c137e0d17d7b53642e14cdd"), 
+            "showName" : "Show 2", 
+            "showTime" : ISODate("2018-12-14T09:07:07.000+0000"), 
+            "pickUpTime" : ISODate("2018-12-14T09:07:07.000+0000"), 
+            "dropOffTime" : ISODate("2018-12-14T10:10:07.000+0000")
+        }
+    ], 
+    "tariffDetails" : [
+        {
+            "_id" : ObjectId("5c137e0d17d7b53642e14ce0"), 
+            "seatType" : "VIP", 
+            "mealsType" : "BreakFast", 
+            "mealsAdultPrice" : NumberInt(100), 
+            "mealsChildPrice" : NumberInt(100), 
+            "sicAdultPrice" : NumberInt(300), 
+            "sicChildPrice" : NumberInt(300), 
+            "privateAdultPrice" : NumberInt(450), 
+            "privateChildPrice" : NumberInt(450)
+        }, 
+        {
+            "_id" : ObjectId("5c137e0d17d7b53642e14cdf"), 
+            "seatType" : "Gold", 
+            "mealsType" : "BreakFast", 
+            "mealsAdultPrice" : NumberInt(100), 
+            "mealsChildPrice" : NumberInt(100), 
+            "sicAdultPrice" : NumberInt(300), 
+            "sicChildPrice" : NumberInt(300), 
+            "privateAdultPrice" : NumberInt(450), 
+            "privateChildPrice" : NumberInt(450)
+        }
+    ], 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c138b72ab13e53e458e16a1"), 
+    "name" : "Ayuthaya Tour by Road1", 
+    "paymentOption" : "Credit", 
+    "seasonPeriod" : "MORNING", 
+    "guidePrice" : NumberInt(300), 
+    "displayText" : "apply only bundle in package cannot public and selling", 
+    "address" : {
+        "address" : "Adhiyana", 
+        "location" : "Mailapur", 
+        "landmark" : "Tank", 
+        "city" : "Chennai", 
+        "country" : "India", 
+        "state" : "Karnataka", 
+        "pincode" : NumberInt(600002), 
+        "latitude" : 12.963928, 
+        "longitude" : 77.598977
+    }, 
+    "contact" : {
+        "contactNumber" : "+9176854565", 
+        "contactName" : "Naban", 
+        "faxNumber" : "+415674215", 
+        "email" : "sales@sightseeing.com"
+    }, 
+    "showTimingDetails" : [
+        {
+            "_id" : ObjectId("5c138b72ab13e53e458e16a3"), 
+            "showName" : "Show 1", 
+            "showTime" : ISODate("2018-12-13T09:07:07.000+0000"), 
+            "pickUpTime" : ISODate("2018-12-13T09:07:07.000+0000"), 
+            "dropOffTime" : ISODate("2018-12-13T10:10:07.000+0000")
+        }, 
+        {
+            "_id" : ObjectId("5c138b72ab13e53e458e16a2"), 
+            "showName" : "Show 2", 
+            "showTime" : ISODate("2018-12-15T09:07:07.000+0000"), 
+            "pickUpTime" : ISODate("2018-12-15T09:07:07.000+0000"), 
+            "dropOffTime" : ISODate("2018-12-15T10:10:07.000+0000")
+        }
+    ], 
+    "tariffDetails" : [
+        {
+            "_id" : ObjectId("5c138b72ab13e53e458e16a5"), 
+            "seatType" : "VIP", 
+            "mealsType" : "BreakFast", 
+            "mealsAdultPrice" : NumberInt(100), 
+            "mealsChildPrice" : NumberInt(100), 
+            "sicAdultPrice" : NumberInt(300), 
+            "sicChildPrice" : NumberInt(300), 
+            "privateAdultPrice" : NumberInt(450), 
+            "privateChildPrice" : NumberInt(450)
+        }, 
+        {
+            "_id" : ObjectId("5c138b72ab13e53e458e16a4"), 
+            "seatType" : "Gold", 
+            "mealsType" : "BreakFast", 
+            "mealsAdultPrice" : NumberInt(100), 
+            "mealsChildPrice" : NumberInt(100), 
+            "sicAdultPrice" : NumberInt(300), 
+            "sicChildPrice" : NumberInt(300), 
+            "privateAdultPrice" : NumberInt(450), 
+            "privateChildPrice" : NumberInt(450)
+        }
+    ], 
+    "__v" : NumberInt(0)
+}

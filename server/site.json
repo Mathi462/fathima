@@ -1,0 +1,62 @@
+{
+    "name": "Ayuthaya Tour by Road1",
+    "paymentOption": "Credit",
+    "seasonPeriod": "MORNING",
+    "guidePrice": 300.0,
+    "displayText": "apply only bundle in package cannot public and selling",
+    "address": {
+        "address": "Ayuthaya Tour by Road1",
+        "location": "Ayuthaya Tour by Road1",
+        "landmark": "Ayuthaya Tour by Road1",
+        "city": "Bangalore",
+        "country": "India",
+        "state": "Karnataka", 
+        "pincode": 636010,
+        "latitude" : 12.963928,
+        "longitude" : 77.598977
+
+
+    },
+    "contact": {
+        "contactNumber": "+2312345678",
+        "contactName": "Ayuthaya Tour by Road1",
+        "faxNumber": "+123452367",
+        "email": "sales@sightseeing.com"
+    },
+    "showTimingDetails": [
+        {
+            "showName": "Show 1",
+            "showTime": "2018-12-14T14:37:07+05:30",
+            "pickUpTime": "2018-12-14T09:07:07Z",
+            "dropOffTime": "2018-12-14T10:10:07Z"
+        },
+        {
+            "showName": "Show 2",
+            "showTime": "2018-12-14T14:37:07+05:30",
+            "pickUpTime": "2018-12-14T09:07:07Z",
+            "dropOffTime": "2018-12-14T10:10:07Z"
+        }
+    ],
+    "tariffDetails": [
+        {
+            "seatType": "VIP",
+            "mealsType": "BreakFast",
+            "mealsAdultPrice": 100,
+            "mealsChildPrice": 100,
+            "sicAdultPrice": 300,
+            "sicChildPrice": 300,
+            "privateAdultPrice": 450,
+            "privateChildPrice": 450
+        },
+        {
+            "seatType": "Gold",
+            "mealsType": "BreakFast",
+            "mealsAdultPrice": 100,
+            "mealsChildPrice": 100,
+            "sicAdultPrice": 300,
+            "sicChildPrice": 300,
+            "privateAdultPrice": 450,
+            "privateChildPrice": 450
+        }
+    ]
+}

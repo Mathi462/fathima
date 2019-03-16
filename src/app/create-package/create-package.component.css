@@ -1,0 +1,46 @@
+.full-width {
+  width:100%
+}
+
+
+
+.hotel-name {
+  font-weight: 450;
+  font-size: 30px
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/* // .img-thumbnail{
+//   width:1000px;
+  
+// } */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+.r2 {
+  border-right: 1px solid #d1d1d1;
+}
+/* // .row.vdivide [class*='col-']:not(:last-child):after {
+//   background: #e0e0e0;
+//   width: 1px;
+//   content: "";
+//   display:block;
+//   position: absolute;
+//   top:0;
+//   bottom: 0;
+//   right: 0;
+//   min-height: 70px;
+// }
+
+// div {
+//   font-size-adjust: 0.58;
+// } */
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0lax{text-align:left;vertical-align:top}

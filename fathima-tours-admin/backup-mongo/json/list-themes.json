@@ -1,0 +1,30 @@
+{ 
+    "_id" : ObjectId("5c09741d66d6db2975c6e899"), 
+    "label" : "Green Theme", 
+    "value" : "light-green-theme", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c09743366d6db2975c6e89a"), 
+    "label" : "Yellow Theme", 
+    "value" : "yellow-theme", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c09748f66d6db2975c6e89b"), 
+    "label" : "Indigo Theme", 
+    "value" : "indigo-theme", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c09749666d6db2975c6e89c"), 
+    "label" : "Red Theme", 
+    "value" : "red-theme", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5c0974a266d6db2975c6e89d"), 
+    "label" : "Purple Theme", 
+    "value" : "purple-theme", 
+    "__v" : NumberInt(0)
+}

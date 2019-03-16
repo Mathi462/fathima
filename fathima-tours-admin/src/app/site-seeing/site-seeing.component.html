@@ -1,0 +1,243 @@
+<form [formGroup]="registerForm" >
+  <div class="container">
+    <mat-card>
+      <mat-card-title>Basic Details:</mat-card-title>
+      <div class="row">
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput placeholder="Name:" formControlName="name">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field>
+            <mat-select placeholder="Payment option:" formControlName="paymentOption">
+              <mat-option *ngFor="let p of paymentOptions" value="{{p}}"> {{p}} </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field>
+            <mat-select placeholder="Session Period:" formControlName="sessionPeriod">
+              <mat-option *ngFor="let sp of sessionPeriods" value="{{sp}}"> {{sp}} </mat-option>
+               </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput type="text" placeholder="Guide Price:" formControlName="guidePrice">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-11">Display Text:
+          <textarea matInput placeholder="Textarea" style="background-color:white" formControlName="displayText"></textarea>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  <br>
+  <div class="container">
+    <mat-card>
+      <mat-card-title>Address Details:</mat-card-title>
+      <div class="row">
+        <div class="col-sm-12">
+          <mat-form-field style="width:93% !important">
+            <input matInput type="text" placeholder="Address: " formControlName="address">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <mat-form-field style="width:93% !important">
+            <input matInput placeholder="Location:" formControlName="location">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput placeholder="City:" formControlName="city">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput placeholder="State:" formControlName="state">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput placeholder="Country:" formControlName="country">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput placeholder="Pincode:" formControlName="pincode">
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  <br>
+  <div class="container">
+    <mat-card>
+      <mat-card-title>Contact Details:</mat-card-title>
+      <div class="row">
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput placeholder="Contact Number:" formControlName="contactNumber">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput placeholder="Contact Name:" formControlName="contactName">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput placeholder="Fax Number:" formControlName="faxNumber">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput placeholder="Email:" type="email" formControlName="email">
+          </mat-form-field>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  <br>
+  <div class="container">
+    <mat-card>
+      <mat-card-title> Show Timing Details:
+        
+        <button mat-icon-button type="button" (click)="addTiming()" style="float:right">
+          <img style="width:75%" src="../../assets/plus.svg">
+        </button>
+      </mat-card-title>
+     
+      <div formArrayName="visits">
+        <div *ngFor="let param of registerForm.get('visits').controls; let i=index">
+          <div [formGroupName]="i">
+      <div class="row">
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput placeholder="Show Name: " formControlName="showName">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput placeholder="Show Time: " type="time" formControlName="showTime">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput placeholder="Pickup Time: " type="time" formControlName="pickupTime">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-2">
+          <mat-form-field>
+            <input matInput placeholder="Dropoff Time: " type="time" formControlName="dropoffTime">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-1">
+            <div style="text-align:end " *ngIf="registerForm.get('visits').length > 1">
+                <button mat-icon-button type="button" (click)="removeTiming(i)">
+                    <img style="width:70%" src="../../assets/negative.svg">
+                </button>
+              </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    </mat-card>
+  </div>
+  <br>
+  <div class="container">
+    <mat-card>
+      <mat-card-title>Tariff Details:
+        <button mat-icon-button type="button" (click)="addTariff()" style="float:right">
+          <img style="width:75%" src="../../assets/plus.svg">
+        </button>
+      </mat-card-title>
+      <div formArrayName="visits2">
+        <div *ngFor="let param of registerForm.get('visits2').controls; let i=index">
+          <div [formGroupName]="i">
+      <div class="row">
+        <div class="col-sm-3">
+          <mat-form-field>
+            <mat-select placeholder="Seat Type:" formControlName="seatType">
+              <mat-option *ngFor="let st of seatTypes" value="{{st}}"> {{st}} </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field>
+            <mat-select placeholder="Meals Type:" formControlName="mealsType">
+              <mat-option *ngFor="let mt of mealsTypes" value="{{mt}}"> {{mt}} </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput type="number" placeholder="Meals Adult Price" formControlName="mealsAdultPrice" step="0.01"
+              min="0.00">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput type="number" placeholder="Meals Child Price" formControlName="mealsChildPrice" step="0.01"
+              min="0.00">
+          </mat-form-field>
+        </div>
+
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput type="number" placeholder="SIC Adult Price" formControlName="sicAdultPrice" step="0.01" min="0.00">
+          </mat-form-field>
+        </div>
+
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput type="number" placeholder="SIC Child Price" formControlName="sicChildPrice" step="0.01" min="0.00">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field>
+            <input matInput type="number" placeholder="Private Adult Price" formControlName="privateAdultPrice" step="0.01"
+              min="0.00">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-2">
+          <mat-form-field>
+            <input matInput type="number" placeholder="Private Child Price" formControlName="privateChildPrice" step="0.01"
+              min="0.00">
+          </mat-form-field>
+        </div>
+        <div class="col-sm-1">
+          <div style="text-align:end " *ngIf="registerForm.get('visits2').length > 1">
+            <button mat-icon-button type="button" (click)="removeTariff(i)">
+                <img style="width:70%" src="../../assets/negative.svg">
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    </mat-card>
+  </div>
+
+  <div class="container">
+    <mat-card>
+      <div class="row">
+        <div class="col-sm-6 ">
+          <button mat-raised-button type="button" (click)="onSubmit()" style=" float : right">Update</button>
+        </div>
+        <div class="col-sm-6">
+          <button mat-raised-button type="button"  style=" float :left">Cancel</button>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</form>
