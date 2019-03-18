@@ -87,7 +87,8 @@ import { CustomModuleModule } from './custom-module/custom-module.module';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import {MaterialModule} from './material';
-import { HotelDetailsComponent } from './hotel-details/hotel-details.component'
+import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
+import { DeleteComponent } from './delete/delete.component'
 
 @NgModule({
   declarations: [
@@ -124,7 +125,8 @@ import { HotelDetailsComponent } from './hotel-details/hotel-details.component'
     FooterComponent,
     RoomDetailsBlockComponent,
     CreatePackageComponent,
-    HotelDetailsComponent
+    HotelDetailsComponent,
+    DeleteComponent
   ],
   imports: [
 

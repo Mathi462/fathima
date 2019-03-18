@@ -4,11 +4,11 @@ import { ApiService } from '../api.service';
 import { MatSnackBar, MatAutocomplete, MatAutocompleteSelectedEvent, MatChipInputEvent } from '@angular/material';
 import { Router } from '@angular/router';
 
-import {COMMA, ENTER} from '@angular/cdk/keycodes';
+import { COMMA, ENTER } from '@angular/cdk/keycodes';
 
 
-import {Observable} from 'rxjs';
-import {map, startWith} from 'rxjs/operators';
+import { Observable } from 'rxjs';
+import { map, startWith } from 'rxjs/operators';
 
 @Component({
   selector: 'app-create-package',
@@ -23,406 +23,406 @@ export class CreatePackageComponent implements OnInit {
   removable = true;
   addOnBlur = true;
   separatorKeysCodes: number[] = [ENTER, COMMA];
- 
+
   fruitCtrl = new FormControl();
   filteredFruits: Observable<string[]>;
   fruits: string[] = ['India'];
   allFruits: string[] = [
-  
- ' Afghanistan'
-,'Albania'
-,'Algeria'
-,'American Samoa'
-,'Andorra'
-,'Angola'
-,'Anguilla'
-,'Antarctica'
-,'Antigua And Barbuda'
-,'Argentina'
-,'Armenia'
-,'Aruba'
-,'Australia'
-,'Austria'
-,'Azerbaijan'
-,'Bahamas The'
-,'Bahrain'
-,'Bangladesh'
-,'Barbados'
-,'Belarus'
-,'Belgium'
-,'Belize'
-,'Benin'
-,'Bermuda'
-,'Bhutan'
-,'Bolivia'
-,'Bosnia and Herzegovina'
-,'Botswana'
-,'Bouvet Island'
-,'Brazil'
-,'British Indian Ocean Territory'
-,'Brunei'
-,'Bulgaria'
-,'Burkina Faso'
-,'Burundi'
-,'Cambodia'
-,'Cameroon'
-,'Canada'
-,'Cape Verde'
-,'Cayman Islands'
-,'Central African Republic'
-,'Chad'
-,'Chile'
-,'China'
-,'Christmas Island'
-,'Cocos (Keeling) Islands'
-,'Colombia'
-,'Comoros'
-,'Congo'
-,'Congo The Democratic Republic Of The'
-,'Cook Islands'
-,'Costa Rica'
-,'Cote D',
-'Ivoire (Ivory Coast)'
-,'Croatia (Hrvatska)'
-,'Cuba'
-,'Cyprus'
-,'Czech Republic'
-,'Denmark'
-,'Djibouti'
-,'Dominica'
-,'Dominican Republic'
-,'East Timor'
-,'Ecuador'
-,'Egypt'
-,'El Salvador'
-,'Equatorial Guinea'
-,'Eritrea'
-,'Estonia'
-,'Ethiopia'
-,'External Territories of Australia'
-,'Falkland Islands'
-,'Faroe Islands'
-,'Fiji Islands'
-,'Finland'
-,'France'
-,'French Guiana'
-,'French Polynesia'
-,'French Southern Territories'
-,'Gabon'
-,'Gambia The'
-,'Georgia'
-,'Germany'
-,'Ghana'
-,'Gibraltar'
-,'Greece'
-,'Greenland'
-,'Grenada'
-,'Guadeloupe'
-,'Guam'
-,'Guatemala'
-,'Guernsey and Alderney'
-,'Guinea'
-,'Guinea-Bissau'
-,'Guyana'
-,'Haiti'
-,'Heard and McDonald Islands'
-,'Honduras'
-,'Hong Kong S.A.R.'
-,'Hungary'
-  ,'Iceland'
-  ,'India'
-  ,'Indonesia'
-  ,'Iran'
-  ,'Iraq'
-  ,'Ireland'
-  ,'Israel'
-  ,'Italy'
-  ,'Jamaica'
-  ,'Japan'
-  ,'Jersey'
-  ,'Jordan'
-  ,'Kazakhstan'
-  ,'Kenya'
-  ,'Kiribati'
-  ,'Korea North'
-  ,'Korea South'
-  ,'Kuwait'
-  ,'Kyrgyzstan'
-  ,'Laos'
-  ,'Latvia'
-  ,'Lebanon'
-  ,'Lesotho'
-  ,'Liberia'
-  ,'Libya'
-  ,'Liechtenstein'
-  ,'Lithuania'
-  ,'Luxembourg'
-  ,'Macau S.A.R.'
-  ,'Macedonia'
-  ,'Madagascar'
-  ,'Malawi'
-  ,'Malaysia'
-  ,'Maldives'
-  ,'Mali'
-  ,'Malta'
-  ,'Man (Isle of)'
-  ,'Marshall Islands'
-  ,'Martinique'
-  ,'Mauritania'
-  ,'Mauritius'
-  ,'Mayotte'
-  ,'Mexico'
-  ,'Micronesia'
-  ,'Moldova'
-  ,'Monaco'
-  ,'Mongolia'
-  ,'Montserrat'
-  ,'Morocco'
-  ,'Mozambique'
-  ,'Myanmar'
-  ,'Namibia'
-  ,'Nauru'
-  ,'Nepal'
-  ,'Netherlands Antilles'
-  ,'Netherlands The'
-  ,'New Caledonia'
-  ,'New Zealand'
-  ,'Nicaragua'
-  ,'Niger'
-  ,'Nigeria'
-  ,'Niue'
-  ,'Norfolk Island'
-  ,'Northern Mariana Islands'
-  ,'Norway'
-  ,'Oman'
-  ,'Pakistan'
-  ,'Palau'
-  ,'Palestinian Territory Occupied'
-  ,'Panama'
-  ,'Papua new Guinea'
-  ,'Paraguay'
-  ,'Peru'
-  ,'Philippines'
-  ,'Pitcairn Island'
-  ,'Poland'
-  ,'Portugal'
-  ,'Puerto Rico'
-  ,'Qatar'
-  ,'Reunion'
-  ,'Romania'
-  ,'Russia'
-  ,'Rwanda'
-  ,'Saint Helena'
-  ,'Saint Kitts And Nevis'
-  ,'Saint Lucia'
-  ,'Saint Pierre and Miquelon'
-  ,'Saint Vincent And The Grenadines'
-  ,'Samoa'
-  ,'San Marino'
-  ,'Sao Tome and Principe'
-  ,'Saudi Arabia'
-  ,'Senegal'
-  ,'Serbia'
-  ,'Seychelles'
-  ,'Sierra Leone'
-  ,'Singapore'
-  ,'Slovakia'
-  ,'Slovenia'
-  ,'Smaller Territories of the UK'
-  ,'Solomon Islands'
-  ,'Somalia'
-  ,'South Africa'
-  ,'South Georgia'
-  ,'South Sudan'
-  ,'Spain'
-  ,'Sri Lanka'
-  ,'Sudan'
-  ,'Suriname'
-  ,'Svalbard And Jan Mayen Islands'
-  ,'Swaziland'
-  ,'Sweden'
-  ,'Switzerland'
-  ,'Syria'
-  ,'Taiwan'
-  ,'Tajikistan'
-  ,'Tanzania'
-  ,'Thailand'
-  ,'Togo'
-  ,'Tokelau'
-  ,'Tonga'
-  ,'Trinidad And Tobago'
-  ,'Tunisia'
-  ,'Turkey'
-  ,'Turkmenistan'
-  ,'Turks And Caicos Islands'
-  ,'Tuvalu'
-  ,'Uganda'
-  ,'Ukraine'
-  ,'United Arab Emirates'
-  ,'United Kingdom'
-  ,'United States'
-  ,'United States Minor Outlying Islands'
-  ,'Uruguay'
-  ,'Uzbekistan'
-  ,'Vanuatu'
-  ,'Vatican City State (Holy See)'
-  ,'Venezuela'
-  ,'Vietnam'
-  ,'Virgin Islands (British)'
-  ,'Virgin Islands (US)'
-  ,'Wallis And Futuna Islands'
-  ,'Western Sahara'
-  ,'Yemen'
-  ,'Yugoslavia'
-  ,'Zambia'
-  ,'Zimbabwe'
 
-];
-  allCities: string[] =[
-  
-  ,'Abhaynagar',
-  ,'Adamighi',
-  ,'Alamdanga',
-  ,'Badarganj',
-  ,'Bajitpur',
-  ,'Bandarban',
-  ,'Baniachang',
-  ,'Barguna',
-  ,'Barisal',
-  ,'Begamganj',
-  ,'Bera',
-  ,'Bhairab Bazar',
-  ,'Bhaluka',
-  ,'Bhandaria',
-  ,'Bhanga',
-  ,'Bhangura',
-  ,'Bheramara',
-  ,'Bhola',
-  ,'Boalkhali',
-  ,'Bochanganj',
-  ,'Bogora',
-  ,'Burhanuddin',
-  ,'Chandpur',
-  ,'Char Bhadrasan',
-  ,'Char Fasson',
-  ,'Chattagam',
-  ,'Chhagalnaiya',
-  ,'Chhatak',
-  ,'Chilmari',
-  ,'Chuadanga',
-  ,'Damurhuda',
-  ,'Dhaka',
-  ,'Dhamrai',
-  ,'Dinajpur',
-  ,'Dohar',
-  ,'Domar',
-  ,'Faridpur',
-  ,'Fatikchhari',
-  ,'Feni',
-  ,'Fulbari',
-  ,'Fulbaria',
-  ,'Gafargaon',
-  ,'Gaurnadi',
-  ,'Gaybanda',
-  ,'Gazipur',
-  ,'Gomastapur',
-  ,'Gopalganj',
-  ,'Gopalpur',
-  ,'Gurudaspur',
-  ,'Habiganj',
-  ,'Hajiganj',
-  ,'Ishurdi',
-  ,'Ishwarganj',
-  ,'Itna',
-  ,'Jamalpur',
-  ,'Jessor',
-  ,'Jhalakati',
-  ,'Jhanaydah',
-  ,'Jhikargachha',
-  ,'Kalia',
-  ,'Kaliganj',
-  ,'Kaptai',
-  ,'Kaunia',
-  ,'Keshabpur',
-  ,'Khagrachari',
-  ,'Khulna',
-  ,'Kishorganj',
-  ,'Komilla',
-  ,'Kotchandpur',
-  ,'Kurigram',
-  ,'Kushtiya',
-  ,'Laksham',
-  ,'Lakshmipur',
-  ,'Lalmohan',
-  ,'Lohagara',
-  ,'Madaripur',
-  ,'Magura',
-  ,'Maimansingh',
-  ,'Manikchhari',
-  ,'Manikganj',
-  ,'Mathbaria',
-  ,'Mehendiganj',
-  ,'Meherpur',
-  ,'Mirzapur',
-  ,'Muktagachha',
-  ,'Munshiganj',
-  ,'Nageshwari',
-  ,'Nalchiti',
-  ,'Nalitabari',
-  ,'Naral',
-  ,'Narayanganj',
-  ,'Narsingdi',
-  ,'Nator',
-  ,'Naugaon',
-  ,'Nawabganj',
-  ,'Nesarabad',
-  ,'Netrakona',
-  ,'Nilphamari',
-  ,'Noakhali',
-  ,'Pabna',
-  ,'Palang',
-  ,'Panchagarh',
-  ,'Pangsha',
-  ,'Parbatipur',
-  ,'Patiya',
-  ,'Patuakhali',
-  ,'Phultala',
-  ,'Pirganj',
-  ,'Pirojpur',
-  ,'Rajbari',
-  ,'Rajshahi',
-  ,'Ramganj',
-  ,'Ramgarh',
-  ,'Ramgati',
-  ,'Rangamati',
-  ,'Rangpur',
-  ,'Rangunia',
-  ,'Raozan',
-  ,'Raypur',
-  ,'Roypura',
-  ,'Rupganj',
-  ,'Saidpur',
-  ,'Sakhipur',
-  ,'Sandip',
-  ,'Sarishabari',
-  ,'Satkaniya',
-  ,'Satkhira',
-  ,'Senbagh',
-  ,'Shahjadpur',
-  ,'Shailkupa',
-  ,'Sherpur',
-  ,'Sherpur',
-  ,'Shibganj',
-  ,'Silhat',
-  ,'Sirajganj',
-  ,'Sunamganj',
-  ,'Tangayal',
-  ,'Thakurgaon',
-  ,'Trishal',
-  ,'Tungi',
-  ,'Tungi Para',
-  ,'Ulipur',
-]
+    ' Afghanistan'
+    , 'Albania'
+    , 'Algeria'
+    , 'American Samoa'
+    , 'Andorra'
+    , 'Angola'
+    , 'Anguilla'
+    , 'Antarctica'
+    , 'Antigua And Barbuda'
+    , 'Argentina'
+    , 'Armenia'
+    , 'Aruba'
+    , 'Australia'
+    , 'Austria'
+    , 'Azerbaijan'
+    , 'Bahamas The'
+    , 'Bahrain'
+    , 'Bangladesh'
+    , 'Barbados'
+    , 'Belarus'
+    , 'Belgium'
+    , 'Belize'
+    , 'Benin'
+    , 'Bermuda'
+    , 'Bhutan'
+    , 'Bolivia'
+    , 'Bosnia and Herzegovina'
+    , 'Botswana'
+    , 'Bouvet Island'
+    , 'Brazil'
+    , 'British Indian Ocean Territory'
+    , 'Brunei'
+    , 'Bulgaria'
+    , 'Burkina Faso'
+    , 'Burundi'
+    , 'Cambodia'
+    , 'Cameroon'
+    , 'Canada'
+    , 'Cape Verde'
+    , 'Cayman Islands'
+    , 'Central African Republic'
+    , 'Chad'
+    , 'Chile'
+    , 'China'
+    , 'Christmas Island'
+    , 'Cocos (Keeling) Islands'
+    , 'Colombia'
+    , 'Comoros'
+    , 'Congo'
+    , 'Congo The Democratic Republic Of The'
+    , 'Cook Islands'
+    , 'Costa Rica'
+    , 'Cote D',
+    'Ivoire (Ivory Coast)'
+    , 'Croatia (Hrvatska)'
+    , 'Cuba'
+    , 'Cyprus'
+    , 'Czech Republic'
+    , 'Denmark'
+    , 'Djibouti'
+    , 'Dominica'
+    , 'Dominican Republic'
+    , 'East Timor'
+    , 'Ecuador'
+    , 'Egypt'
+    , 'El Salvador'
+    , 'Equatorial Guinea'
+    , 'Eritrea'
+    , 'Estonia'
+    , 'Ethiopia'
+    , 'External Territories of Australia'
+    , 'Falkland Islands'
+    , 'Faroe Islands'
+    , 'Fiji Islands'
+    , 'Finland'
+    , 'France'
+    , 'French Guiana'
+    , 'French Polynesia'
+    , 'French Southern Territories'
+    , 'Gabon'
+    , 'Gambia The'
+    , 'Georgia'
+    , 'Germany'
+    , 'Ghana'
+    , 'Gibraltar'
+    , 'Greece'
+    , 'Greenland'
+    , 'Grenada'
+    , 'Guadeloupe'
+    , 'Guam'
+    , 'Guatemala'
+    , 'Guernsey and Alderney'
+    , 'Guinea'
+    , 'Guinea-Bissau'
+    , 'Guyana'
+    , 'Haiti'
+    , 'Heard and McDonald Islands'
+    , 'Honduras'
+    , 'Hong Kong S.A.R.'
+    , 'Hungary'
+    , 'Iceland'
+    , 'India'
+    , 'Indonesia'
+    , 'Iran'
+    , 'Iraq'
+    , 'Ireland'
+    , 'Israel'
+    , 'Italy'
+    , 'Jamaica'
+    , 'Japan'
+    , 'Jersey'
+    , 'Jordan'
+    , 'Kazakhstan'
+    , 'Kenya'
+    , 'Kiribati'
+    , 'Korea North'
+    , 'Korea South'
+    , 'Kuwait'
+    , 'Kyrgyzstan'
+    , 'Laos'
+    , 'Latvia'
+    , 'Lebanon'
+    , 'Lesotho'
+    , 'Liberia'
+    , 'Libya'
+    , 'Liechtenstein'
+    , 'Lithuania'
+    , 'Luxembourg'
+    , 'Macau S.A.R.'
+    , 'Macedonia'
+    , 'Madagascar'
+    , 'Malawi'
+    , 'Malaysia'
+    , 'Maldives'
+    , 'Mali'
+    , 'Malta'
+    , 'Man (Isle of)'
+    , 'Marshall Islands'
+    , 'Martinique'
+    , 'Mauritania'
+    , 'Mauritius'
+    , 'Mayotte'
+    , 'Mexico'
+    , 'Micronesia'
+    , 'Moldova'
+    , 'Monaco'
+    , 'Mongolia'
+    , 'Montserrat'
+    , 'Morocco'
+    , 'Mozambique'
+    , 'Myanmar'
+    , 'Namibia'
+    , 'Nauru'
+    , 'Nepal'
+    , 'Netherlands Antilles'
+    , 'Netherlands The'
+    , 'New Caledonia'
+    , 'New Zealand'
+    , 'Nicaragua'
+    , 'Niger'
+    , 'Nigeria'
+    , 'Niue'
+    , 'Norfolk Island'
+    , 'Northern Mariana Islands'
+    , 'Norway'
+    , 'Oman'
+    , 'Pakistan'
+    , 'Palau'
+    , 'Palestinian Territory Occupied'
+    , 'Panama'
+    , 'Papua new Guinea'
+    , 'Paraguay'
+    , 'Peru'
+    , 'Philippines'
+    , 'Pitcairn Island'
+    , 'Poland'
+    , 'Portugal'
+    , 'Puerto Rico'
+    , 'Qatar'
+    , 'Reunion'
+    , 'Romania'
+    , 'Russia'
+    , 'Rwanda'
+    , 'Saint Helena'
+    , 'Saint Kitts And Nevis'
+    , 'Saint Lucia'
+    , 'Saint Pierre and Miquelon'
+    , 'Saint Vincent And The Grenadines'
+    , 'Samoa'
+    , 'San Marino'
+    , 'Sao Tome and Principe'
+    , 'Saudi Arabia'
+    , 'Senegal'
+    , 'Serbia'
+    , 'Seychelles'
+    , 'Sierra Leone'
+    , 'Singapore'
+    , 'Slovakia'
+    , 'Slovenia'
+    , 'Smaller Territories of the UK'
+    , 'Solomon Islands'
+    , 'Somalia'
+    , 'South Africa'
+    , 'South Georgia'
+    , 'South Sudan'
+    , 'Spain'
+    , 'Sri Lanka'
+    , 'Sudan'
+    , 'Suriname'
+    , 'Svalbard And Jan Mayen Islands'
+    , 'Swaziland'
+    , 'Sweden'
+    , 'Switzerland'
+    , 'Syria'
+    , 'Taiwan'
+    , 'Tajikistan'
+    , 'Tanzania'
+    , 'Thailand'
+    , 'Togo'
+    , 'Tokelau'
+    , 'Tonga'
+    , 'Trinidad And Tobago'
+    , 'Tunisia'
+    , 'Turkey'
+    , 'Turkmenistan'
+    , 'Turks And Caicos Islands'
+    , 'Tuvalu'
+    , 'Uganda'
+    , 'Ukraine'
+    , 'United Arab Emirates'
+    , 'United Kingdom'
+    , 'United States'
+    , 'United States Minor Outlying Islands'
+    , 'Uruguay'
+    , 'Uzbekistan'
+    , 'Vanuatu'
+    , 'Vatican City State (Holy See)'
+    , 'Venezuela'
+    , 'Vietnam'
+    , 'Virgin Islands (British)'
+    , 'Virgin Islands (US)'
+    , 'Wallis And Futuna Islands'
+    , 'Western Sahara'
+    , 'Yemen'
+    , 'Yugoslavia'
+    , 'Zambia'
+    , 'Zimbabwe'
+
+  ];
+  allCities: string[] = [
+
+    , 'Abhaynagar',
+    , 'Adamighi',
+    , 'Alamdanga',
+    , 'Badarganj',
+    , 'Bajitpur',
+    , 'Bandarban',
+    , 'Baniachang',
+    , 'Barguna',
+    , 'Barisal',
+    , 'Begamganj',
+    , 'Bera',
+    , 'Bhairab Bazar',
+    , 'Bhaluka',
+    , 'Bhandaria',
+    , 'Bhanga',
+    , 'Bhangura',
+    , 'Bheramara',
+    , 'Bhola',
+    , 'Boalkhali',
+    , 'Bochanganj',
+    , 'Bogora',
+    , 'Burhanuddin',
+    , 'Chandpur',
+    , 'Char Bhadrasan',
+    , 'Char Fasson',
+    , 'Chattagam',
+    , 'Chhagalnaiya',
+    , 'Chhatak',
+    , 'Chilmari',
+    , 'Chuadanga',
+    , 'Damurhuda',
+    , 'Dhaka',
+    , 'Dhamrai',
+    , 'Dinajpur',
+    , 'Dohar',
+    , 'Domar',
+    , 'Faridpur',
+    , 'Fatikchhari',
+    , 'Feni',
+    , 'Fulbari',
+    , 'Fulbaria',
+    , 'Gafargaon',
+    , 'Gaurnadi',
+    , 'Gaybanda',
+    , 'Gazipur',
+    , 'Gomastapur',
+    , 'Gopalganj',
+    , 'Gopalpur',
+    , 'Gurudaspur',
+    , 'Habiganj',
+    , 'Hajiganj',
+    , 'Ishurdi',
+    , 'Ishwarganj',
+    , 'Itna',
+    , 'Jamalpur',
+    , 'Jessor',
+    , 'Jhalakati',
+    , 'Jhanaydah',
+    , 'Jhikargachha',
+    , 'Kalia',
+    , 'Kaliganj',
+    , 'Kaptai',
+    , 'Kaunia',
+    , 'Keshabpur',
+    , 'Khagrachari',
+    , 'Khulna',
+    , 'Kishorganj',
+    , 'Komilla',
+    , 'Kotchandpur',
+    , 'Kurigram',
+    , 'Kushtiya',
+    , 'Laksham',
+    , 'Lakshmipur',
+    , 'Lalmohan',
+    , 'Lohagara',
+    , 'Madaripur',
+    , 'Magura',
+    , 'Maimansingh',
+    , 'Manikchhari',
+    , 'Manikganj',
+    , 'Mathbaria',
+    , 'Mehendiganj',
+    , 'Meherpur',
+    , 'Mirzapur',
+    , 'Muktagachha',
+    , 'Munshiganj',
+    , 'Nageshwari',
+    , 'Nalchiti',
+    , 'Nalitabari',
+    , 'Naral',
+    , 'Narayanganj',
+    , 'Narsingdi',
+    , 'Nator',
+    , 'Naugaon',
+    , 'Nawabganj',
+    , 'Nesarabad',
+    , 'Netrakona',
+    , 'Nilphamari',
+    , 'Noakhali',
+    , 'Pabna',
+    , 'Palang',
+    , 'Panchagarh',
+    , 'Pangsha',
+    , 'Parbatipur',
+    , 'Patiya',
+    , 'Patuakhali',
+    , 'Phultala',
+    , 'Pirganj',
+    , 'Pirojpur',
+    , 'Rajbari',
+    , 'Rajshahi',
+    , 'Ramganj',
+    , 'Ramgarh',
+    , 'Ramgati',
+    , 'Rangamati',
+    , 'Rangpur',
+    , 'Rangunia',
+    , 'Raozan',
+    , 'Raypur',
+    , 'Roypura',
+    , 'Rupganj',
+    , 'Saidpur',
+    , 'Sakhipur',
+    , 'Sandip',
+    , 'Sarishabari',
+    , 'Satkaniya',
+    , 'Satkhira',
+    , 'Senbagh',
+    , 'Shahjadpur',
+    , 'Shailkupa',
+    , 'Sherpur',
+    , 'Sherpur',
+    , 'Shibganj',
+    , 'Silhat',
+    , 'Sirajganj',
+    , 'Sunamganj',
+    , 'Tangayal',
+    , 'Thakurgaon',
+    , 'Trishal',
+    , 'Tungi',
+    , 'Tungi Para',
+    , 'Ulipur',
+  ]
   @ViewChild('fruitInput') fruitInput: ElementRef<HTMLInputElement>;
   @ViewChild('auto') matAutocomplete: MatAutocomplete;
 
@@ -491,7 +491,7 @@ export class CreatePackageComponent implements OnInit {
   //Booking Process Variables
   bookingProcess: any = [];
   bookHotelForm: FormGroup;
-  bookingPrefer:FormGroup;
+  bookingPrefer: FormGroup;
 
   //Arval Date and Dep Dates
   arvDate: any = []
@@ -509,24 +509,40 @@ export class CreatePackageComponent implements OnInit {
     this.bookHotelForm = formBuilder.group({
       roomCat: ['']
     })
-    
+
 
     this.params = formBuilder.group({
-      fullname: ['', Validators.required],
-      email: ['', Validators.compose([Validators.required, Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$')])],
-      mobile: ['', Validators.compose([Validators.required, Validators.pattern('[6789][0-9]{9}')])],
-      whatsapp: ['', Validators.compose([Validators.required, Validators.pattern('[6789][0-9]{9}')])],
-      
 
-      nationality: ['', Validators.required],
-      country: ['', Validators.required],
-      arrDate: ['', Validators.required],
-      depDate: ['', Validators.required],
-      paxType: ['', Validators.required],
-      noOfAdults: ['', Validators.required],
-      noOfChildrens: ['', Validators.required],
-    
-      // hotelCategory: ['', Validators.required],
+
+      fullname: [''],
+      email: [''],
+      mobile: [''],
+      whatsapp: [''],
+
+
+      nationality: [''],
+      country: [''],
+      arrDate: [''],
+      depDate: [''],
+      paxType: [''],
+      noOfAdults: [''],
+      noOfChildrens: [''],
+      
+      // fullname: ['', Validators.required],
+      // email: ['', Validators.compose([Validators.required, Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$')])],
+      // mobile: ['', Validators.compose([Validators.required, Validators.pattern('[6789][0-9]{9}')])],
+      // whatsapp: ['', Validators.compose([Validators.required, Validators.pattern('[6789][0-9]{9}')])],
+
+
+      // nationality: ['', Validators.required],
+      // country: ['', Validators.required],
+      // arrDate: ['', Validators.required],
+      // depDate: ['', Validators.required],
+      // paxType: ['', Validators.required],
+      // noOfAdults: ['', Validators.required],
+      // noOfChildrens: ['', Validators.required],
+
+      
       roomConfigurations: formBuilder.group({
         single: [''],
         twin: [''],
@@ -541,7 +557,7 @@ export class CreatePackageComponent implements OnInit {
         sightseeing: [''],
         transfer: [''],
         food: [''],
-       
+
 
       }),
 
@@ -813,7 +829,7 @@ export class CreatePackageComponent implements OnInit {
           for (let j in this.hotelJson.hotels) {
             this.roomCategory[k] = "Deluxe"
             this.inRoomFac[k] = "Deluxe"
-             k++;
+            k++;
           }
 
         }
@@ -984,7 +1000,7 @@ export class CreatePackageComponent implements OnInit {
 
     return this.allFruits.filter(fruit => fruit.toLowerCase().indexOf(filterValue) === 0);
   }
-  
+
 
 }
 

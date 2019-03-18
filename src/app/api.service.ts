@@ -82,7 +82,7 @@ export class ApiService {
 
 
   getfoodDetails(body) {
-    let headers = new HttpHeaders( {
+    let headers = new HttpHeaders({
       'Content-Type' : 'application/json',
       'Accept' : 'application/json'
      })

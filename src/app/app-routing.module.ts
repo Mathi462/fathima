@@ -33,6 +33,7 @@ import { FooterComponent } from './footer/footer.component';
 import { RoomDetailsBlockComponent } from './room-details-block/room-details-block.component';
 import { CreatePackageComponent } from './create-package/create-package.component';
 import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
+import { DeleteComponent } from './delete/delete.component';
 
 const routes: Routes = [
   {
@@ -167,6 +168,10 @@ const routes: Routes = [
   {
     path:'gallery2',
     component:Gallery2Component
+  },
+  {
+    path:'del',
+    component:DeleteComponent
   }
 ];
 
