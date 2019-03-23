@@ -137,23 +137,20 @@
                       <div class="col-sm-11 ">
 
                         <div *ngFor="let show of list.showDetails" class="mt-2">
-                          <mat-divider></mat-divider>
+                         
                           <h5 class="text-left">{{show.showName}}</h5>
                           <div> <strong> Timing :</strong> hh:mm to hh:mm <strong> Duration : </strong> hh:mm hrs
                           </div>
-                          <div> <strong> Meals : </strong> included</div>
-<<<<<<< HEAD
-                          <div> <strong> Each Person : </strong> $38
-                            <button mat-button>Pick Me</button>
-=======
+                          <div> <strong> Meals : </strong> included
+                            <div class="text-right">
+                              <button class="uk-button uk-button-primary" color=primary>Tarif Details</button>
+                            </div>
+                          </div>
 
-                            <div style="float:right">
-                          <h5 > <button class="uk-button uk-button-primary" color=primary>Tarif Details</button> </h5>
->>>>>>> d9575fbaacd17b60dda7fef06a885f3edb2f5a98
-                        </div>
+                          <mat-divider></mat-divider>
                         </div>
 
-                    
+
                       </div>
                     </div>
                   </mat-card>
