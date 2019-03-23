@@ -93,14 +93,74 @@
                 </div>
 
                 <div class="col-sm-9">
-                  <div class="row"><strong>Morning</strong></div>
+                  <!-- <div class="row"><strong>Morning</strong></div>
                   <div class="row"><strong>Afternoon</strong></div>
                   <div class="row"><strong>Evening</strong></div>
-                  <div class="row"><strong>Night</strong></div>
+                  <div class="row"><strong>Night</strong></div> -->
+
+                  <button class="uk-button uk-button-primary" (click)="pickSite.toggle()" color=primary>Pick
+                    SightSeeing</button>
                 </div>
 
               </div>
             </mat-card>
+
+            <div mdbCollapse [isCollapsed]="true" #pickSite="bs-collapse">
+              <mat-card-content class="mt-2">
+
+                <!-- <div class="row mt-1">
+                  <div *ngFor="let city of city_list;let i = index ">
+                    <button mat-raised-button name="fontStyle" aria-label="Font Style"
+                      (click)="getCitySiteData(city,i)">{{city.city}}
+                      {{i}}</button>
+                  </div>
+                </div> -->
+
+                <div>
+                  <h4 class="font-weight-bold text-left mt-3 "> Recommended SiteSeeing... </h4>
+                </div>
+                <div *ngFor="let list of siteDetails">
+                  <mat-card class="mt-1">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <img src="../../assets/img.jpg">
+                      </div>
+                      <div class="col-sm-9">
+                        <div>
+                          <h5 class="font-weight-bold text-left">{{list.name}}</h5>
+                          <p>{{list.city}} / {{list.country}}</p>
+                          <h5 style="float:right"><strong>SessionPeriod : </strong> {{list.sessionPeriod}}</h5>
+                          <div (click)="viewOffers1.toggle()">
+                            <button class="uk-button uk-button-primary" color=primary>Show Details</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div mdbCollapse [isCollapsed]="true" #viewOffers1="bs-collapse" class="row mt-2">
+                      <h5 class="font-weight-bold ">Show Details</h5>
+
+                      <div class="col-sm-1">
+
+                      </div>
+                      <div class="col-sm-10 ">
+
+
+                        <div *ngFor="let show of list.showDetails" class="mt-2"
+                          style="border-radius: 5px;border:1px solid black;">
+                          <h5 class="text-left">{{show.showName}}</h5>
+                          <div> <strong> Timing :</strong> hh:mm to hh:mm <strong> Duration : </strong> hh:mm hrs</div>
+                          <div> <strong> Meals : </strong> included</div>
+                          <div> <strong> Each Person : </strong> $38</div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </mat-card>
+                </div>
+
+
+              </mat-card-content>
+            </div>
           </div>
         </div>
 
@@ -152,16 +212,13 @@
           </div>
           <div class="col-sm-9">
             <div>
-
               <h5 class="font-weight-bold text-left">{{list.name}}</h5>
               <p>{{list.city}} / {{list.country}}</p>
               <h5 style="float:right"><strong>SessionPeriod : </strong> {{list.sessionPeriod}}</h5>
               <div (click)="viewOffers1.toggle()">
                 <button class="uk-button uk-button-primary" color=primary>Show Details</button>
               </div>
-
             </div>
-
           </div>
         </div>
         <div mdbCollapse [isCollapsed]="true" #viewOffers1="bs-collapse" class="row mt-2">
