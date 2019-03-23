@@ -137,18 +137,53 @@
                       <div class="col-sm-11 ">
 
                         <div *ngFor="let show of list.showDetails" class="mt-2">
-                         
+
                           <h5 class="text-left">{{show.showName}}</h5>
                           <div> <strong> Timing :</strong> hh:mm to hh:mm <strong> Duration : </strong> hh:mm hrs
                           </div>
                           <div> <strong> Meals : </strong> included
-                            <div class="text-right">
-                              <button class="uk-button uk-button-primary" color=primary>Tarif Details</button>
-                            </div>
+
+                          </div>
+                          <div class="text-right">
+                            <button class="uk-button uk-button-primary" (click)="tariff.toggle()" color=primary>Tariff
+                              Details</button>
                           </div>
 
-                          <mat-divider></mat-divider>
+                          <mat-divider class="mt-1"></mat-divider>
+
+                          <div mdbCollapse [isCollapsed]="true" #tariff="bs-collapse" class="row mt-2">
+                            <div class="table-responsive">
+                              <table class="table" >
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Type</th>
+                                    <th scope="col">Group Type</th>
+                                    <th scope="col">Group AdultPrice</th>
+                                    <th scope="col">Group ChildPrice</th>
+                                    <th scope="col">Private AdultPrice</th>
+                                    <th scope="col">Private ChildPrice</th>
+                                    <th scope="col">Sic AdultPrice</th>
+                                    <th scope="col">Sic ChildPrice</th>
+                                  </tr>
+                                </thead>
+                                <tbody >
+                                  <tr *ngFor="let traf of show.tariffDetailsVector">
+                                    <td scope="row">{{traf.groupAdultPrice}}</td>
+                                    <td scope="row">data</td>
+                                    <td scope="row">data</td>
+                                    <td scope="row">data</td>
+                                    <td scope="row">data</td>
+                                    <td scope="row">data</td>
+                                    <td scope="row">data</td>
+                                    <td scope="row">data</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+
+                          </div>
                         </div>
+
 
 
                       </div>
