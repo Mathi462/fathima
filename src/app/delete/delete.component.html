@@ -4,28 +4,39 @@
 
 </div>
 
-<!-- <mat-tab-group>
-
-  <div *ngFor="let city of city_list">
-    <mat-tab label={{city.city}}>
-
-      <mat-card>
-        <div class="row">
-          <div class="col-sm-4">1</div>
-          <div class="col-sm-4">2</div>
-          <div class="col-sm-4">3</div>
-        </div>
-      </mat-card>
 
 
-    </mat-tab>
+<!-- <mat-card style="margin-left: 20px;margin-top: 10px;margin-right: 20px;">
+  <div class="row">
+    <div class="col-sm-3">
+      <mat-form-field appearance="outline">
+        <mat-label>Start Date</mat-label>
+        <input matInput disabled value="{{item.arrDate | date : 'shortDate'}}">
+        <mat-icon matSuffix>date_range</mat-icon>
+      </mat-form-field>
+    </div>
+    <div class="col-sm-3">
+      <mat-form-field appearance="outline">
+        <mat-label>End Date</mat-label>
+        <input matInput disabled value="{{item.depDate | date : 'shortDate'}}">
+        <mat-icon matSuffix>date_range</mat-icon>
+      </mat-form-field>
+    </div>
+    <div class="col-sm-3">
+      <mat-form-field appearance="outline">
+        <mat-label>No.of Adults</mat-label>
+        <input matInput disabled value="{{item.noOfAdults}}">
+        <mat-icon matSuffix>wc</mat-icon>
+      </mat-form-field>
+    </div>
+    <div class="col-sm-3">
+      <mat-form-field appearance="outline">
+        <mat-label>No.of Childrens</mat-label>
+        <input matInput disabled value="{{item.noOfChildrens}}">
+        <mat-icon matSuffix>child_care</mat-icon>
+      </mat-form-field>
+    </div>
   </div>
-
-
-</mat-tab-group> -->
-
-
-<mat-card style="margin-left: 20px;margin-top: 10px;margin-right: 20px;">
   <div class="row">
     <div class="col-sm-4">
       <mat-select placeholder="Select Date">
@@ -34,36 +45,151 @@
         </mat-option>
       </mat-select>
     </div>
-    <div class="col-sm-2">
+    <div class="col-sm-8">
 
     </div>
-    
+
   </div>
 </mat-card>
 
 
-<!-- 
-<div *ngFor="let dat of date">
-  <mat-card style="margin-left: 20px;margin-top: 5px;margin-right: 20px;height: 150px;">
-    <div class="row">
-      <div class="col-sm-4">
-        <div
-          style="height: 100px;margin: 0;position: absolute;top: 50%;left: 50%;-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);">
-          {{dat | date : 'shortDate'}}
-        </div>
-      </div>
 
-      <div class="col-sm-4">
-
-        <label>Morning</label> <br>
-        <label>Afternoon</label> <br>
-        <label>Evening</label> <br>
+ -->
 
 
-      </div>
-      <div class="col-sm-4"></div>
+<mat-card style="width: 800px;margin-left: 20%;" class="mt-3">
+  <mat-card-title style="text-align: center;">
+    Sightseeing Selection
+  </mat-card-title>
+  <div class="row">
+    <div class="col-sm-3">
+      <label>Strar Date : </label> <strong>{{item.arrDate | date : 'shortDate'}}</strong>
     </div>
-  </mat-card>
-</div> -->
+    <div class="col-sm-3">
+      <label>End Date : </label> <strong>{{item.depDate | date : 'shortDate'}}</strong>
+    </div>
+    <div class="col-sm-3">
+      <label>No.of Adults : </label> <strong>{{item.noOfAdults}}</strong>
+    </div>
+    <div class="col-sm-3">
+      <label>No.of Childrens : </label> <strong>{{item.noOfChildrens}}</strong>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+  <div>
+
+    <mat-tab-group>
+      <mat-tab name="fontStyle" aria-label="Font Style" *ngFor="let city of city_list;let index = index"
+        [label]="city.city">
 
 
+        <div *ngFor="let date_list of date">
+          <div *ngIf="date_list.city ==city.city">
+            <mat-card class="mt-1"
+              style="border-radius: 10px;background-color: rgba(0,0,0,.03);border:1px solid black;">
+              <div class="row">
+                <div class="col-sm-3" style="text-align: center;vertical-align: middle;line-height: 90px;">
+                  {{date_list.date | date : 'mediumDate'}}
+                </div>
+
+                <div class="col-sm-9">
+                  <div class="row"><strong>Morning</strong></div>
+                  <div class="row"><strong>Afternoon</strong></div>
+                  <div class="row"><strong>Evening</strong></div>
+                  <div class="row"><strong>Night</strong></div>
+                </div>
+
+              </div>
+            </mat-card>
+          </div>
+        </div>
+
+      </mat-tab>
+
+    </mat-tab-group>
+
+
+  </div>
+
+  <mat-divider class="mt-1"></mat-divider>
+
+  <mat-card-content class="mt-2">
+
+    <!-- <div class="row mt-1">
+      <div *ngFor="let city of city_list;let i = index ">
+        <button mat-raised-button name="fontStyle" aria-label="Font Style"
+          (click)="getCitySiteData(city,i)">{{city.city}}
+          {{i}}</button>
+      </div>
+    </div> -->
+
+    <div class="row">
+
+      <div class="col-sm-6">
+        <!-- <strong><label>Select Date :</label></strong>  -->
+        <mat-form-field style="width: 80%;">
+          <label>Select Date </label>
+          <mat-select>
+            <mat-option *ngFor="let date of date" placeholder="Select Date" [value]="date.date">
+              {{date.date | date : 'mediumDate' }} - {{date.city}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="col-sm-6 mt-2">
+
+        <button class="uk-button uk-button-primary" color=primary>Search Sight Seeing</button>
+      </div>
+    </div>
+    <div>
+      <h4 class="font-weight-bold text-left mt-3 "> Recommended SiteSeeing... </h4>
+    </div>
+    <div *ngFor="let list of siteDetails">
+      <mat-card class="mt-1">
+        <div class="row">
+          <div class="col-sm-3">
+            <img src="../../assets/img.jpg">
+          </div>
+          <div class="col-sm-9">
+            <div>
+
+              <h5 class="font-weight-bold text-left">{{list.name}}</h5>
+              <p>{{list.city}} / {{list.country}}</p>
+              <h5 style="float:right"><strong>SessionPeriod : </strong> {{list.sessionPeriod}}</h5>
+              <div (click)="viewOffers1.toggle()">
+                <button class="uk-button uk-button-primary" color=primary>Show Details</button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div mdbCollapse [isCollapsed]="true" #viewOffers1="bs-collapse" class="row mt-2">
+          <h5 class="font-weight-bold ">Show Details</h5>
+
+          <div class="col-sm-1">
+
+          </div>
+          <div class="col-sm-10 ">
+
+
+            <div *ngFor="let show of list.showDetails" class="mt-2" style="border-radius: 5px;border:1px solid black;">
+              <h5 class="text-left">{{show.showName}}</h5>
+              <div> <strong> Timing :</strong> hh:mm to hh:mm <strong> Duration : </strong> hh:mm hrs</div>
+              <div> <strong> Meals : </strong> included</div>
+              <div> <strong> Each Person : </strong> $38</div>
+            </div>
+
+          </div>
+        </div>
+      </mat-card>
+    </div>
+
+
+  </mat-card-content>
+</mat-card>
+
+
+
+<button (click)="viewOffers1.toggle()">click</button>
+<div mdbCollapse [isCollapsed]="true" #viewOffers1="bs-collapse">hhhhhhhhhhhhhhhhhhhhhhhhhhhh</div>

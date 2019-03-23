@@ -52,10 +52,11 @@ export class ApiService {
       'Content-Type' : 'application/json',
       'Accept' : 'application/json'
      })
-     console.log("http://ec2-34-220-166-216.us-west-2.compute.amazonaws.com:8080/fathimatours/data/hotels/"+body)
+     
      return new Promise ((resolve)=>{
       this.httpClient.get("http://ec2-34-220-166-216.us-west-2.compute.amazonaws.com:8080/fathimatours/data/hotels").subscribe(res=>{
         resolve(res)
+        console.log(res)
       },
       err=>{
         resolve(err)
@@ -94,6 +95,28 @@ export class ApiService {
       },
       err=>{
         resolve(err)
+      })
+    })
+  }
+
+
+
+
+  getSite() {
+    let headers = new HttpHeaders( {
+      'Content-Type' : 'application/json',
+      'Accept' : 'application/json'
+     })
+     
+     
+     return new Promise ((resolve)=>{
+      this.httpClient.get("http://ec2-34-220-166-216.us-west-2.compute.amazonaws.com:8080/fathimatours/data/sightseeings",{headers : headers}).subscribe(res=>{
+        resolve(res)
+        // console.log(res)
+      },
+      err=>{
+        resolve(err)
+        console.log(err)
       })
     })
   }

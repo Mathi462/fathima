@@ -3,6 +3,9 @@ import { ApiService } from './api.service';
 import { ThemeService } from './theme-service/theme.service';
 import { Observable } from 'rxjs';
 
+
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -20,14 +23,14 @@ export class AppComponent {
   }
   getTheme() {
     this._apiService.getTheme().then(d => {
-      console.log(d) 
+      // console.log(d) 
       this.theme = d
-      this.theme = this.theme.data[0]
+      // this.theme = this.theme.data[0]
       this.themename = this.theme.value
       this.theme = this.theme.theme
       localStorage.setItem("theme" , this.themename)
-      console.log(this.themename)
-      console.log(this.theme)
+      // console.log(this.themename)
+      // console.log(this.theme)
       this.themeService.setTheme(this.theme)
 
     })

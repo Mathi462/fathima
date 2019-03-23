@@ -1,0 +1,88 @@
+<div class="hp-banner">
+  <img src="assets/images/detailed-banner1.jpg" alt="">
+</div>
+
+
+
+<mat-card style="width: 800px;margin-left: 20%;" class="mt-3">
+  <mat-card-title style="text-align: center;">
+    Sightseeing Selection
+  </mat-card-title>
+  <div class="row">
+    <div class="col-sm-3">
+      <label>Strar Date : </label> <strong>{{item.arrDate | date : 'shortDate'}}</strong>
+    </div>
+    <div class="col-sm-3">
+      <label>End Date : </label> <strong>{{item.depDate | date : 'shortDate'}}</strong>
+    </div>
+    <div class="col-sm-3">
+      <label>No.of Adults : </label> <strong>{{item.noOfAdults}}</strong>
+    </div>
+    <div class="col-sm-3">
+      <label>No.of Childrens : </label> <strong>{{item.noOfChildrens}}</strong>
+    </div>
+  </div>
+  <mat-divider></mat-divider>
+
+  <div>
+    <mat-checkbox>Need Stand by</mat-checkbox> <br>
+    <mat-checkbox>Need Airport Pickup/ Drop</mat-checkbox>
+
+  </div>
+  <mat-divider></mat-divider>
+  <div>
+
+
+    <div class="row">
+      <div class="col-sm-1">Date</div>
+      <div class="col-sm-2">City</div>
+      <div class="col-sm-3">Vehicle Type</div>
+      <div class="col-sm-3">Guide Details</div>
+      <div class="col-sm-3"></div>
+    </div>
+
+    <div *ngFor="let data of date">
+      <div class="row">
+        <div class="col-sm-1">{{data.date | date : 'shortDate'}}</div>
+        <div class="col-sm-2">{{data.city}}</div>
+        <div class="col-sm-3">
+          <mat-form-field>
+            <mat-label>Select vehicle</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let vehicle of vehicle_Type" [value]="vehicle">
+                {{vehicle}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <mat-form-field>
+            <mat-label>Select vehicle</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let guide of guide_details" [value]="guide">
+                {{guide}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="col-sm-3">
+          <div class="row">
+            <button class="uk-button uk-button-primary" color=primary>Show Addtional Vehicle</button>
+            <img src="../../assets/negative.svg" style="width: 10px;height: 10px;">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <mat-divider class="mt-1"></mat-divider>
+
+  <mat-card-content class="mt-2">
+
+
+
+  </mat-card-content>
+</mat-card>

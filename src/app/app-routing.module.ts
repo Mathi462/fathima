@@ -34,6 +34,7 @@ import { RoomDetailsBlockComponent } from './room-details-block/room-details-blo
 import { CreatePackageComponent } from './create-package/create-package.component';
 import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
 import { DeleteComponent } from './delete/delete.component';
+import { TransferComponent } from './transfer/transfer.component';
 
 const routes: Routes = [
   {
@@ -172,6 +173,10 @@ const routes: Routes = [
   {
     path:'del',
     component:DeleteComponent
+  },
+  {
+    path:'transfer',
+    component:TransferComponent
   }
 ];
 

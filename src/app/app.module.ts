@@ -88,7 +88,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import {MaterialModule} from './material';
 import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
-import { DeleteComponent } from './delete/delete.component'
+import { DeleteComponent } from './delete/delete.component';
+import { TransferComponent } from './transfer/transfer.component'
 
 @NgModule({
   declarations: [
@@ -126,7 +127,8 @@ import { DeleteComponent } from './delete/delete.component'
     RoomDetailsBlockComponent,
     CreatePackageComponent,
     HotelDetailsComponent,
-    DeleteComponent
+    DeleteComponent,
+    TransferComponent
   ],
   imports: [
 
