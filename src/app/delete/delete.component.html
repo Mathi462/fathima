@@ -132,11 +132,9 @@
                     <div mdbCollapse [isCollapsed]="true" #viewOffers1="bs-collapse" class="row mt-2">
                       <h5 class="font-weight-bold ">Show Details</h5>
 
-                      <div class="col-sm-1">
+                     
 
-                      </div>
-
-                      <div class="col-sm-11 ">
+                      <div class="col-sm-12 ">
 
                         <div *ngFor="let show of list.showDetails" class="mt-2">
 
@@ -145,13 +143,57 @@
                           </div>
                           <div> <strong> Meals : </strong> included
                             <div class="text-right">
-                              <button class="uk-button uk-button-primary" (click)="getSite(list , i)"
-                                color=primary>Tarif Details</button>
+                              <button class="uk-button uk-button-primary" (click)="tariff.toggle()" color=primary>Tarif
+                                Details</button>
+                              <!-- (click)="getSite(show , i)" -->
                             </div>
                           </div>
 
-                          <mat-divider></mat-divider>
+                          <mat-divider class="mt-1"></mat-divider>
+
+                          <div mdbCollapse [isCollapsed]="true" #tariff="bs-collapse" class="row mt-2">
+                            <div class="table-responsive">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+
+                                    <th scope="col">Type</th>
+                                    <th scope="col">Group Type</th>
+                                    <th scope="col">Group AdultPrice</th>
+                                    <th scope="col">Group ChildPrice</th>
+                                    <th scope="col">Private AdultPrice</th>
+                                    <th scope="col">Private ChildPrice</th>
+                                    <th scope="col">Sic AdultPrice</th>
+                                    <th scope="col">Sic ChildPrice</th>
+                                    <th scope="col">Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr *ngFor="let traf of list.tariffDetailsVector">
+
+                                    <td scope="row">
+                                      <mat-radio-button>
+                                        {{traf.sighSeeingSeatType}}
+                                      </mat-radio-button>
+                                    </td>
+                                    <td scope="row">{{traf.groupType}}</td>
+                                    <td scope="row">{{traf.groupAdultPrice}}</td>
+                                    <td scope="row">{{traf.groupChildPrice}}</td>
+                                    <td scope="row">{{traf.privateAdultPrice}}</td>
+                                    <td scope="row">{{traf.privateChildPrice}}</td>
+                                    <td scope="row">{{traf.sicAdultPrice}}</td>
+                                    <td scope="row">{{traf.sicChildPrice}}</td>
+                                    <th scope="row">
+                                      <button class="uk-button uk-button-primary" (click)="tariff.toggle(); getSite(show , i,traf) " color=primary>Pick</button>
+                                    </th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+
+                          </div>
                         </div>
+
 
 
                       </div>

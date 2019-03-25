@@ -68,7 +68,8 @@ export class DeleteComponent implements OnInit {
 
   }
   
-  getSite(list , i) {
+  getSite(list , i,tariff) {
+console.log(tariff)
     console.log(this.date)
     this.date[i].pickedSite.push(list);
   }
