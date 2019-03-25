@@ -132,7 +132,7 @@
                     <div mdbCollapse [isCollapsed]="true" #viewOffers1="bs-collapse" class="row mt-2">
                       <h5 class="font-weight-bold ">Show Details</h5>
 
-                     
+
 
                       <div class="col-sm-12 ">
 
@@ -171,47 +171,34 @@
                                 <tbody>
                                   <tr *ngFor="let traf of list.tariffDetailsVector">
 
-                                    <td scope="row">
-                                      <mat-radio-button>
-                                        {{traf.sighSeeingSeatType}}
-                                      </mat-radio-button>
-                                    </td>
-                                    <td scope="row">{{traf.groupType}}</td>
-                                    <td scope="row">{{traf.groupAdultPrice}}</td>
-                                    <td scope="row">{{traf.groupChildPrice}}</td>
-                                    <td scope="row">{{traf.privateAdultPrice}}</td>
-                                    <td scope="row">{{traf.privateChildPrice}}</td>
-                                    <td scope="row">{{traf.sicAdultPrice}}</td>
-                                    <td scope="row">{{traf.sicChildPrice}}</td>
+                                    <td scope="row">{{traf.sighSeeingSeatType}} </td>
+                                    <td scope="row">{{traf.groupType}} </td>
+                                    <td scope="row">{{traf.groupAdultPrice}} </td>
+                                    <td scope="row">{{traf.groupChildPrice}} </td>
+                                    <td scope="row">{{traf.privateAdultPrice}} </td>
+                                    <td scope="row">{{traf.privateChildPrice}} </td>
+                                    <td scope="row">{{traf.sicAdultPrice}} </td>
+                                    <td scope="row">{{traf.sicChildPrice}} </td>
                                     <th scope="row">
-                                      <button class="uk-button uk-button-primary" (click)="tariff.toggle(); getSite(show , i,traf) " color=primary>Pick</button>
+                                      <button class="uk-button uk-button-primary"
+                                        (click)="tariff.toggle(); getSite(show , i,traf) " color=primary>Pick</button>
                                     </th>
                                   </tr>
                                 </tbody>
                               </table>
                             </div>
-
                           </div>
                         </div>
-
-
-
                       </div>
                     </div>
                   </mat-card>
                 </div>
-
-
               </mat-card-content>
             </div>
           </div>
         </div>
-
       </mat-tab>
-
     </mat-tab-group>
-
-
   </div>
   <!-- 
   <mat-divider class="mt-1"></mat-divider>
@@ -285,5 +272,3 @@
 
 
 
-<button (click)="viewOffers1.toggle()">click</button>
-<div mdbCollapse [isCollapsed]="true" #viewOffers1="bs-collapse">hhhhhhhhhhhhhhhhhhhhhhhhhhhh</div>

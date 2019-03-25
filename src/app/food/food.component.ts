@@ -1,40 +1,38 @@
 import { Component, OnInit, NgZone } from '@angular/core';
 
-import { FormBuilder, FormArray, FormGroup, FormControl } from '@angular/forms';
+import { FormBuilder } from '@angular/forms';
 import { MatSnackBar } from '@angular/material';
 import { Router } from '@angular/router';
+
 import { ApiService } from '../api.service';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-
-
-
 
 @Component({
-  selector: 'app-delete',
-  templateUrl: './delete.component.html',
-  styleUrls: ['./delete.component.css']
+  selector: 'app-food',
+  templateUrl: './food.component.html',
+  styleUrls: ['./food.component.css']
 })
-export class DeleteComponent implements OnInit {
+export class FoodComponent implements OnInit {
 
-  public show: boolean = false;
-  public buttonName: any = 'Show';
+
+  public show:boolean = false;
+  public buttonName:any = 'Show';
   item: any
   city_list: any = []
 
   itr: any
   range: any
   date: any = [{
-    pickedSite: []
+    pickedSite : []
   }]
 
   siteDetails: any = {}
-  siteDetails1: any
+  siteDetails1 : any 
 
   siteSeeingData: any
 
 
   constructor(private _apiService: ApiService, public formBuilder: FormBuilder, public snackBar: MatSnackBar, public ngZone: NgZone, public router: Router,
-    public httpClient: HttpClient) {
+    ) {
 
     this.item = JSON.parse(localStorage.getItem('traveller-quotation'));
 
@@ -53,7 +51,7 @@ export class DeleteComponent implements OnInit {
 
       this.callDate(startDate, endDate, city)
       this.setEventSize()
-      this.mapCalling()
+      
       this.getSiteData()
 
     }
@@ -66,39 +64,25 @@ export class DeleteComponent implements OnInit {
 
 
   }
-
-  getSite(list, i, tariff) {
-    console.log(tariff)
+  
+  getSite(list , i,tariff) {
+console.log(tariff)
     console.log(this.date)
     this.date[i].pickedSite.push(list);
   }
   getSiteData() {
+    
+    // this._apiService.getSite().then(result => {
+      
+    //   console.log(result)
+    //   this.siteDetails1 = result
+    //   console.log(this.siteDetails1)
+      
+    //   this.siteDetails = this.siteDetails1.extras
+    //   console.log(this.siteDetails)
+      
 
-
-    let data = {
-      intiaterID: "1234",
-      intiaterName: "dhamu",
-      paxType: "FIT",
-      objectType: "SIGHTSEEING",
-      startDate: null,
-      endDate: null,
-      country: "Thailand",
-      city: "Phuket",
-      noOfAdults: 0,
-      noOfChilds: 0,
-      hotelCategory: "FOUR_STAR"
-    }
-    this._apiService.getSite(data).then(result => {
-
-      console.log(result)
-      this.siteDetails1 = result
-      console.log(this.siteDetails1)
-
-      this.siteDetails = this.siteDetails1.extras
-      console.log(this.siteDetails)
-
-
-    })
+    // })
   }
 
 
@@ -126,7 +110,7 @@ export class DeleteComponent implements OnInit {
     console.log(dateArr)
 
     for (let i = 0; i < dateArr.length; i++) {
-      this.date.push(Object.assign(dateArr[i], { pickedSite: [] }))
+      this.date.push(Object.assign(dateArr[i] , {pickedSite : []}))
     }
 
 
@@ -139,7 +123,7 @@ export class DeleteComponent implements OnInit {
     this.siteSeeingData
   }
 
-
+ 
 
   dateChange(event) {
     console.log(event)
@@ -158,29 +142,6 @@ export class DeleteComponent implements OnInit {
 
   }
 
-
-  mapCalling() {
-
-    let headers = new HttpHeaders({
-      'Content-Type': 'application/json'
-
-
-    })
-
-    //  let headers = ("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT")
-
-    let body = {
-      origins: '11.6693517,78.1392038',
-      destinations: '11.6541948,78.1581402'
-    }
-
-
-    var url = 'https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=' + body.origins + '&destinations=' + body.destinations + '&key=AIzaSyDHZh-MLj7m8hl7qloX1_w2_pdgTC_QreA'
-
-
-
-
-  }
 
 
 
