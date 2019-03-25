@@ -16,13 +16,16 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class DeleteComponent implements OnInit {
 
-
+  public show:boolean = false;
+  public buttonName:any = 'Show';
   item: any
   city_list: any = []
 
   itr: any
   range: any
-  date: any = []
+  date: any = [{
+    pickedSite : []
+  }]
 
   siteDetails: any = {}
   siteDetails1 : any 
@@ -64,7 +67,11 @@ export class DeleteComponent implements OnInit {
 
 
   }
-
+  
+  getSite(list , i) {
+    console.log(this.date)
+    this.date[i].pickedSite.push(list);
+  }
   getSiteData() {
     
     this._apiService.getSite().then(result => {
@@ -105,7 +112,7 @@ export class DeleteComponent implements OnInit {
     console.log(dateArr)
 
     for (let i = 0; i < dateArr.length; i++) {
-      this.date.push(dateArr[i])
+      this.date.push(Object.assign(dateArr[i] , {pickedSite : []}))
     }
 
 

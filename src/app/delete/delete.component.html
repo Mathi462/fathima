@@ -83,8 +83,8 @@
         [label]="city.city">
 
 
-        <div *ngFor="let date_list of date">
-          <div *ngIf="date_list.city ==city.city">
+        <div *ngFor="let date_list of date;let i = index">
+          <div *ngIf="date_list.city == city.city">
             <mat-card class="mt-1"
               style="border-radius: 10px;background-color: rgba(0,0,0,.03);border:1px solid black;">
               <div class="row">
@@ -93,6 +93,8 @@
                 </div>
 
                 <div class="col-sm-9">
+
+                  {{date_list.pickedSite}}
                   <!-- <div class="row"><strong>Morning</strong></div>
                   <div class="row"><strong>Afternoon</strong></div>
                   <div class="row"><strong>Evening</strong></div>
@@ -137,13 +139,14 @@
                       <div class="col-sm-11 ">
 
                         <div *ngFor="let show of list.showDetails" class="mt-2">
-                         
+
                           <h5 class="text-left">{{show.showName}}</h5>
                           <div> <strong> Timing :</strong> hh:mm to hh:mm <strong> Duration : </strong> hh:mm hrs
                           </div>
                           <div> <strong> Meals : </strong> included
                             <div class="text-right">
-                              <button class="uk-button uk-button-primary" color=primary>Tarif Details</button>
+                              <button class="uk-button uk-button-primary" (click)="getSite(list , i)"
+                                color=primary>Tarif Details</button>
                             </div>
                           </div>
 
