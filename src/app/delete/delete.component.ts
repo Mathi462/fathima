@@ -5,7 +5,9 @@ import { MatSnackBar } from '@angular/material';
 import { Router } from '@angular/router';
 import { ApiService } from '../api.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
+import {map, startWith} from 'rxjs/operators';
 
 
 
@@ -16,6 +18,11 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class DeleteComponent implements OnInit {
 
+  myControl = new FormControl();
+  options: string[] = ['One', 'Two', 'Three'];
+  filteredOptions: Observable<string[]>;
+
+
   public show:boolean = false;
   public buttonName:any = 'Show';
   item: any
@@ -23,9 +30,7 @@ export class DeleteComponent implements OnInit {
 
   itr: any
   range: any
-  date: any = [{
-    pickedSite : []
-  }]
+  date: any =[]
 
   siteDetails: any = {}
   siteDetails1 : any 
@@ -64,14 +69,26 @@ export class DeleteComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.filteredOptions = this.myControl.valueChanges.pipe(
+      startWith(''),
+      map(value => this._filter(value))
+    );
 
+  }
+  private _filter(value: string): string[] {
+    const filterValue = value.toLowerCase();
 
+    return this.options.filter(option => option.toLowerCase().indexOf(filterValue) === 0);
   }
   
   getSite(list , i,tariff) {
 console.log(tariff)
     console.log(this.date)
-    this.date[i].pickedSite.push(list);
+    this.date[i].pickedSite.push({ show : list, tariff : tariff  } );
+  }
+  removeSite(i,j){
+    this.date[i].pickedSite.splice(j,1)
+    console.log(this.date)
   }
   getSiteData() {
     
@@ -162,7 +179,7 @@ console.log(tariff)
     }
 
 
-    var url = 'https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=' + body.origins + '&destinations=' + body.destinations + '&key=AIzaSyDHZh-MLj7m8hl7qloX1_w2_pdgTC_QreA'
+    // var url = 'https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=' + body.origins + '&destinations=' + body.destinations + '&key=AIzaSyDHZh-MLj7m8hl7qloX1_w2_pdgTC_QreA'
 
 
 
@@ -170,6 +187,11 @@ console.log(tariff)
   }
 
 
+  getCitys() {
+    this._apiService.getCity().then(data => {
+      console.log(data)
+    })
+  }
 
 
 
