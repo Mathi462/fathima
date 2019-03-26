@@ -33,7 +33,7 @@ export class DeleteComponent implements OnInit {
   date: any =[]
 
   siteDetails: any = {}
-  siteDetails1 : any 
+  siteDetails1: any
 
   siteSeeingData: any
 
@@ -50,7 +50,6 @@ export class DeleteComponent implements OnInit {
     for (let j = 0; j < this.city_list.length; j++) {
 
       console.log(this.city_list[j].city)
-
       console.log(this.city_list[j].arrDate)
       console.log(this.city_list[j].depDate)
       var startDate = new Date(this.city_list[j].arrDate);
@@ -80,9 +79,9 @@ export class DeleteComponent implements OnInit {
 
     return this.options.filter(option => option.toLowerCase().indexOf(filterValue) === 0);
   }
-  
-  getSite(list , i,tariff) {
-console.log(tariff)
+
+  getSite(list, i, tariff) {
+    console.log(tariff)
     console.log(this.date)
     this.date[i].pickedSite.push({ show : list, tariff : tariff  } );
   }
@@ -91,16 +90,30 @@ console.log(tariff)
     console.log(this.date)
   }
   getSiteData() {
-    
-    this._apiService.getSite().then(result => {
-      
+
+
+    let data = {
+      intiaterID: "1234",
+      intiaterName: "dhamu",
+      paxType: "FIT",
+      objectType: "SIGHTSEEING",
+      startDate: null,
+      endDate: null,
+      country: "Thailand",
+      city: "Phuket",
+      noOfAdults: 0,
+      noOfChilds: 0,
+      hotelCategory: "FOUR_STAR"
+    }
+    this._apiService.getSite(data).then(result => {
+
       console.log(result)
       this.siteDetails1 = result
       console.log(this.siteDetails1)
-      
+
       this.siteDetails = this.siteDetails1.extras
       console.log(this.siteDetails)
-      
+
 
     })
   }
@@ -130,7 +143,7 @@ console.log(tariff)
     console.log(dateArr)
 
     for (let i = 0; i < dateArr.length; i++) {
-      this.date.push(Object.assign(dateArr[i] , {pickedSite : []}))
+      this.date.push(Object.assign(dateArr[i], { pickedSite: [] }))
     }
 
 
@@ -143,7 +156,7 @@ console.log(tariff)
     this.siteSeeingData
   }
 
- 
+
 
   dateChange(event) {
     console.log(event)
