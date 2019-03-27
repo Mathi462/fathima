@@ -1,12 +1,18 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http'
+import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
 
   url : any = "http://localhost:9000/";       
-  constructor(public httpClient : HttpClient ) { }
+  constructor(public httpClient : HttpClient ) { 
+
+    this.getJSON().subscribe(data => {
+      console.log(data);
+  });
+  }
 
   getCountryStateByPincode(pincode) {
     return new Promise((reslove) => {
@@ -99,6 +105,24 @@ export class ApiService {
     })
   }
 
+  getCity() {
+    let headers = new HttpHeaders({
+      'Content-Type' : 'application/json',
+      'Accept' : 'application/json'
+     })
+    
+    //  console.log(this.url + "angular-travel/get-food-details/"+body)
+    let city = "http://localhost:4200/assets/countries.json"
+     return new Promise ((resolve)=>{
+      this.httpClient.get(city,{headers : headers}).subscribe(res=>{
+        resolve(res)
+      },
+      err=>{
+        resolve(err)
+      })
+    })
+  }
+
 
 
 
@@ -122,6 +146,7 @@ export class ApiService {
     })
   }
 
+<<<<<<< HEAD
   getSite1(data) {
     let headers = new HttpHeaders( {
       'Content-Type' : 'application/json',
@@ -141,5 +166,10 @@ export class ApiService {
       })
     })
   }
+=======
+  public getJSON(): Observable<any> {
+    return this.httpClient.get("./assets/countries.json");
+}
+>>>>>>> 22e5e2e3eeae067b05d2470fac1c67f3417bdaaa
 
 }
