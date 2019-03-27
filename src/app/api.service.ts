@@ -122,4 +122,24 @@ export class ApiService {
     })
   }
 
+  getSite1(data) {
+    let headers = new HttpHeaders( {
+      'Content-Type' : 'application/json',
+      'Accept' : 'application/json'
+     })
+     
+     console.log(data)
+     
+     return new Promise ((resolve)=>{
+      this.httpClient.post("http://ec2-34-220-166-216.us-west-2.compute.amazonaws.com:8080/fathimatours/data/bookingrequest",data,{headers : headers}).subscribe(res=>{
+        resolve(res)
+        // console.log(res)
+      },
+      err=>{
+        resolve(err)
+        console.log(err)
+      })
+    })
+  }
+
 }
