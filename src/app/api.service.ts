@@ -146,8 +146,30 @@ export class ApiService {
     })
   }
 
+<<<<<<< HEAD
+  getSite1(data) {
+    let headers = new HttpHeaders( {
+      'Content-Type' : 'application/json',
+      'Accept' : 'application/json'
+     })
+     
+     console.log(data)
+     
+     return new Promise ((resolve)=>{
+      this.httpClient.post("http://ec2-34-220-166-216.us-west-2.compute.amazonaws.com:8080/fathimatours/data/bookingrequest",data,{headers : headers}).subscribe(res=>{
+        resolve(res)
+        // console.log(res)
+      },
+      err=>{
+        resolve(err)
+        console.log(err)
+      })
+    })
+  }
+=======
   public getJSON(): Observable<any> {
     return this.httpClient.get("./assets/countries.json");
 }
+>>>>>>> 22e5e2e3eeae067b05d2470fac1c67f3417bdaaa
 
 }

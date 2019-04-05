@@ -105,7 +105,19 @@ export class DeleteComponent implements OnInit {
       noOfChilds: 0,
       hotelCategory: "FOUR_STAR"
     }
-    this._apiService.getSite(data).then(result => {
+    // this._apiService.getSite(data).then(result => {
+
+    //   console.log(result)
+    //   this.siteDetails1 = result
+    //   console.log(this.siteDetails1)
+
+    //   this.siteDetails = this.siteDetails1.extras
+    //   console.log(this.siteDetails)
+
+
+    // })
+
+    this._apiService.getSite1(data).then(result => {
 
       console.log(result)
       this.siteDetails1 = result
