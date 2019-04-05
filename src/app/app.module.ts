@@ -90,7 +90,8 @@ import {MaterialModule} from './material';
 import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
 import { DeleteComponent } from './delete/delete.component';
 import { TransferComponent } from './transfer/transfer.component';
-import { FoodComponent } from './food/food.component'
+import { FoodComponent } from './food/food.component';
+import { HotaldeleteComponent } from './hotaldelete/hotaldelete.component'
 
 @NgModule({
   declarations: [
@@ -130,7 +131,8 @@ import { FoodComponent } from './food/food.component'
     HotelDetailsComponent,
     DeleteComponent,
     TransferComponent,
-    FoodComponent
+    FoodComponent,
+    HotaldeleteComponent
   ],
   imports: [
 

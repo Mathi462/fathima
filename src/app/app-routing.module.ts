@@ -36,6 +36,7 @@ import { HotelDetailsComponent } from './hotel-details/hotel-details.component';
 import { DeleteComponent } from './delete/delete.component';
 import { TransferComponent } from './transfer/transfer.component';
 import { FoodComponent } from './food/food.component';
+import { HotaldeleteComponent } from './hotaldelete/hotaldelete.component';
 
 const routes: Routes = [
   {
@@ -174,6 +175,10 @@ const routes: Routes = [
   {
     path:'del',
     component:DeleteComponent
+  },
+  {
+    path:'hotaldel',
+    component:HotaldeleteComponent
   },
   {
     path:'transfer',
